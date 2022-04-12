@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'davidfont';
+    src: url("davidfont.otf") format("truetype");
+}
+
+main {
+    max-width: 70ch;
+    padding: 2ch;
+    margin: auto;
+    font-family: 'davidfont';
+}
+h1 {
+    font-weight: normal;
+}
+h2 {
+    font-size: inherit;
+}
+footer {
+    padding-top: 20px;
+    font-size: 9pt;
+}
+a:link, a:visited {
+    color: inherit;
+}
+
+img {
+    border-radius: 15px;
+    max-width: 100%;
+}
+
+figure { margin: 0 0 1em }
+ul { margin: 0; padding: 0; list-style: none;}
+ul li::before { content: "â€“"; padding-right: 4px; }
+ul.ing li::before { content: none; padding-right: 0; }
+li ul { margin-left: 1em;}
