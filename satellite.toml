@@ -1,0 +1,10 @@
+# Address to listen to requests (default: 0.0.0.0:1965)
+listen = "0.0.0.0"
+
+[tls]
+# Directory to save certificates
+directory = "/var/lib/gemini/certs"
+
+[[domain]]
+name = "nnix.com"
+root = "/nnix.com/capsule"
