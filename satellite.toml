@@ -7,4 +7,4 @@ directory = "/var/lib/gemini/certs"
 
 [[domain]]
 name = "nnix.com"
-root = "/nnix.com/capsule"
+root = "/web/nnix.com/capsule"
