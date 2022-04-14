@@ -1,2 +1,2 @@
-*/1 * * * * cd /nnix.com && /usr/bin/git pull origin main
-*/1 * * * * cd /nnix.com/capsule && /usr/bin/git pull origin main
+*/1 * * * * /usr/bin/git -C /nnix.com pull origin main
+*/1 * * * * /usr/bin/git -C /nnix.com/capsule pull origin main
