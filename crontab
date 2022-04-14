@@ -1,2 +1,2 @@
-*/1 * * * * /usr/bin/git -C /nnix.com pull origin main
-*/1 * * * * /usr/bin/git -C /nnix.com/capsule pull origin main
+*/1 * * * * ec2-user /usr/bin/git -C /web/nnix.com pull origin main
+*/1 * * * * ec2-user /usr/bin/git -C /web/nnix.com/capsule pull origin main
