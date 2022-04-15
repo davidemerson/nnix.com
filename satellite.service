@@ -1,0 +1,13 @@
+[Unit]
+Description=Satellite Gemini Server
+After=network.target
+
+[Service]
+Type=simple
+User=ec2-user
+WorkingDirectory=/usr/local/bin
+ExecStart=/usr/local/bin/satellite
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
