@@ -1,24 +1,33 @@
+# An http server and a gemini server
+(or at least a pile of configs for them)
 
-install nginx, git, scdoc, and go
+## install nginx, git, scdoc, and go
 yum install nginx git scdoc go
 
-get your certbot certs
+## clone this repo to /web/nnix.com/
+
+## clone the capsule repo to /web/nnix.com/capsule
+
+## copy nginx.conf over
+cp /web/nnix.com/nginx.conf /etc/nginx/nginx.conf
+
+## get your certbot certs
 certbot -d nnix.com -d www.nnix.com
 
-or renew your certbot certs
+## or renew your certbot certs
 certbot renew
 
-clone satellite from sources at https://sr.ht/~gsthnz/satellite/
+## clone satellite from sources at https://sr.ht/~gsthnz/satellite/
 
-two web directories, make them if you need to
-/nnix.com
-/capsule
-
-in the satellite directory,
+## in the satellite directory,
 make && make install
 
-run satellite using your config and background it
-satellite -c /nnix.com/satellite.toml &
+## move your service description for satellite to systemd
+cp /web/nnix.com/satellite.service /etc/systemd/system/
 
-copy crontab entries to /etc/crontab
-cat /nnix.com/crontab > /etc/crontab
+## enable nginx and satellite
+systemctl enable nginx.service
+systemctl enable satellite.service
+
+## copy crontab entries to the ec2-user crontab
+crontab -e (and paste)
