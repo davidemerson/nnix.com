@@ -39,4 +39,14 @@ go get tildegit.org/solderpunk/molly-brown
 ## copy binary
 cp ~/go/bin/molly-brown /usr/bin
 
-## 
+## make keys
+openssl req -new -subj "/CN=nnix.com" -x509 -newkey ec -pkeyopt ec_paramgen_curve:secp521r1 -pkeyopt ec_param_enc:named_curve -days 3650 -nodes -out /web/certs/nnix.com.pem -keyout /web/certs/nnix.com.key
+
+## chmod keys
+chmod 400 /web/certs/nnix.com.*
+
+## add service
+cp /web/nnix.com/mollybrown.service /etc/systemd/system/
+
+## enable service
+systemctl enable mollybrown.service

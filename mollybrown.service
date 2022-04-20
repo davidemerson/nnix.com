@@ -1,0 +1,13 @@
+[Unit]
+Description=The Unsinkable Molly Brown Gemserv
+After=network.target
+
+[Service]
+Type=simple
+User=ec2-user
+WorkingDirectory=/usr/local/bin
+ExecStart=/usr/local/bin/molly-brown -c /web/nnix.com/molly.conf
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
