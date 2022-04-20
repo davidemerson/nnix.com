@@ -31,3 +31,12 @@ systemctl enable satellite.service
 
 ## copy crontab entries to the ec2-user crontab
 crontab -e (and paste)
+
+# Molly Brown Instead
+## get mb sources
+go get tildegit.org/solderpunk/molly-brown
+
+## copy binary
+cp ~/go/bin/molly-brown /usr/bin
+
+## 
