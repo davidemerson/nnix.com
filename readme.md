@@ -17,22 +17,6 @@ certbot -d nnix.com -d www.nnix.com
 ## or renew your certbot certs
 certbot renew
 
-## clone satellite from sources at https://sr.ht/~gsthnz/satellite/
-
-## in the satellite directory,
-make && make install
-
-## move your service description for satellite to systemd
-cp /web/nnix.com/satellite.service /etc/systemd/system/
-
-## enable nginx and satellite
-systemctl enable nginx.service
-systemctl enable satellite.service
-
-## copy crontab entries to the ec2-user crontab
-crontab -e (and paste)
-
-# Molly Brown Instead
 ## get mb sources
 go get tildegit.org/solderpunk/molly-brown
 
@@ -48,5 +32,9 @@ chmod 400 /web/certs/nnix.com.*
 ## add service
 cp /web/nnix.com/mollybrown.service /etc/systemd/system/
 
-## enable service
+## enable nginx and satellite
 systemctl enable mollybrown.service
+systemctl enable nginx.service
+
+## copy crontab entries to the ec2-user crontab
+crontab -e (and paste)
