@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Type=simple
 User=ec2-user
-WorkingDirectory=/usr/bin
+WorkingDirectory=/tmp
 ExecStart=/usr/bin/molly-brown -c /web/nnix.com/molly.conf
 Restart=on-failure
 
