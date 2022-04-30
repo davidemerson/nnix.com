@@ -1,4 +1,4 @@
-# An http server and a gemini server
+# An http server and a gemini server and a scuttlebutt server
 (or at least a pile of configs for them)
 
 ## install nginx, git, scdoc, and go
@@ -31,6 +31,15 @@ chmod 400 /web/certs/nnix.com.*
 
 ## add service
 cp /web/nnix.com/mollybrown.service /etc/systemd/system/
+
+## clone go-ssb-room
+git clone https://github.com/ssb-ngi-pointer/go-ssb-room.git
+
+## build go-ssb-room
+cd go-ssb-room/cmd/server
+go build
+
+
 
 ## enable nginx and satellite
 systemctl enable mollybrown.service
