@@ -1,8 +1,30 @@
-# An http server and a gemini server and a scuttlebutt server
+# An http server and a gemini server
 (or at least a pile of configs for them)
 
-## install nginx, git, scdoc, and go
-yum install nginx git scdoc go
+## launch an EC2 t4g.nano
+- running amazon linux 64-bit arm
+- 30GB gp2 storage on the root volume
+
+## acquire an Elastic IP, if you don't have a free one already.
+
+## associate the Elastic IP with the instance you launched just now.
+
+## set your A record to the Elastic IP in question
+
+## log in (ssh) to the EC2 you just made
+
+## edit hostname
+sudo nano /etc/hostname
+sudo reboot
+
+## install basic updates
+sudo yum update
+
+## install nginx from linux-extras
+sudo amazon-linux-extras install nginx1
+
+## install git, scdoc, certbot and go
+yum install git scdoc go certbot
 
 ## clone this repo to /web/nnix.com/
 
@@ -31,15 +53,6 @@ chmod 400 /web/certs/nnix.com.*
 
 ## add service
 cp /web/nnix.com/mollybrown.service /etc/systemd/system/
-
-## clone go-ssb-room
-git clone https://github.com/ssb-ngi-pointer/go-ssb-room.git
-
-## build go-ssb-room
-cd go-ssb-room/cmd/server
-go build
-
-
 
 ## enable nginx and satellite
 systemctl enable mollybrown.service
