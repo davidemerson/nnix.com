@@ -23,8 +23,11 @@ sudo yum update
 ## install nginx from linux-extras
 sudo amazon-linux-extras install nginx1
 
+## install epel
+sudo amazon-linux-extras install epel
+
 ## install git, scdoc, certbot and go
-yum install git scdoc go certbot
+yum install git scdoc go certbot-nginx
 
 ## clone this repo to /web/nnix.com/
 
