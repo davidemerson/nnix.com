@@ -1,13 +1,13 @@
 @font-face {
-    font-family: 'davidfont';
-    src: url("davidfont.otf") format("truetype");
+    font-family: 'nnixfont';
+    src: url("davidfont.ttf") format("truetype");
 }
 
 main {
     max-width: 70ch;
     padding: 2ch;
     margin: auto;
-    font-family: 'davidfont';
+    font-family: 'nnixfont';
 }
 h1 {
     font-weight: normal;
