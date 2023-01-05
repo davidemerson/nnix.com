@@ -26,7 +26,7 @@ sudo amazon-linux-extras install nginx1
 ## install epel
 sudo amazon-linux-extras install epel
 
-## install git, scdoc, certbot and go
+## install git, scdoc, certbot, bind and go
 yum install git scdoc go certbot-nginx
 
 ## clone this repo to /web/nnix.com/
