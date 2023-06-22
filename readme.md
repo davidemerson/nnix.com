@@ -1,3 +1,6 @@
+Note :: I used to host this site on an ec2 instance, but now it's on a third party (FM) provider. This is where I keep molly brown configs and reference former redirects now.
+
+
 # An http server and a gemini server
 (or at least a pile of configs for them)
 
