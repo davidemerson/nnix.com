@@ -1,0 +1,23 @@
+base_url = "https://nnix.com"
+title = "nnix.com"
+description = "novo nilbud by swamplight: coal’s short but we got plenty of bog in the yard"
+compile_sass = false
+minify_html = false
+default_language = "en"
+
+[slugify]
+paths = "on"
+anchors = "on"
+
+[markdown]
+render_emoji = true
+external_links_target_blank = true
+smart_punctuation = true
+
+[link_checker]
+internal_level = "warn"
+
+[extra]
+author = "David Emerson"
+default_theme = "light"
+twitter_card = true

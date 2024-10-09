@@ -1,0 +1,9 @@
+name = "nnix"
+description = "A simple theme to make my project page not suck"
+homepage = "https://nnix.com"
+min_version = "1.0"
+demo = "https://nnix.com"
+
+[author]
+name = "David Emerson"
+homepage = "https://davidemerson.com"
