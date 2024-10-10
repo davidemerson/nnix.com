@@ -65,9 +65,9 @@ Run through standard install. Install just the standard system utilities, and ss
 
 Log in as your user. su to root.
 
-Install curl, git, nano, sudo, xorg, lightdm, xterm
+Install curl, git, nano, sudo, xorg, lightdm, lxterminal
 
-`apt install curl nano git sudo xorg lightdm xterm`
+`apt install curl nano git sudo xorg lightdm lxterminal`
 
 Add your user to sudoers
 
