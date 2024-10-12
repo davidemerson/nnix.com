@@ -7,6 +7,14 @@ description = "anonymous community defense social network."
   toc = true
 +++
 
+# status
+My goal is to have a working alpha inside six months, the time it took Andy Goldsworthy to complete “Boulder”, allegedly.
+
+As of 11 October 2024,
+- API development started
+- App wireframes at about 80%
+- AWS Lambda development started
+
 # overview
 This is a repository of design notes for an application I'm building, slowly and in spare time.
 
