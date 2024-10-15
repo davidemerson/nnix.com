@@ -1,7 +1,7 @@
 +++
 title = "cherubgyre"
 slug = "cherubgyre"
-date = 2024-10-08
+date = 2024-10-15
 description = "anonymous community defense social network."
 [extra]
   toc = true
