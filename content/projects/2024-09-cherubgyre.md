@@ -8,15 +8,17 @@ description = "anonymous community defense social network."
 +++
 
 # status
-My goal is to have a working alpha inside six months, the time it took [Andy Goldsworthy](https://www.glenstone.org/artist/andy-goldsworthy/) to complete “Boulder”, allegedly. I do not know if this is a long time or a short time, but surely there are [professionals](https://julianprairie.com) with strong opinions on the matter.
+My goal is to have a working alpha inside six months, the time it took [Andy Goldsworthy](https://www.glenstone.org/artist/andy-goldsworthy/) to complete “Boulder”, allegedly. I do not know if this is a long time or a short time, but surely there are professionals with strong opinions on the matter. This seems like a small stone hut of a project with a clay sphere inside, so I'm going with six months to alpha.
 
 The project started in earnest on 20 September 2024.
 
 As of 14 October 2024,
 - API development started
 - App wireframes at about 85%
-- AWS Lambda development started
+- Server development (AWS Lambda) started
+- Database development started
 - Rust code started merging into [repository](https://github.com/davidemerson/cherubgyre/)
+- Test pipeline and linters built
 
 # overview
 This is a repository of design notes for an application I'm building, slowly and in spare time.
