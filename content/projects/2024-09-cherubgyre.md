@@ -8,7 +8,7 @@ description = "anonymous community defense social network."
 +++
 
 # status
-My goal is to have a working alpha inside six months, the time it took [Andy Goldsworthy](https://www.glenstone.org/artist/andy-goldsworthy/) to complete “Boulder”, allegedly. I do not know if this is a long time or a short time, but there are professionals with strong opinions on the matter.[^1] This seems like a small stone hut of a project with a clay sphere inside, so I'm going with six months to alpha.
+My goal is to have a working alpha inside six months, the time it took [Andy Goldsworthy](https://www.glenstone.org/artist/andy-goldsworthy/) to complete “Boulder”, allegedly. I do not know if this is a long time or a short time, but there are professionals with strong opinions on the matter.† This seems like a small stone hut of a project with a clay sphere inside, so I'm going with six months to alpha.
 
 The project started in earnest on 20 September 2024.
 
@@ -21,7 +21,7 @@ As of 14 October 2024,
 - Test pipeline and linters built
 - Put up a [security.txt](https://cherubgyre.com/.well-known/security.txt) and a [public pgp key for security@cherubgyre.com](https://cherubgyre.com/.well-known/pgp-key.txt) just in case.
 
-[^1]: I know at least one.
+†: I know at least one.
 
 # overview
 This is a repository of design notes for an application I'm building, slowly and in spare time.
