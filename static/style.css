@@ -14,3 +14,4 @@ ul { margin: 0; padding: 0; list-style: none; }
 ul li::before { content: "+"; padding-right: 4px; }
 ul.ing li::before { content: none; padding-right: 0; }
 li ul { margin-left: 1em;}
+th { border: 1px solid black; border-radius: 10px; background-color: #F2F2F2;}
