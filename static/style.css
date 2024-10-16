@@ -14,5 +14,6 @@ ul { margin: 0; padding: 0; list-style: none; }
 ul li::before { content: "+"; padding-right: 4px; }
 ul.ing li::before { content: none; padding-right: 0; }
 li ul { margin-left: 1em;}
+table{border-collapse: collapse;}
 td{background-color:#FFFFFF;padding:10px 5px; word-break:normal; }
 th{ background-color:#F2F2F2;border-bottom-width:1px;border-color:#000000;border-style:solid; padding:10px 5px;word-break:normal; }
