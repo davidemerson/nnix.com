@@ -14,4 +14,6 @@ ul { margin: 0; padding: 0; list-style: none; }
 ul li::before { content: "+"; padding-right: 4px; }
 ul.ing li::before { content: none; padding-right: 0; }
 li ul { margin-left: 1em;}
-th { border: 1px solid black; border-radius: 10px; background-color: #F2F2F2;}
+table  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}
+table td{background-color:#FFFFFF;border-bottom-width:1px;border-color:#000000;border-style:solid;border-top-width:1px;border-width:0px;color:#333;padding:10px 5px; word-break:normal; }
+table th{ background-color:#F2F2F2;border-bottom-width:1px;border-color:#000000;border-style:solid; padding:10px 5px;word-break:normal; }
