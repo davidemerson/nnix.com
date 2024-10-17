@@ -12,6 +12,7 @@ I designed and produced a mold which allows the casting (from concrete or resin)
 # drawings
 The mold concept is illustrated here:
 
+{{ img(id="/images/blockmold.png", alt="block mold illustration render") }}
 {{ img(id="/images/textile_block_1.png", alt="block mold illustration I") }}
 {{ img(id="/images/textile_block_2.png", alt="block mold illustration II") }}
 {{ img(id="/images/textile_block_3.png", alt="block mold illustration III") }}
