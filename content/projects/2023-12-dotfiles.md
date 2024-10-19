@@ -60,7 +60,7 @@ Grab this repo. If you're going to fork this and make your own dotfiles, you mig
 git clone https://github.com/davidemerson/dotfiles.git
 ```
 
-Execute the execute.sh script, which refreshes the /srv/salt/ directory and applies highstate.
+Execute the execute.sh script, which refreshes the `/srv/salt/` directory and applies highstate.
 ```
 cd dotfiles
 chmod 755 execute.sh
@@ -73,9 +73,9 @@ Run fc-cache to update fonts.
 fc-cache
 ```
 
-Keep salt-minion from starting (unnecessary since we're using salt-check). Use your editor of choice to comment out the pkg_scripts=salt_minion line in /etc/rc.conf.local.
+Keep salt-minion from starting (unnecessary since we're using salt-check). Use your editor of choice to comment out the `pkg_scripts=salt_minion` line in `/etc/rc.conf.local`.
 
-Make your hostname appropriate by editing /etc/myname with the editor of your choice.
+Make your hostname appropriate by editing `/etc/myname` with the editor of your choice.
 
 Reboot
 ```
@@ -83,7 +83,7 @@ sudo reboot
 ```
 
 # Notes
-* You'll note that my .muttrc and .msmtprc refer to "~/.secrets/mailpass" for credentials. This is a one liner file containing my mail app password, keeping it out of this repo, and allowing me to do things like encrypt it on disk. You can substitute any form of password management here, to accommodate your personal preferences.
+* You'll note that my `.muttrc` and `.msmtprc` refer to `~/.secrets/mailpass` for credentials. This is a one liner file containing my mail app password, keeping it out of this repo, and allowing me to do things like encrypt it on disk. You can substitute any form of password management here, to accommodate your personal preferences.
 * I've always hopped between Debian and OpenBSD for my personal workstation, with the majority of my time spent in Debian for practical reasons. I prefer OpenBSD philosophically, though, and at present, its warts have never been fewer, so it's what I'm running at the moment. If you used a previous version of this repo, it used to be Debian-centric until recently, and the current iteration will break some of that.
 
 # Additional References
