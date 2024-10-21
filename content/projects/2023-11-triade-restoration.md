@@ -1,6 +1,6 @@
 +++
 title = "Triad"
-date = 2023-11-12
+date = 2024-10-20
 description = "restoring a Gerald Louis Morin sculpture."
 [extra]
   toc = true
@@ -25,7 +25,9 @@ From the previous owners, who purchased this piece and originally installed it:
 5. Install new mirror glass in the metal shells
 6. Install on original concrete pad, which was carefully aligned to reflect the sun into the residence at particular times of day
 
-The piece is awaiting reinstallation, so I'll take more pictures when it's properly installed, but my notes so far:
+I installed the piece today (20 Oct 2024). It's great to have it in place again, but we have a problem with the compatibility between the mirror silvering and the mastic used to secure the mirrors to the neoprene rubber backing. This is very unfortunate, since it will ultimately require me to remove all the mirrors (destructively) and replace them.
+
+I plan to replace the mirrors with titanium plate, polished to a mirror finish. If this doesn't work out for some reason, I'll use aluminum plate, likewise polished to a mirror finish. The polished metal will be less-perfectly reflective, of course, but also far more durable, and a dirty mirror isn't that much different than a mirror-polished piece of metal (and these are always dirty, since they're outside, uncovered).
 
 * Mirror glass is incredibly fickle. The silvering is fragile, the edges delicate.
 * Spread out the cement with a paddle or a roller when you adhere the urethane to the metal, and again when you adhere the mirror to the urethane. You don't want blobs of cement, even if they do flatten, because they can put uneven pressure on the mirror silvering and cause it to delaminate.
