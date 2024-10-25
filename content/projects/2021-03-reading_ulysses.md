@@ -74,10 +74,10 @@ In my opinion, if you want beautiful "standard" English, read Nabokov's Lolita. 
 > In any event I have got to live in a world where a large number of people are to varying degrees conditioned by a knowledge of Ulysses. I shall not be able to analyze any experience of mine in which they take part unless I can fully comprehend their conditioning in this respect. - West, 37
 
 # about Dublin on June 16, 1904
-* https://www.youtube.com/watch?v=OrKDRpDEPDI "Walking Into Eternity" Dublin Tour (Part 1)
-* https://www.youtube.com/watch?v=EWPvLHh7g3U "Walking Into Eternity" Dublin Tour (Part 2)
-* http://m.joyceproject.com/notes/020064telegraph.html The Evening Telegraph (Context)
-* http://www.riverrun.org.uk/tools/LastPink_IG.pdf The Evening Telegraph 16 June 1904 (Full Reconstruction)
+* [Dublin Tour (Part 1)](https://www.youtube.com/watch?v=OrKDRpDEPDI "Walking Into Eternity")
+* [Dublin Tour (Part 2)](https://www.youtube.com/watch?v=EWPvLHh7g3U "Walking Into Eternity")
+* [The Evening Telegraph (Context)](http://m.joyceproject.com/notes/020064telegraph.html)
+* [The Evening Telegraph 16 June 1904 (Full Reconstruction)](http://www.riverrun.org.uk/tools/LastPink_IG.pdf)
 
 # accessory books & articles
 * [Ulysses Annotated, the best single annotated companion for the Ulysses reader.](https://www.amazon.com/Ulysses-Annotated-Notes-James-Joyces/dp/0520253973)
@@ -93,7 +93,7 @@ In my opinion, if you want beautiful "standard" English, read Nabokov's Lolita. 
 
 
 # chapters
-* https://campuspress.yale.edu/modernismlab/ulysses/ Modernism Lab Overview
+* [Modernism Lab Overview](https://campuspress.yale.edu/modernismlab/ulysses/)
 
 ## part I : The Telemachiad
 
