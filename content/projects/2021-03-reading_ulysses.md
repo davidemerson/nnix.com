@@ -1,6 +1,6 @@
 +++
 title = "Ulysses"
-date = 2021-03-10
+date = 2024-10-26
 description = "resources for reading the book."
 [extra]
   toc = true
@@ -21,7 +21,6 @@ Ulysses is an encyclopedic epic which tracks three Dubliners' intersecting lives
 * Various modes of language and expressive style - dialogue, news, advertising, jokes, song, music, letters, catechism, interior monologue, allusion, citation, etc.
 * Parallax. The whole work tells its story from many perspectives and in many styles to give the reader a sense of realism
 
-
 # why read Ulysses?
 There are innumerable publications and reviews of Ulysses. Two exceptionally negative ones are presented here. There are far more reasons to read Ulysses than to ignore Ulysses - and so we'll let the opposition make their case. It's worth noting that the distillation of modernist literature represented by Ulysses was difficult to interpret in its time, as it represented a break from both traditional use of language and traditional storytelling.
 
@@ -29,7 +28,6 @@ In my opinion, if you want beautiful "standard" English, read Nabokov's Lolita. 
 
 ## the Bersani review, 2004
 * [Against Ulysses, Leo Bersani (from Casebook)](https://jamesjoycesulysses.weebly.com/uploads/5/3/1/6/5316047/bersani--against_ulysses.pdf) 
-
 (The book is a ruse.)
 
 > We have only to glance at the title and read page one of Ulysses to be forewarned: trickery, cunning and ruse are the novel's first connotations, and the possibility is thus raised from the very start that those qualities not only belong to certain characters within the novel but, much more significantly, that they define an authorial strategy. Approaching it with naivete is tantamount to walking into a trap. - Bersani, 202
