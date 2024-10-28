@@ -1,7 +1,7 @@
 +++
 title = "cherubgyre"
 slug = "cherubgyre"
-date = 2024-10-15
+date = 2024-10-28
 description = "anonymous community defense social network."
 [extra]
   toc = true
@@ -11,6 +11,9 @@ description = "anonymous community defense social network."
 My goal is to have a working alpha inside six months, the time it took [Andy Goldsworthy](https://www.glenstone.org/artist/andy-goldsworthy/) to complete “Boulder”, allegedly. I do not know if this is a long time or a short time, but there are professionals with strong opinions on the matter.† This seems like a small stone hut of a project with a clay sphere inside, so I'm going with six months to alpha.
 
 The project started in earnest on 20 September 2024.
+
+As of 28 October 2024,
+- API documentation updated
 
 As of 14 October 2024,
 - API development started
@@ -41,7 +44,7 @@ If you're still having trouble imagining who needs this, I guess here's some ide
 * dissidents
 * high-profile individuals and their families
 * anyone who does dangerous things now and then
-* anyone who cares about someone who does dangerous things now and then 
+* anyone who cares about someone who does dangerous things now and then
 
 There are many reasons you might prefer this solution to others, such as:
 * it's open source, which means you can inspect the code to ensure it is not collecting or transmitting anything to which you object
@@ -91,7 +94,7 @@ UIDs will be assigned at registration, and are [UUIDv7](https://www.uuidgenerato
 0192246c-a257-787d-83ba-2b0c007e0941
 ```
 ### usernames (friendly names)
-Community members are identified by a randomly chosen unique name, consisting of a type of angel, a type of curl or vortex, and city name. For example, 
+Community members are identified by a randomly chosen unique name, consisting of a type of angel, a type of curl or vortex, and city name. For example,
 ```
 "cherub-gyre-chicago"
 ```
