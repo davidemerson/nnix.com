@@ -1,6 +1,6 @@
 +++
-title = "life-notes"
-slug = "life-notes"
+title = "notes"
+slug = "notes"
 date = 2024-11-04
 description = "existence and management of the same"
 [extra]
@@ -23,6 +23,8 @@ description = "existence and management of the same"
 * [destruction] the oldest things aren't in present-day cities (self)
 * [spontaneity] all cuisine is accidental (Czula)
 * [responsibility] the world is becoming, never being (Rovelli)
+* [innovation] we sequester innovation, this is why expensive initial development is not wasteful if properly recorded
+* everyone is either an asshole or an imbecile
 
 # leadership
 Leadership is service. You are a catalyst, not a director, and to lead with positional authority, without anyone appointing you, you must:
