@@ -1,5 +1,6 @@
 +++
 title = "dm42 programs"
+slug = "dm42"
 date = 2022-01-07
 description = "an rpn machine I use daily."
 [extra]

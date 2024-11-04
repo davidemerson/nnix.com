@@ -1,5 +1,6 @@
 +++
 title = "retaining wall"
+slug = "retainingwall"
 date = 2024-05-20
 description = "in which I design ways to hold back Earth."
 [extra]

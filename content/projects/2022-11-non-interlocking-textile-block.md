@@ -1,5 +1,6 @@
 +++
 title = "non-interlocking textile block"
+slug = "noninterlockingblock"
 date = 2022-11-28
 description = "a concrete cube mold with patterned sides."
 [extra]

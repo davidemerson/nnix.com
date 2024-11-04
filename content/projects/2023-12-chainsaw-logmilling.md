@@ -1,5 +1,6 @@
 +++
 title = "chainsaw logmilling"
+slug = "logmilling"
 date = 2024-06-12
 description = "how to get beautiful wood the hard way."
 [extra]

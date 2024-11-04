@@ -1,5 +1,6 @@
 +++
 title = "Eames remixed"
+slug = "eamesremixed"
 date = 2022-01-07
 description = "a large sapele worktable for two."
 [extra]

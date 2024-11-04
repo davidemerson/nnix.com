@@ -1,5 +1,6 @@
 +++
 title = "2.2 audio dsp"
+slug = "dsp"
 date = 2024-08-14
 description = "parametric equalization and room correction."
 [extra]

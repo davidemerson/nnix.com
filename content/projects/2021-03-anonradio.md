@@ -1,5 +1,6 @@
 +++
 title = "aNONradio"
+slug = "anonradio"
 date = 2021-03-04
 description = "a streaming setup for anon DJing."
 [extra]

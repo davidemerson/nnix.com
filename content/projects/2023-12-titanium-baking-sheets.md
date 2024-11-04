@@ -1,5 +1,6 @@
 +++
 title = "titanium baking sheets"
+slug = "bakingsheets"
 date = 2023-12-30
 description = "for when the croissant mood strikes."
 [extra]

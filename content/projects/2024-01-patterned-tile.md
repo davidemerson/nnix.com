@@ -1,5 +1,6 @@
 +++
 title = "textile brick"
+slug = "textilebrick"
 date = 2024-01-22
 description = "a printable tile mold with patterned front."
 [extra]

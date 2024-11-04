@@ -1,5 +1,6 @@
 +++
 title = "Ulysses"
+slug = "ulysses"
 date = 2024-10-26
 description = "resources for reading the book."
 [extra]

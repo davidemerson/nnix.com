@@ -1,5 +1,6 @@
 +++
 title = "theta casablanca"
+slug = "casablanca"
 date = 2024-10-09
 description = "teardown and case recycle."
 [extra]

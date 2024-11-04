@@ -1,7 +1,7 @@
 +++
 title = "dotfiles"
-date = 2024-10-18
 slug = "dotfiles"
+date = 2024-10-18
 description = "how I build my workstation environment."
 [extra]
   toc = true
