@@ -1,5 +1,6 @@
 +++
 title = "emerson.farm"
+slug = "cabin"
 date = 2023-04-12
 description = "plans for a ridgetop woods home."
 [extra]

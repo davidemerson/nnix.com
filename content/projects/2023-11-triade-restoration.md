@@ -1,5 +1,6 @@
 +++
 title = "Triad"
+slug = "triad"
 date = 2024-10-20
 description = "restoring a Gerald Louis Morin sculpture."
 [extra]

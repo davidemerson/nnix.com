@@ -1,5 +1,6 @@
 +++
 title = "migrating: tower"
+slug = "tower"
 date = 2019-08-30
 description = "underground parking and a master suite."
 [extra]
