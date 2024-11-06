@@ -1,6 +1,6 @@
 +++
 title = "reading"
-sort_by = "update_date"
+sort_by = "date"
 template = "reading_section.html"
 page_template = "reading_page.html"
 +++
