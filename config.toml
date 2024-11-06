@@ -7,8 +7,7 @@ default_language = "en"
 
 taxonomies = [
 	{ name = "recommender" },
-	{ name = "authorfirstname" },
-	{ name = "authorsurname" },
+	{ name = "authorname" },
 	{ name = "pubyear" },
 	{ name = "rating" },
 	{ name = "readstate" }

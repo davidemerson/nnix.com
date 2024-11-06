@@ -10,7 +10,7 @@
 <ul>
 {% for page in pages %}
   <li>
-    {{ page.taxonomies.authorsurname[0] | default(value="") }}, {{ page.taxonomies.authorfirstname[0] | default(value="") }}.
+    {{ page.taxonomies.authorname[0] | default(value="") }}.
     ({{ page.taxonomies.pubyear[0] | default(value="") }}).
     <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
     <br>

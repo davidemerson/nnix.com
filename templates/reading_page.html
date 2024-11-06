@@ -33,10 +33,41 @@
 
 {% endif %}
 
-{% if page.taxonomies.authorfirstname and page.taxonomies.authorfirstname | length > 0 %}
-    <p>Author First Name: {{ page.taxonomies.authorfirstname[0] }}</p>
+[taxonomies]
+  readstate = ["read"]
+  rating = ["5"]
+  recommender = ["Peter F."]
+  authorname = ["Joyce, James"]
+  pubyear = ["1922"]
+
+{% if page.taxonomies.authorname and page.taxonomies.authorname | length > 0 %}
+    <p>Author: {{ page.taxonomies.authorname[0] }}</p>
 {% else %}
-    <p>Author First Name: Not available</p>
+    <p>Author: </p>
+{% endif %}
+
+{% if page.taxonomies.pubyear and page.taxonomies.pubyear | length > 0 %}
+    <p>Published: {{ page.taxonomies.pubyear[0] }}</p>
+{% else %}
+    <p>Published: </p>
+{% endif %}
+
+{% if page.taxonomies.readstate and page.taxonomies.readstate | length > 0 %}
+    <p>Status: {{ page.taxonomies.readstate[0] }}</p>
+{% else %}
+    <p>Status: </p>
+{% endif %}
+
+{% if page.taxonomies.recommender and page.taxonomies.recommender | length > 0 %}
+    <p>Recommender: {{ page.taxonomies.recommender[0] }}</p>
+{% else %}
+    <p>Recommender: </p>
+{% endif %}
+
+{% if page.taxonomies.rating and page.taxonomies.rating | length > 0 %}
+    <p>Rating: {{ page.taxonomies.rating[0] }}/5</p>
+{% else %}
+    <p>Rating: </p>
 {% endif %}
 
 {{ page.content | safe }}
