@@ -33,7 +33,7 @@
 </ul>
 
 <h2>recently read</h2>
-{% set sorted_pages = pages | sort(attribute="update_date", reverse=true) %}
+{% set sorted_pages = pages | sort(attribute="date", reverse=true) %}
 <ul>
 {% set counter = 0 %}
 {% for page in sorted_pages %}
@@ -43,7 +43,7 @@
       ({{ page.taxonomies.pubyear[0] | default(value="") }}).
       <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
       <br>
-      <sub>Last updated on {{ page.update_date | date(format="%Y-%m-%d") }}</sub>
+      <sub>Last updated on {{ page.date | date(format="%Y-%m-%d") }}</sub>
       <br>
       {% if page.taxonomies.rating and page.taxonomies.rating | length > 0 %}
       <sub>rated {{ page.taxonomies.rating[0] }}/5</sub>
