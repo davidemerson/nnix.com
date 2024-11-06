@@ -33,8 +33,10 @@
 
 {% endif %}
 
-{% if page.taxonomies.authorfirstname %}
+{% if page.taxonomies.authorfirstname and page.taxonomies.authorfirstname | length > 0 %}
     <p>Author First Name: {{ page.taxonomies.authorfirstname[0].name }}</p>
+{% else %}
+    <p>Author First Name: Not available</p>
 {% endif %}
 
 {{ page.content | safe }}
