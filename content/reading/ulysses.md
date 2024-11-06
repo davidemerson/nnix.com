@@ -13,7 +13,7 @@ date = 2024-11-06
 +++
 
 {% if page.taxonomies.authorfirstname %}
-    <p>Author First Name: {{ page.taxonomies.authorfirstname[0].name }}</p>
+    <p>Author First Name: {{ page.taxonomies.authorfirstname | first.name }}</p>
 {% endif %}
 
 Author: {{ page.taxonomies.authorsurname[0] | default(value="") }}, {{ page.taxonomies.authorfirstname[0] | default(value="") }}
