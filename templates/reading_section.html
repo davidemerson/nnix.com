@@ -33,8 +33,9 @@
 </ul>
 
 <h2>recently read</h2>
+{% set recent_pages = pages | sort(attribute="updated", reverse=true) | slice(0, 5) %}
 <ul>
-{% for page in pages | slice(0, 5) %}
+{% for page in recent_pages %}
   <li>
     {{ page.taxonomies.authorname[0] | default(value="") }}.
     ({{ page.taxonomies.pubyear[0] | default(value="") }}).
