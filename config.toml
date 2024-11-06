@@ -6,12 +6,12 @@ minify_html = false
 default_language = "en"
 
 taxonomies = [
-{ name = "recommender" }
-{ name = "authorfirstname" }
-{ name = "authorsurname" }
-{ name = "pubyear" }
-{ name = "rating" }
-{ name = "readstate" }
+	{ name = "recommender" },
+	{ name = "authorfirstname" },
+	{ name = "authorsurname" },
+	{ name = "pubyear" },
+	{ name = "rating" },
+	{ name = "readstate" }
 ]
 
 [slugify]
