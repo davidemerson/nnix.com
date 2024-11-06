@@ -2,12 +2,12 @@
 title = "Ulysses"
 date = 2024-11-06
 [taxonomies]
-  readstate = ["read"]
-  rating = ["5"]
-  recommender = ["Peter F."]
-  authorfirstname = ["James"]
-  authorsurname = ["Joyce"]
-  pubyear = ["1922"]
+  readstate = "read"
+  rating = "5"
+  recommender = "Peter F."
+  authorfirstname = "James"
+  authorsurname = "Joyce"
+  pubyear = "1922"
 [extra]
   toc = true
 +++
