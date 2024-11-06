@@ -32,19 +32,71 @@
 </ul>
 
 {% endif %}
+<div>
+ <table>
+  <tr>
+    <td>Author</td>
+        {% if page.taxonomies.authorname and page.taxonomies.authorname | length > 0 %}
+    <td>{{ page.taxonomies.authorname[0] }}</td>
+        {% else %}
+    <td> </td>
+        {% endif %}
+  </tr>
+  <tr>
+    <td>headtube top interior ø</td>
+    <td>34 mm</td>
+  </tr>
+  <tr>
+    <td>headtube bottom interior ø</td>
+    <td>44 mm</td>
+  </tr>
+  <tr>
+    <td>headtube length</td>
+    <td>144 mm</td>
+  </tr>
+  <tr>
+    <td>standover height</td>
+    <td>825.8 mm</td>
+  </tr>
+  <tr>
+    <td>bottom bracket height</td>
+    <td>273 mm</td>
+  </tr>
+  <tr>
+    <td>seat tube angle</td>
+    <td>73.5°</td>
+  </tr>
+  <tr>
+    <td>top tube length</td>
+    <td>560 mm</td>
+  </tr>
+  <tr>
+    <td>seat tube length</td>
+    <td>560 mm</td>
+  </tr>
+  <tr>
+    <td>down tube length</td>
+    <td>636 mm</td>
+  </tr>
+  <tr>
+    <td>dropout width</td>
+    <td>135 mm</td>
+  </tr>
+  <tr>
+    <td>tire clearance</td>
+    <td>32 mm</td>
+  </tr>
+  <tr>
+    <td>chain line</td>
+    <td>43.5 mm</td>
+  </tr>
+  <tr>
+    <td>top tube angle</td>
+    <td>absolutely freaking level like it should be</td>
+  </tr>
+</table>
+</div>
 
-[taxonomies]
-  readstate = ["read"]
-  rating = ["5"]
-  recommender = ["Peter F."]
-  authorname = ["Joyce, James"]
-  pubyear = ["1922"]
-
-{% if page.taxonomies.authorname and page.taxonomies.authorname | length > 0 %}
-    <p>Author: {{ page.taxonomies.authorname[0] }}</p>
-{% else %}
-    <p>Author: </p>
-{% endif %}
 
 {% if page.taxonomies.pubyear and page.taxonomies.pubyear | length > 0 %}
     <p>Published: {{ page.taxonomies.pubyear[0] }}</p>
