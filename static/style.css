@@ -5,8 +5,8 @@
 main { max-width: 80ch; padding: 2ch; margin: auto; font-family: 'nnixbook'; }
 code, pre, tt, kbd, samp { font-size: 85%; font-family: "nnixmono"; background-color:#F2F2F2; }
 h1 { font-family: 'nnixbold'; font-weight: normal; font-size: 36px; }
-h2 { font-family: 'nnixbook'; font-weight: normal; font-size: 28px; }
-h3 { font-family: 'nnixbook'; font-weight: normal; font-size: 22px; }
+h2 { font-family: 'nnixitalic'; font-weight: normal; font-size: 28px; }
+h3 { font-family: 'nnixitalic'; font-weight: normal; font-size: 22px; }
 footer { max-width: 80ch; padding: 2ch; margin: auto; font-family: 'nnixfont'; }
 a:link, a:visited { color: inherit; }
 img { border-radius: 15px; max-width: 100%; }
