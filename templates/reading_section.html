@@ -7,6 +7,27 @@
 {{ section.content | safe }}
 {% set pages = section.pages %}
 
+<h2>Top Rated Books</h2>
+<ul>
+{% for page in pages %}
+  {% if page.taxonomies.rating and page.taxonomies.rating[0] == 5 %}
+  <li>
+    {{ page.taxonomies.authorname[0] | default(value="") }}.
+    ({{ page.taxonomies.pubyear[0] | default(value="") }}).
+    <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
+    <br>
+    <sub>rated {{ page.taxonomies.rating[0] }}/5</sub>
+    <br>
+    {% if page.taxonomies.recommender and page.taxonomies.recommender | length > 0 %}
+    <sub>recommended by {{ page.taxonomies.recommender[0] }}</sub>
+    {% else %}
+    <sub> </sub>
+    {% endif %}
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
+
 <ul>
 {% for page in pages %}
   <li>
@@ -15,7 +36,7 @@
     <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
     <br>
     {% if page.taxonomies.rating and page.taxonomies.rating | length > 0 %}
-    <sub>{{ page.taxonomies.rating[0] }}/5</sub>
+    <sub>rated {{ page.taxonomies.rating[0] }}/5</sub>
         {% else %}
     <sub>unrated</sub>
         {% endif %}
