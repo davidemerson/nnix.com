@@ -12,8 +12,14 @@ date = 2024-11-06
   toc = true
 +++
 
-# Author: {{ page.taxonomies.authorsurname[0] | default(value="") }}, {{ page.taxonomies.authorfirstname[0] | default(value="") }}
-# Publication Year: {{ page.taxonomies.pubyear[0] | default(value="") }}
+{% if page.taxonomies.authorfirstname %}
+{% if page.taxonomies.authorsurname %}
+    <p>Author First Name: {{ page.taxonomies.authorfirstname[0].name }}, {{ page.taxonomies.authorsurname[0].name }}</p>
+{% endif %}
+{% endif %}
+
+Author: {{ page.taxonomies.authorsurname[0] | default(value="") }}, {{ page.taxonomies.authorfirstname[0] | default(value="") }}
+Publication Year: {{ page.taxonomies.pubyear[0] | default(value="") }}
 # Rating: {{ page.taxonomies.rating[0] | default(value="") }}
 # Recommended By: {{ page.taxonomies.recommender[0] | default(value="") }}
 # Present State: {{ page.taxonomies.readstate[0] | default(value="") }}
