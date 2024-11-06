@@ -10,7 +10,11 @@
 <ul>
 {% for page in pages %}
   <li>
-    {{ page.taxonomies.authorsurname }}, {{ page.taxonomies.authorfirstname }}. ({{ page.taxonomies.pubyear }}). <a href="{{ page.permalink | safe }}">{{ page.title }}</a>. Recommended by {{ page.taxonomies.recommender }}. Rated {{ page.taxonomies.rating }}/5.
+    {{ page.taxonomies.authorsurname | default(value="") }}, {{ page.taxonomies.authorfirstname | default(value="") }}. ({{ page.taxonomies.pubyear | default(value="") }}).
+    <a href="{{ page.permalink | safe }}">{{ page.title }}</a>.
+    Recommended by {{ page.taxonomies.recommender | default(value="") }}.
+    Rated {{ page.taxonomies.rating | default(value="") }}/5.
   </li>
 {% endfor %}
 </ul>
+{% endblock %}
