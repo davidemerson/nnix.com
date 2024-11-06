@@ -14,9 +14,17 @@
     ({{ page.taxonomies.pubyear[0] | default(value="") }}).
     <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
     <br>
-    <sub>Recommended by {{ page.taxonomies.recommender[0] | default(value="") }}</sub>
+    {% if page.taxonomies.rating and page.taxonomies.rating | length > 0 %}
+    <sub>{{ page.taxonomies.rating[0] }}/5</sub>
+        {% else %}
+    <sub>unrated</sub>
+        {% endif %}
     <br>
-    <sub>Rated {{ page.taxonomies.rating[0] | default(value="") }}/5.</sub>
+    {% if page.taxonomies.recommender and page.taxonomies.recommender | length > 0 %}
+    <sub>recommended by {{ page.taxonomies.recommender[0] }}</sub>
+        {% else %}
+    <sub> </sub>
+        {% endif %}
   </li>
 {% endfor %}
 </ul>
