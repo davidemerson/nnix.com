@@ -1,5 +1,6 @@
 +++
 title = "Ulysses"
+date = 2021-03-12
 update_date = 2022-02-20
 [taxonomies]
   readstate = ["read"]
