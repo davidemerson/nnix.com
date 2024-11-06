@@ -14,9 +14,9 @@
     ({{ page.taxonomies.pubyear[0] | default(value="") }}).
     <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
     <br>
-    Recommended by {{ page.taxonomies.recommender[0] | default(value="") }}
+    <sub>Recommended by {{ page.taxonomies.recommender[0] | default(value="") }}</sub>
     <br>
-    Rated {{ page.taxonomies.rating[0] | default(value="") }}/5.
+    <sub>Rated {{ page.taxonomies.rating[0] | default(value="") }}/5.</sub>
   </li>
 {% endfor %}
 </ul>

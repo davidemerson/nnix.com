@@ -17,6 +17,7 @@ ul { margin-left: 1em; padding: 0; list-style: none; }
 ul li::before { content: "+"; padding-right: 4px; }
 ul.ing li::before { content: none; padding-right: 0; }
 li ul { margin-left: 2em;}
+sub { margin-left: 1em; padding: 0; list-style: none; font-size:9px; }
 table { border-collapse:collapse; }
 td{ background-color:#FFFFFF; overflow:hidden; text-align:left; word-break:normal; padding:5px 20px; }
 th{ background-color:#F2F2F2; overflow:hidden; text-align:left; word-break:normal; padding:8px 15px; border-radius:15px; border:8px solid white; }
