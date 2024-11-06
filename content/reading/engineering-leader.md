@@ -1,6 +1,8 @@
 +++
 title = "The Engineering Leader: Strategies for Scaling Teams and Yourself"
 date = 2024-07-30
+# if you don't use a taxonomy, delete it
+# empty fields not allowed
 [taxonomies]
   readstate = ["read"]
   rating = ["2"]
