@@ -30,6 +30,10 @@
   </li>
   {% endfor %}
 </ul>
+
+{% endif %}
+{% if page.taxonomies.authorfirstname %}
+    <p>Author First Name: {{ page.taxonomies.authorfirstname | first.name }}</p>
 {% endif %}
 
 {{ page.content | safe }}
