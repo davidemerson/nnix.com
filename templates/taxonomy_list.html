@@ -1,9 +1,11 @@
 {% extends "index.html" %}
+{% import "index_macros.html" as index_macros %}
 {% import "taxonomy_macros.html" as taxonomy_macros %}
 
 {% block content %}
 <!-- START NAV -->
 {% block header %}
+
 {% endblock header %}
 <!-- END NAV -->
 <main>
@@ -11,6 +13,7 @@
     {% if not title %}
     {% set title = "All " ~ taxonomy.name | title %}
     {% endif %}
+    {{ index_macros::hero(title=title,primary=false) }}
     <!-- END HERO TITLE -->
     <!-- START TAXONOMY LIST -->
     {{ taxonomy_macros::list(terms=terms) }}
