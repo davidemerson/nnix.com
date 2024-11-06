@@ -4,7 +4,7 @@
 @font-face { font-family: 'nnixmono'; src: url("/fonts/nnixmono.woff") format("woff"); }
 main { max-width: 80ch; padding: 2ch; margin: auto; font-family: 'nnixbook'; }
 code, pre, tt, kbd, samp { font-size: 85%; font-family: "nnixmono"; background-color:#F2F2F2; }
-h1 { font-family: 'nnixbook'; font-weight: normal; font-size: 36px; }
+h1 { font-family: 'nnixbold'; font-weight: normal; font-size: 36px; }
 h2 { font-family: 'nnixbook'; font-weight: normal; font-size: 28px; }
 h3 { font-family: 'nnixbook'; font-weight: normal; font-size: 22px; }
 footer { max-width: 80ch; padding: 2ch; margin: auto; font-family: 'nnixfont'; }
