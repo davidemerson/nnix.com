@@ -1,6 +1,8 @@
 +++
 title = "The Poetics of Space"
 date = 2024-09-14
+# if you don't use a taxonomy, delete it
+# empty fields not allowed
 [taxonomies]
   readstate = ["reading"]
   rating = ["5"]

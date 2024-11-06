@@ -27,6 +27,7 @@
     {% if page.taxonomies.recommender and page.taxonomies.recommender | length > 0 %}
     <sub>recommended by {{ page.taxonomies.recommender[0] }}</sub>
     {% endif %}
+    <br>
   </li>
   {% endif %}
 {% endfor %}
@@ -52,6 +53,7 @@
       {% if page.taxonomies.recommender and page.taxonomies.recommender | length > 0 %}
       <sub>recommended by {{ page.taxonomies.recommender[0] }}</sub>
       {% endif %}
+      <br>
     </li>
     {% set counter = counter + 1 %}
   {% else %}
@@ -76,6 +78,7 @@
     {% else %}
     <sub> </sub>
     {% endif %}
+    <br>
   </li>
   {% endif %}
 {% endfor %}
@@ -101,6 +104,7 @@
     {% if page.taxonomies.recommender and page.taxonomies.recommender | length > 0 %}
     <sub>recommended by {{ page.taxonomies.recommender[0] }}</sub>
     {% endif %}
+    <br>
   </li>
   {% endif %}
 {% endfor %}

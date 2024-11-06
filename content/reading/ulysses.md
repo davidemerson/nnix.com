@@ -1,6 +1,8 @@
 +++
 title = "Ulysses"
 date = 2021-03-12
+# if you don't use a taxonomy, delete it
+# empty fields not allowed
 [taxonomies]
   readstate = ["read"]
   rating = ["5"]
