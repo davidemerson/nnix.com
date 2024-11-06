@@ -33,7 +33,8 @@
 </ul>
 
 <h2>recently read</h2>
-{% set recent_pages = pages | sort(attribute="updated", reverse=true) | slice(0, 5) %}
+{% set sorted_pages = pages | sort(attribute="updated", reverse=true) %}
+{% set recent_pages = sorted_pages | slice(0, 5) %}
 <ul>
 {% for page in recent_pages %}
   <li>
