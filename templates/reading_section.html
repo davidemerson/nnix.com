@@ -10,9 +10,7 @@
 <ul>
 {% for page in pages %}
   <li>
-    <a href="{{ page.permalink | safe }}">{{ page.title }}</a>: {{ page.description }}
+    {{ page.authorsurname }}, {{ page.authorfirstname }}. ({{ page.pubyear }}). <a href="{{ page.permalink | safe }}">{{ page.title }}</a>. Recommended by {{ page.recommender }}. Rated {{ page.rating }}/5.
   </li>
 {% endfor %}
 </ul>
-
-{% endblock content %}
