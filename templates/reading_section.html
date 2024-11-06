@@ -34,26 +34,31 @@
 
 <h2>recently read</h2>
 {% set sorted_pages = pages | sort(attribute="updated", reverse=true) %}
-{% set recent_pages = sorted_pages | slice(0, 5) %}
 <ul>
-{% for page in recent_pages %}
-  <li>
-    {{ page.taxonomies.authorname[0] | default(value="") }}.
-    ({{ page.taxonomies.pubyear[0] | default(value="") }}).
-    <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
-    <br>
-    <sub>Last updated on {{ page.updated | date(format="%Y-%m-%d") }}</sub>
-    <br>
-    {% if page.taxonomies.rating and page.taxonomies.rating | length > 0 %}
-    <sub>rated {{ page.taxonomies.rating[0] }}/5</sub>
-    {% else %}
-    <sub>unrated</sub>
-    {% endif %}
-    <br>
-    {% if page.taxonomies.recommender and page.taxonomies.recommender | length > 0 %}
-    <sub>recommended by {{ page.taxonomies.recommender[0] }}</sub>
-    {% endif %}
-  </li>
+{% set counter = 0 %}
+{% for page in sorted_pages %}
+  {% if counter < 5 %}
+    <li>
+      {{ page.taxonomies.authorname[0] | default(value="") }}.
+      ({{ page.taxonomies.pubyear[0] | default(value="") }}).
+      <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
+      <br>
+      <sub>Last updated on {{ page.updated | date(format="%Y-%m-%d") }}</sub>
+      <br>
+      {% if page.taxonomies.rating and page.taxonomies.rating | length > 0 %}
+      <sub>rated {{ page.taxonomies.rating[0] }}/5</sub>
+      {% else %}
+      <sub>unrated</sub>
+      {% endif %}
+      <br>
+      {% if page.taxonomies.recommender and page.taxonomies.recommender | length > 0 %}
+      <sub>recommended by {{ page.taxonomies.recommender[0] }}</sub>
+      {% endif %}
+    </li>
+    {% set counter = counter + 1 %}
+  {% else %}
+    {% break %}
+  {% endif %}
 {% endfor %}
 </ul>
 
