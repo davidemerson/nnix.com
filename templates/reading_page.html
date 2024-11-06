@@ -43,84 +43,39 @@
         {% endif %}
   </tr>
   <tr>
-    <td>headtube top interior ø</td>
-    <td>34 mm</td>
+    <td>Published</td>
+        {% if page.taxonomies.pubyear and page.taxonomies.pubyear | length > 0 %}
+    <td>{{ page.taxonomies.pubyear[0] }}</td>
+        {% else %}
+    <p> </td>
+        {% endif %}
   </tr>
   <tr>
-    <td>headtube bottom interior ø</td>
-    <td>44 mm</td>
+    <td>Status</td>
+        {% if page.taxonomies.readstate and page.taxonomies.readstate | length > 0 %}
+    <td>{{ page.taxonomies.readstate[0] }}</td>
+        {% else %}
+    <td> </td>
+        {% endif %}
   </tr>
   <tr>
-    <td>headtube length</td>
-    <td>144 mm</td>
+    <td>Recommender</td>
+        {% if page.taxonomies.recommender and page.taxonomies.recommender | length > 0 %}
+    <td>{{ page.taxonomies.recommender[0] }}</td>
+        {% else %}
+    <td> </td>
+        {% endif %}
   </tr>
   <tr>
-    <td>standover height</td>
-    <td>825.8 mm</td>
-  </tr>
-  <tr>
-    <td>bottom bracket height</td>
-    <td>273 mm</td>
-  </tr>
-  <tr>
-    <td>seat tube angle</td>
-    <td>73.5°</td>
-  </tr>
-  <tr>
-    <td>top tube length</td>
-    <td>560 mm</td>
-  </tr>
-  <tr>
-    <td>seat tube length</td>
-    <td>560 mm</td>
-  </tr>
-  <tr>
-    <td>down tube length</td>
-    <td>636 mm</td>
-  </tr>
-  <tr>
-    <td>dropout width</td>
-    <td>135 mm</td>
-  </tr>
-  <tr>
-    <td>tire clearance</td>
-    <td>32 mm</td>
-  </tr>
-  <tr>
-    <td>chain line</td>
-    <td>43.5 mm</td>
-  </tr>
-  <tr>
-    <td>top tube angle</td>
-    <td>absolutely freaking level like it should be</td>
+    <td>Rating</td>
+        {% if page.taxonomies.rating and page.taxonomies.rating | length > 0 %}
+    <td>{{ page.taxonomies.rating[0] }}/5</td>
+        {% else %}
+    <td> </td>
+        {% endif %}
   </tr>
 </table>
 </div>
-
-
-{% if page.taxonomies.pubyear and page.taxonomies.pubyear | length > 0 %}
-    <p>Published: {{ page.taxonomies.pubyear[0] }}</p>
-{% else %}
-    <p>Published: </p>
-{% endif %}
-
-{% if page.taxonomies.readstate and page.taxonomies.readstate | length > 0 %}
-    <p>Status: {{ page.taxonomies.readstate[0] }}</p>
-{% else %}
-    <p>Status: </p>
-{% endif %}
-
-{% if page.taxonomies.recommender and page.taxonomies.recommender | length > 0 %}
-    <p>Recommender: {{ page.taxonomies.recommender[0] }}</p>
-{% else %}
-    <p>Recommender: </p>
-{% endif %}
-
-{% if page.taxonomies.rating and page.taxonomies.rating | length > 0 %}
-    <p>Rating: {{ page.taxonomies.rating[0] }}/5</p>
-{% else %}
-    <p>Rating: </p>
-{% endif %}
 
 {{ page.content | safe }}
 {% endblock content %}

@@ -1,6 +1,6 @@
 +++
 title = "Ulysses"
-date = 2024-11-06
+date = 2022-02-20
 [taxonomies]
   readstate = ["read"]
   rating = ["5"]
@@ -11,11 +11,4 @@ date = 2024-11-06
   toc = true
 +++
 
-# overview
-I mean, it's the best book ever.
-
-# why
-Because you have to read the best book ever.
-
-## and how
-Good luck!
+Ulysses is my favorite book. I have a whole guide on how to read it [here](https://nnix.com/projects/ulysses).
