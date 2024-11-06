@@ -5,6 +5,15 @@ compile_sass = false
 minify_html = false
 default_language = "en"
 
+taxonomies = [
+	{name = "recommender"}
+	{name = "author_firstname"}
+	{name = "author_surname"}
+	{name = "pub_year"}
+	{name = "rating"}
+	{name = "read_state"}
+]
+
 [slugify]
 paths = "on"
 anchors = "on"
