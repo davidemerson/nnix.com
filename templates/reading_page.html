@@ -32,8 +32,9 @@
 </ul>
 
 {% endif %}
+
 {% if page.taxonomies.authorfirstname %}
-    <p>Author First Name: {{ page.taxonomies.authorfirstname | first.name }}</p>
+    <p>Author First Name: {{ page.taxonomies.authorfirstname[0].name }}</p>
 {% endif %}
 
 {{ page.content | safe }}
