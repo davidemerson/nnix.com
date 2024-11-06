@@ -1,6 +1,6 @@
 +++
 title = "Ulysses"
-date = 2022-02-20
+updated = 2022-02-20
 [taxonomies]
   readstate = ["read"]
   rating = ["5"]

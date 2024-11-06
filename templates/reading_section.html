@@ -7,7 +7,55 @@
 {{ section.content | safe }}
 {% set pages = section.pages %}
 
-<h2>Top Rated Books</h2>
+<h2>currently reading</h2>
+<ul>
+{% for page in pages %}
+  {% if page.taxonomies.readstate and page.taxonomies.readstate[0] == "reading" %}
+  <li>
+    {{ page.taxonomies.authorname[0] | default(value="") }}.
+    ({{ page.taxonomies.pubyear[0] | default(value="") }}).
+    <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
+    <br>
+    <sub>Read state: {{ page.taxonomies.readstate[0] }}</sub>
+    <br>
+    {% if page.taxonomies.rating and page.taxonomies.rating | length > 0 %}
+    <sub>rated {{ page.taxonomies.rating[0] }}/5</sub>
+    {% else %}
+    <sub>unrated</sub>
+    {% endif %}
+    <br>
+    {% if page.taxonomies.recommender and page.taxonomies.recommender | length > 0 %}
+    <sub>recommended by {{ page.taxonomies.recommender[0] }}</sub>
+    {% endif %}
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+<h2>recently read</h2>
+<ul>
+{% for page in pages | slice(0, 5) %}
+  <li>
+    {{ page.taxonomies.authorname[0] | default(value="") }}.
+    ({{ page.taxonomies.pubyear[0] | default(value="") }}).
+    <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
+    <br>
+    <sub>Last updated on {{ page.updated | date(format="%Y-%m-%d") }}</sub>
+    <br>
+    {% if page.taxonomies.rating and page.taxonomies.rating | length > 0 %}
+    <sub>rated {{ page.taxonomies.rating[0] }}/5</sub>
+    {% else %}
+    <sub>unrated</sub>
+    {% endif %}
+    <br>
+    {% if page.taxonomies.recommender and page.taxonomies.recommender | length > 0 %}
+    <sub>recommended by {{ page.taxonomies.recommender[0] }}</sub>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
+
+<h2>top rated</h2>
 <ul>
 {% for page in pages %}
   {% if page.taxonomies.rating and page.taxonomies.rating[0] == 5 %}
@@ -28,25 +76,29 @@
 {% endfor %}
 </ul>
 
+<h2>queued, unread</h2>
 <ul>
 {% for page in pages %}
+  {% if page.taxonomies.readstate and page.taxonomies.readstate[0] == "queue" %}
   <li>
     {{ page.taxonomies.authorname[0] | default(value="") }}.
     ({{ page.taxonomies.pubyear[0] | default(value="") }}).
     <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
     <br>
+    <sub>Read state: {{ page.taxonomies.readstate[0] }}</sub>
+    <br>
     {% if page.taxonomies.rating and page.taxonomies.rating | length > 0 %}
     <sub>rated {{ page.taxonomies.rating[0] }}/5</sub>
-        {% else %}
+    {% else %}
     <sub>unrated</sub>
-        {% endif %}
+    {% endif %}
     <br>
     {% if page.taxonomies.recommender and page.taxonomies.recommender | length > 0 %}
     <sub>recommended by {{ page.taxonomies.recommender[0] }}</sub>
-        {% else %}
-    <sub> </sub>
-        {% endif %}
+    {% endif %}
   </li>
+  {% endif %}
 {% endfor %}
 </ul>
+
 {% endblock %}
