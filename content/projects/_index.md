@@ -1,5 +1,6 @@
 +++
 title = "projects"
 sort_by = "date"
-page_template = "projects.html"
+template = "projects_section.html"
+page_template = "projects_page.html"
 +++
