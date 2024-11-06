@@ -10,10 +10,11 @@
 <ul>
 {% for page in pages %}
   <li>
-    {{ page.taxonomies.authorsurname | default(value="") }}, {{ page.taxonomies.authorfirstname | default(value="") }}. ({{ page.taxonomies.pubyear | default(value="") }}).
+    {{ page.taxonomies.authorsurname[0] | default(value="") }}, {{ page.taxonomies.authorfirstname[0] | default(value="") }}.
+    ({{ page.taxonomies.pubyear[0] | default(value="") }}).
     <a href="{{ page.permalink | safe }}">{{ page.title }}</a>.
-    Recommended by {{ page.taxonomies.recommender | default(value="") }}.
-    Rated {{ page.taxonomies.rating | default(value="") }}/5.
+    Recommended by {{ page.taxonomies.recommender[0] | default(value="") }}.
+    Rated {{ page.taxonomies.rating[0] | default(value="") }}/5.
   </li>
 {% endfor %}
 </ul>
