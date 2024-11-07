@@ -85,12 +85,6 @@
     ({{ page.taxonomies.pubyear[0] | default(value="") }}).
     <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
     <br>
-    {% if page.taxonomies.rating and page.taxonomies.rating | length > 0 %}
-    <sub>rated {{ page.taxonomies.rating[0] }}/5</sub>
-    {% else %}
-    <sub>unrated</sub>
-    <br>
-    {% endif %}
     {% if page.taxonomies.recommender and page.taxonomies.recommender | length > 0 %}
     <sub>recommended by {{ page.taxonomies.recommender[0] }}</sub>
     <br>
