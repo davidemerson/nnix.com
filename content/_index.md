@@ -9,6 +9,7 @@ Herein are numerous gaps and omissions.
 	<a href="/projects">projects</a>
 	</li>
 </ul>
-
+<br>
+<br>
 <img class="smallfeature" src="/images/fdcp_block_mold.png" alt="a concrete block in a mold, exploded view"/>
 
