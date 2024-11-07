@@ -1,12 +1,12 @@
 +++
-title = "Ficciones"
+title = "The Timeless Way of Building"
 date = 2023-05-02
 # if you don't use a taxonomy, delete it
 # empty fields not allowed
 [taxonomies]
   readstate = ["read"]
-  authorname = ["Borges, Jorge Luis"]
-  pubyear = ["1944"]
-  rating = ["5"]
+  authorname = ["Alexander, Christopher"]
+  pubyear = ["1979"]
+  rating = ["4"]
 +++
 
