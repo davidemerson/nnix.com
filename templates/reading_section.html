@@ -7,7 +7,7 @@
 {{ section.content | safe }}
 {% set pages = section.pages %}
 
-<h2>currently reading</h2>
+<h2>currently</h2>
 <ul>
 {% for page in pages %}
   {% if page.taxonomies.readstate and page.taxonomies.readstate[0] == "reading" %}
@@ -32,7 +32,7 @@
 {% endfor %}
 </ul>
 
-<h2>recently read</h2>
+<h2>recently finished</h2>
 <ul>
 {% for page in pages | sort(attribute="date", reverse=true) | slice(end=5) %}
   <p><li>
@@ -76,7 +76,7 @@
 {% endfor %}
 </ul>
 
-<h2>queued, unread</h2>
+<h1>unread (queue)</h1>
 <ul>
 {% for page in pages %}
   {% if page.taxonomies.readstate and page.taxonomies.readstate[0] == "queue" %}
