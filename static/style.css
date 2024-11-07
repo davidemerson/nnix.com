@@ -21,4 +21,4 @@ li ul { margin-left: 2em;}
 sub { margin-left: 3em; padding: 0; list-style: none; font-family:"nnixbook" ;font-size:inherit; }
 table { border-collapse:collapse; }
 td{ background-color:#FFFFFF; overflow:hidden; text-align:left; word-break:normal; padding:5px 20px; }
-th{ font-family: 'nnixbold'; background-color:#F2F2F2; overflow:hidden; text-align:left; word-break:normal; padding:8px 15px; border-radius:15px; border:8px solid white; }
+th{ font-family: 'nnixbold'; font-weight: normal; background-color:#F2F2F2; overflow:hidden; text-align:left; word-break:normal; padding:8px 15px; border-radius:15px; border:8px solid white; }
