@@ -38,7 +38,7 @@
 {% set counter = 0 %}
 {% for page in sorted_pages %}
   {% if page.taxonomies.readstate and page.taxonomies.readstate[0] == "read" and counter < 5 %}
-    <li>
+    <p><li>
       {{ page.taxonomies.authorname[0] | default(value="") }}.
       ({{ page.taxonomies.pubyear[0] | default(value="") }}).
       <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
@@ -54,7 +54,7 @@
         <sub>recommended by {{ page.taxonomies.recommender[0] }}</sub>
         <br>
       {% endif %}
-    </li>
+    </li></p>
     {% set counter = counter + 1 %}
   {% endif %}
   {% if counter >= 5 %}
