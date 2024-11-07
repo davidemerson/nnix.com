@@ -34,27 +34,34 @@
 
 <h2>recently finished</h2>
 <ul>
-{% for page in pages | sort(attribute="date", reverse=true) | slice(end=5) %}
-  <p><li>
-    {{ page.taxonomies.authorname[0] | default(value="") }}.
-    ({{ page.taxonomies.pubyear[0] | default(value="") }}).
-    <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
-    <br>
-    {% if page.taxonomies.rating and page.taxonomies.rating | length > 0 %}
-    <sub>rated {{ page.taxonomies.rating[0] }}/5</sub>
-    <br>
-    {% else %}
-    <sub>unrated</sub>
-    <br>
-    {% endif %}
-    {% if page.taxonomies.recommender and page.taxonomies.recommender | length > 0 %}
-    <sub>recommended by {{ page.taxonomies.recommender[0] }}</sub>
-    <br>
-    {% endif %}
-  </li></p>
+{% set sorted_pages = pages | sort(attribute="date", reverse=true) %}
+{% set counter = 0 %}
+{% for page in sorted_pages %}
+  {% if page.taxonomies.readstate and page.taxonomies.readstate[0] == "read" and counter < 5 %}
+    <li>
+      {{ page.taxonomies.authorname[0] | default(value="") }}.
+      ({{ page.taxonomies.pubyear[0] | default(value="") }}).
+      <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
+      <br>
+      {% if page.taxonomies.rating and page.taxonomies.rating | length > 0 %}
+        <sub>rated {{ page.taxonomies.rating[0] }}/5</sub>
+        <br>
+      {% else %}
+        <sub>unrated</sub>
+        <br>
+      {% endif %}
+      {% if page.taxonomies.recommender and page.taxonomies.recommender | length > 0 %}
+        <sub>recommended by {{ page.taxonomies.recommender[0] }}</sub>
+        <br>
+      {% endif %}
+    </li>
+    {% set counter = counter + 1 %}
+  {% endif %}
+  {% if counter >= 5 %}
+    {% break %}
+  {% endif %}
 {% endfor %}
 </ul>
-
 
 <h2>top rated</h2>
 <ul>
