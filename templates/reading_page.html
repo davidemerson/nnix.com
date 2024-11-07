@@ -58,22 +58,18 @@
     <td> </td>
         {% endif %}
   </tr>
+  {% if page.taxonomies.recommender and page.taxonomies.recommender | length > 0 %}
   <tr>
     <td><b>Recommender</b></td>
-        {% if page.taxonomies.recommender and page.taxonomies.recommender | length > 0 %}
     <td>{{ page.taxonomies.recommender[0] }}</td>
-        {% else %}
-    <td> </td>
-        {% endif %}
   </tr>
+  {% endif %}
+  {% if page.taxonomies.rating and page.taxonomies.rating | length > 0 %}
   <tr>
     <td><b>Rating</b></td>
-        {% if page.taxonomies.rating and page.taxonomies.rating | length > 0 %}
     <td>{{ page.taxonomies.rating[0] }}/5</td>
-        {% else %}
-    <td> </td>
-        {% endif %}
   </tr>
+  {% endif %}
 </table>
 </div>
 
