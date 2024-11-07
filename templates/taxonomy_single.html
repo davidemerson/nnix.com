@@ -4,31 +4,14 @@
 {% import "index_macros.html" as index_macros %}
 
 {% block content %}
-<!-- START NAV -->
-{% block header %}
-
-{% endblock header %}
-<!-- END NAV -->
-<main>
+<div><a href=".."><<<</a></div>
     <!-- START HERO TITLE -->
     {% if not title %}
-    {% set title = taxonomy.name ~ ": " ~ term.name | capitalize %}
+    {% set title = taxonomy.name ~ ": " ~ term.name %}
     {% endif %}
     {{ index_macros::hero(title=title,primary=false) }}
     <!-- END HERO TITLE -->
-    <div class="container">
-        <!-- START ARTICLE FEED -->
-        {% if paginator %}
-        {{ index_macros::list_articles(pages=paginator.pages) }}
-        {% else %}
-        {{ index_macros::list_articles(pages=term.pages) }}
-        {% endif %}
-        <!-- END ARTICLE FEED -->
-        <!-- START PAGINATION -->
-        {% if paginator %}
-        {{ index_macros::paginate(paginator=paginator) }}
-        {% endif %}
-        <!-- END PAGINATION -->
-    </div>
-</main>
+    <!-- START ARTICLE FEED -->
+    {{ index_macros::list_articles(pages=term.pages) }}
+    <!-- END ARTICLE FEED -->
 {% endblock content %}

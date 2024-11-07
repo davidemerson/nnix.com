@@ -1,19 +1,11 @@
 {% macro list(terms) %}
-<section>
-    <div class="container">
-        <div class="columns">
-            <div class="column is-8 is-offset-2">
-                {% if terms %}
-                <div class="list box">
-                    {% for term in terms %}
-                    <a href="{{ term.permalink | safe }}">
-                        <span class="tag is-large is-primary">{{ term.name }}({{ term.pages | length }})</span>
-                    </a>
-                    {% endfor %}
-                </div>
-                {% endif %}
-            </div>
-        </div>
-    </div>
-</section>
+<ul>
+    {% if terms %}
+    {% for term in terms %}
+    <p><li>
+        <a href="{{ term.permalink | safe }}">{{ term.name }}</a> ({{ term.pages | length }})
+        {% endfor %}
+    </li></p>
+    {% endif %}
+</ul>
 {% endmacro list %}
