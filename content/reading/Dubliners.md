@@ -7,6 +7,6 @@ date = 2023-05-02
   readstate = ["read"]
   authorname = ["Joyce, James"]
   pubyear = ["1914"]
-  rating = ["5"]
+  rating = ["4"]
 +++
 
