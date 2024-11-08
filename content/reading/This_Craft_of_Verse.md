@@ -10,4 +10,4 @@ date = 2023-05-02
   rating = ["5"]
 +++
 
-This is an excellent lecture by Borges. Insightful and fun to read, great for fans of literary criticism and writing and reading.&nbsp;
+This is an excellent lecture by Borges. Insightful and fun to read, great for fans of literary criticism and writing and reading.

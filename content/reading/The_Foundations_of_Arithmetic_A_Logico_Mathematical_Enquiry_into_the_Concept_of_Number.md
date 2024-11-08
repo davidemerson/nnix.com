@@ -8,5 +8,6 @@ date = 2023-05-02
   authorname = ["Frege, Gottlob"]
   pubyear = ["1884"]
   rating = ["5"]
+  recommender = ["Lance R."]
 +++
 

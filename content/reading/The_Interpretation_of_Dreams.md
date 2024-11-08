@@ -10,4 +10,4 @@ date = 2024-01-30
   rating = ["3"]
 +++
 
-A better book than I expected. Actually interesting. All BS by today's standards, but well written and intelligent, and relatable. I can see why this book is popular.&nbsp;
+A better book than I expected. Actually interesting. All BS by today's standards, but well written and intelligent, and relatable. I can see why this book is popular.

@@ -8,5 +8,6 @@ date = 2023-05-02
   authorname = ["Woit, Peter"]
   pubyear = ["2006"]
   rating = ["4"]
+  recommender = ["George W."]
 +++
 

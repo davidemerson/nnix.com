@@ -10,4 +10,4 @@ date = 2023-05-02
   rating = ["4"]
 +++
 
-Maybe the most practical book in the first three of this series.&nbsp
+Maybe the most practical book in the first three of this series.

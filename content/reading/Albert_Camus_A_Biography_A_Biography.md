@@ -11,3 +11,5 @@ date = 2023-09-04
 +++
 
 My gosh, this is a long book. It's too long. I didn't need to read all these words about Albert Camus, and some editing could have significantly made this book better by pruning huge quantities of superfluous content and verbosity. The subject wasn't uninteresting, and the author clearly did good research on a subject not particularly easy to research, but damn, this should be half the length for what's actually contained in the book.
+
+Strangely, I found this book in Haarlem, at a university bookstore. Good find before a plane ride.

@@ -8,6 +8,7 @@ date = 2024-01-22
   authorname = ["Beath, Joel & Price, Elizabeth"]
   pubyear = ["2021"]
   rating = ["3"]
+  recommender = ["Charles H."]
 +++
 
-A light, fast read. I like their videos more, it’s much harder to get a sense of these tiny spaces in print.&nbsp;
+A light, fast read. I like their videos more, it’s much harder to get a sense of these tiny spaces in print.

@@ -8,6 +8,7 @@ date = 2023-08-10
   authorname = ["Searle, John R."]
   pubyear = ["2015"]
   rating = ["4"]
+  recommender = ["Lee P."]
 +++
 
 As always, Searle doesn’t waste words. It’s not an easy read, but he’s so careful with your time that you don’t mind taking a moment to read carefully.&nbsp;

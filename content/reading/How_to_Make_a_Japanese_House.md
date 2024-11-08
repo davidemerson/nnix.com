@@ -8,6 +8,7 @@ date = 2023-09-13
   authorname = ["Nuijsink, Cathelijne"]
   pubyear = ["2012"]
   rating = ["3"]
+  recommender = ["Carrie N."]
 +++
 
 A good book. Light reading, but highlights some interesting small domestic projects, and the economy/culture which encourages them.

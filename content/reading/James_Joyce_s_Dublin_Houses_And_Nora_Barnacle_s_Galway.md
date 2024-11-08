@@ -10,4 +10,6 @@ date = 2023-09-04
   rating = ["4"]
 +++
 
-An excellent book! Really informative and well researched.&nbsp
+An excellent book! Really informative and well researched.
+
+I found this book in a Haarlem (Netherlands) bookstore, another good find before an airplane ride.

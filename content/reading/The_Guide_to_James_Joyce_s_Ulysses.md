@@ -10,3 +10,4 @@ date = 2023-05-02
   rating = ["4"]
 +++
 
+A new entrant to the Ulysses guide category. It's not going to replace Gifford any time soon for me, but it is very good. Worth having.

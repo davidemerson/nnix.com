@@ -10,3 +10,4 @@ date = 2023-05-02
   rating = ["4"]
 +++
 
+Good collection of scholarship on Ulysses. Definitely worth having around for the enthusiast.

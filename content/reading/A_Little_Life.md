@@ -7,6 +7,7 @@ date = 2024-06-03
   readstate = ["read"]
   authorname = ["Yanagihara, Hanya"]
   pubyear = ["2015"]
+  recommender = ["Elizabeth B."]
   rating = ["3"]
 +++
 

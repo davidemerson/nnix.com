@@ -10,4 +10,4 @@ date = 2023-05-02
   rating = ["4"]
 +++
 
-Too long. Otherwise, a brilliant book. You might skim parts of it, his argument could’ve occupied about 1/4th this much space, but it’s brilliantly researched, well written, and extremely insightful. Highly recommended work.&nbsp;
+Too long. Otherwise, a brilliant book. You might skim parts of it, his argument could’ve occupied about 1/4th this much space, but it’s brilliantly researched, well written, and extremely insightful. Highly recommended work.

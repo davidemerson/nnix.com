@@ -10,4 +10,4 @@ date = 2023-09-03
   rating = ["3"]
 +++
 
-Honestly, a fine idea, but explainable in an article, not a whole book. Read a summary of the idea and move on. Chapters 2 and maybe 5.&nbsp;
+Honestly, a fine idea, but explainable in an article, not a whole book. Read a summary of the idea and move on. Chapters 2 and maybe 5.

@@ -10,3 +10,4 @@ date = 2023-05-27
   rating = ["3"]
 +++
 
+I read this in a house I rented in Montauk for a week. It was a good beach read.

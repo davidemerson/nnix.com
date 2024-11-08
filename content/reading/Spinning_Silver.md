@@ -8,6 +8,7 @@ date = 2023-05-02
   authorname = ["Novik, Naomi"]
   pubyear = ["2018"]
   rating = ["2"]
+  recommender = ["Elizabeth B."]
 +++
 
 I had trouble with the narrative style. It was too flat, without subtlety or nuance to intrigue me.

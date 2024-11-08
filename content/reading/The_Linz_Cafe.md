@@ -10,4 +10,4 @@ date = 2023-05-02
   rating = ["4"]
 +++
 
-The best book of the series to provide practical context for the theory Alexander et al espouse. A nice little cafe too.&nbsp
+The best book of the series to provide practical context for the theory Alexander et al espouse. A nice little cafe too.

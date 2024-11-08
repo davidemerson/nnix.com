@@ -10,4 +10,4 @@ date = 2023-05-02
   rating = ["4"]
 +++
 
-A strong collection of literature on FW. It’s not going to help you read the book, but it is well equipped to help you understand the world of the book itself, as seen by academics who write clearly and relatively succinctly.&nbsp;
+A strong collection of literature on FW. It’s not going to help you read the book, but it is well equipped to help you understand the world of the book itself, as seen by academics who write clearly and relatively succinctly.

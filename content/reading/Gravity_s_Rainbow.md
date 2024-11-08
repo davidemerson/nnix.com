@@ -8,5 +8,6 @@ date = 2023-05-02
   authorname = ["Pynchon, Thomas"]
   pubyear = ["1973"]
   rating = ["4"]
+  recommender = ["George W."]
 +++
 
