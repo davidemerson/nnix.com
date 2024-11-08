@@ -40,7 +40,7 @@
         <br>
       {% endif %}
     </li></p>
-    {% set counter = counter + 1 %}
+    {% set_global counter = counter + 1 %}
   {% endif %}
   {% if counter >= 5 %}
     {% break %}
