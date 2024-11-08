@@ -8,6 +8,9 @@ Herein are numerous gaps and omissions.
 	<li>
 	<a href="/projects">projects</a>
 	</li>
+	<li>
+	<a href="/reading">reading</a>
+	</li>
 </ul>
 <br>
 <br>
