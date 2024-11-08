@@ -60,6 +60,10 @@ Leadership is service. You are a catalyst, not a director, and to lead with posi
 > "We are what we repeatedly do. Excellence, then, is not an act, but a habit."
 (The Story of Philosophy)
 
+## Nir Eyal
+> "All motivation is a desire to escape discomfort. Traction moves you toward goals, distraction moves you away from goals, and triggers prompt actions which are distraction or traction. Consider each action and whether it is moving your toward or away from a goal as you consider whether it is something in which you want to engage."
+(Indistractable)
+
 # teaching
 ## Bertrand Russell
 > "When you want to teach children to think, you begin by treating them seriously when they are little, giving them responsibilities, talking to them candidly, providing privacy and solitude for them, and making them readers and thinkers of significant thoughts from the beginning. That’s if you want to teach them to think."

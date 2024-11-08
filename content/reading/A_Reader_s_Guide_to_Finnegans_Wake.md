@@ -10,4 +10,4 @@ date = 2023-06-09
   rating = ["4"]
 +++
 
-You won’t make it through finnegans wake without this. It’s good, just get it.&nbsp;
+You won’t make it through Finnegans Wake without this. It’s good, just get it.
