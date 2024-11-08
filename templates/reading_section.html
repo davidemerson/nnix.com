@@ -22,25 +22,27 @@
 
 <h2>recently finished</h2>
 <ul>
-{% set sorted_pages = section.pages | sort(attribute="date", reverse=true) %}
+{% set recent_books = section.pages | sort(attribute="date") | reverse %}
 {% set counter = 0 %}
 
-{% for page in sorted_pages %}
-  {% if page.taxonomies.readstate and page.taxonomies.readstate[0] == "read" and counter < 5 %}
-    <p><li>
-      {{ page.taxonomies.authorname[0] | default(value="") }}.
-      ({{ page.taxonomies.pubyear[0] | default(value="") }}).
-      <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
-      <br>
-      {% if page.taxonomies.rating and page.taxonomies.rating | length > 0 %}
-        <sub>rated {{ page.taxonomies.rating[0] }}/5</sub>
+{% for page in recent_books %}
+  {% if page.taxonomies.readstate and page.taxonomies.readstate[0] == "read" %}
+    {% if counter < 5 %}
+      <p><li>
+        {{ page.taxonomies.authorname[0] | default(value="") }}.
+        ({{ page.taxonomies.pubyear[0] | default(value="") }}).
+        <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
         <br>
-      {% else %}
-        <sub>unrated</sub>
-        <br>
-      {% endif %}
-    </li></p>
-    {% set_global counter = counter + 1 %}
+        {% if page.taxonomies.rating and page.taxonomies.rating | length > 0 %}
+          <sub>rated {{ page.taxonomies.rating[0] }}/5</sub>
+          <br>
+        {% else %}
+          <sub>unrated</sub>
+          <br>
+        {% endif %}
+      </li></p>
+      {% set_global counter = counter + 1 %}
+    {% endif %}
   {% endif %}
   {% if counter >= 5 %}
     {% break %}
