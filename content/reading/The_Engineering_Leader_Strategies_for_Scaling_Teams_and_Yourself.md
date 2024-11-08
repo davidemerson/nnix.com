@@ -7,7 +7,7 @@ date = 2024-09-04
   readstate = ["read"]
   authorname = ["Huston, Cate"]
   pubyear = ["2021"]
-  rating = ["2"]
+  rating = ["1"]
 +++
 
 I didn't care for this book. There were perhaps two useful tidbits in a tide of insubstantial fluff. Not recommended, there are many better similar titles in my list here.

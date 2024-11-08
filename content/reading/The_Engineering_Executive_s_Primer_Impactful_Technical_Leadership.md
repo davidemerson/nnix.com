@@ -7,6 +7,7 @@ date = 2024-09-04
   readstate = ["read"]
   authorname = ["Larson, Will"]
   pubyear = ["2021"]
-  rating = ["4"]
+  rating = ["3"]
 +++
 
+Worth reading. Unexciting, but well written and relevant if you work in tech.
