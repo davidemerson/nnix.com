@@ -28,19 +28,16 @@
 {% for page in recent_books %}
   {% if page.taxonomies.readstate and page.taxonomies.readstate[0] == "read" %}
     {% if counter < 7 %}
-      <p><li>
+      <li>
         {{ page.taxonomies.authorname[0] | default(value="") }}.
         ({{ page.taxonomies.pubyear[0] | default(value="") }}).
-        <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
-        <br>
+        <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>. 
         {% if page.taxonomies.rating and page.taxonomies.rating | length > 0 %}
-          <sub>rated {{ page.taxonomies.rating[0] }}/5</sub>
-          <br>
+        (rated {{ page.taxonomies.rating[0] }}/5)
         {% else %}
-          <sub>unrated</sub>
-          <br>
+        (unrated)
         {% endif %}
-      </li></p>
+      </li>
       {% set_global counter = counter + 1 %}
     {% endif %}
   {% endif %}

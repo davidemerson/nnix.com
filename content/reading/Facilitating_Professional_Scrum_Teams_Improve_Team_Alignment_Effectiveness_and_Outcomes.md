@@ -7,6 +7,6 @@ date = 2024-09-04
   readstate = ["read"]
   authorname = ["Kong, Patricia & Spinks, David & Califano, Glaudia"]
   pubyear = ["2023"]
-  rating = ["4"]
+  rating = ["3"]
 +++
 
