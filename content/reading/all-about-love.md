@@ -9,3 +9,7 @@ date = 2024-01-01
   pubyear = ["1999"]
   recommender = ["Julian P."]
 +++
+
+what's for sure is bell hooks and I share a love for lowercase by default
+
+otherwise this is still in queue, as yet unread
