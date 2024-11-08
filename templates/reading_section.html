@@ -22,8 +22,9 @@
 
 <h2>recently finished</h2>
 <ul>
-{% set sorted_pages = pages | sort(attribute="date", reverse=true) %}
+{% set sorted_pages = section.pages | sort(attribute="date", reverse=true) %}
 {% set counter = 0 %}
+
 {% for page in sorted_pages %}
   {% if page.taxonomies.readstate and page.taxonomies.readstate[0] == "read" and counter < 5 %}
     <p><li>
@@ -46,6 +47,9 @@
   {% endif %}
 {% endfor %}
 </ul>
+
+
+
 
 <h2>favorite all-time</h2>
 <ul>
