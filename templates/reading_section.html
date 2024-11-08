@@ -27,7 +27,7 @@
 
 {% for page in recent_books %}
   {% if page.taxonomies.readstate and page.taxonomies.readstate[0] == "read" %}
-    {% if counter < 5 %}
+    {% if counter < 7 %}
       <p><li>
         {{ page.taxonomies.authorname[0] | default(value="") }}.
         ({{ page.taxonomies.pubyear[0] | default(value="") }}).
