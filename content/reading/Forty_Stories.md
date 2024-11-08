@@ -7,5 +7,6 @@ date = 2024-09-07
   readstate = ["reading"]
   authorname = ["Chekhov, Anton"]
   pubyear = ["1894"]
+  rating = ["NR"]
 +++
 
