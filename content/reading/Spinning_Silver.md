@@ -11,4 +11,4 @@ date = 2023-05-02
   recommender = ["Elizabeth B."]
 +++
 
-I had trouble with the narrative style. It was too flat, without subtlety or nuance to intrigue me.
+I had trouble with the narrative style. It was too flat, without subtlety or nuance to intrigue me. DNF on this one, though I did try for about half the book.
