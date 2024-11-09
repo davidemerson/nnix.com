@@ -19,5 +19,5 @@ Her core notion of dissonance causing distress is similar to other books I've re
 
 Also no different than any of the many notions of cognitive dissonance. One should indeed look for coherency between what you are, what you believe, and what you are doing. That will reduce dissonance for you, but reduction of dissonance is not a singular pursuit, nor absolute. The notion of integrity (reduction of dissonance) hazards becoming a cultural conceit in itself, no different than status or wealth. Integrity might be a helpful concept but I don't think it's fully achievable, or even desirable.
 
-"Don't ever mention the rules" is an excellent way to describe a lot of cultural pretense, I like that. Like secrecy, politeness is technically unnecessary but practically helpful at times. I don't believe there should never be cultural pretense, but I do believe it's helpful to recognize what pretense exists, and then that pretense is not of service.
+"Don't ever mention the rules" is an excellent way to describe a lot of cultural pretense, I like that. Like secrecy, politeness is technically unnecessary but practically helpful at times. I don't believe there should never be cultural pretense, but I do believe it's helpful to recognize what pretense exists, and when that pretense is not of service.
 
