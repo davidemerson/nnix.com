@@ -6,6 +6,6 @@ date = 2024-06-03
 [taxonomies]
   readstate = ["queue"]
   authorname = ["Various"]
-  pubyear = ["2023"]
+  pubyear = ["2024"]
   rating = ["NR"]
 +++
