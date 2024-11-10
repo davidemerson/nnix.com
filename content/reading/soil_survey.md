@@ -17,3 +17,5 @@ date = 2024-11-10
 # person who recommended the book to you (delete if not recommended)
   recommender = ["Dave P."]
 +++
+
+I'll update notes on this to emerson.farm entry in projects. It's of local interest.

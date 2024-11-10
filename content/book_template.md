@@ -15,5 +15,5 @@ date = 2023-05-02
 # rating, whole numbers, 1-5. NR if not yet rated
   rating = ["NR"]
 # person who recommended the book to you (delete if not recommended)
-  recommender = [""]
+  recommender = ["PERSON"]
 +++
