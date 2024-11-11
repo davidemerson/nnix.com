@@ -30,6 +30,24 @@ There are a few things I still need to resolve:
 * Small stuff, like insetting the thresholds on the office doors in the slab, so I don't trip.
 * Medium stuff, like building a plan for an accessible raceway in the slab to make maintenance of the plumbing and electrical easier. I don't want to pour this stuff straight into the concrete, I'd rather have it be in conduit so it can be redone as needed without trenching.
 
+
+## soil survey
+* You have a soil survey book which features this build site
+* On the ridge, you have "CpD" or Colyer-Trappist complex, at 12-20% slope.
+* Nearer the road, you have "FfE2" (Faywood-Fairmount-Rock outcrop complex, 20-30% slope) and "FdD2" (Faywood silt loam, 12-20% slope)
+
+### Colyer Series
+(p. 69 in Soil Survey)
+> "The Colyer series consists of shallow, well drained, slowly permeable doils. These soils formed in material weathered from black, fissile shale. They are on narrow ridgetops and side slopes in the uplands, mainly in the northern part of the county. Slopes range from 12% to 50%. The soils are clayey-skeletal, mixed, mesic Lithic Dystrochrepts."
+
+### Faywood Series
+(p. 72 in Soil Survey)
+> "The faywood series consists of moderately deep, well drained, moderately slowly permeable or slowly permeable soils. These soils formed in material weathered from limestone and mudstone interbeddded with thin layers of calcareous shale. They are on narrow ridgetops and side slopes in the uplands. Slopes range from 12% to 30%. The soils are fine, mixed, mesic Typic Hapludalfs."
+
+We also have Fairmount associations with the Faywood series indicated on the map,
+
+> "Fairmont soils have a mollic epipedon and have bedrock at a depth of less than 20 inches."
+
 # figures
 {{ img(id="/images/cabin_iso_l.png", alt="Isometric left-side view") }}
 
