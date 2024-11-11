@@ -1,7 +1,7 @@
 +++
 title = "emerson.farm"
 slug = "cabin"
-date = 2023-04-12
+date = 2024-11-11
 description = "plans for a ridgetop woods home."
 [extra]
   toc = true
@@ -29,7 +29,6 @@ There are a few things I still need to resolve:
 * I'm violating my own requirement for at least two walls of each room having natural light. This is an easy fix where it's an issue, but it needs to be done because it drastically improves the experience of light in a room.
 * Small stuff, like insetting the thresholds on the office doors in the slab, so I don't trip.
 * Medium stuff, like building a plan for an accessible raceway in the slab to make maintenance of the plumbing and electrical easier. I don't want to pour this stuff straight into the concrete, I'd rather have it be in conduit so it can be redone as needed without trenching.
-
 
 ## soil survey
 * You have a soil survey book which features this build site

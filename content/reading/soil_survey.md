@@ -2,7 +2,7 @@
 # book title
 title = "Soil Survey of Casey County, Kentucky"
 # last updated date
-date = 2024-11-10
+date = 2024-11-11
 # if you don't use a taxonomy, delete it
 # empty fields not allowed
 [taxonomies]
@@ -13,12 +13,12 @@ date = 2024-11-10
 # year of publication
   pubyear = ["1994"]
 # rating, whole numbers, 1-5. NR if not yet rated
-  rating = ["NR"]
+  rating = ["3"]
 # person who recommended the book to you (delete if not recommended)
   recommender = ["Dave P."]
 +++
 
-I'll sync notes on this to emerson.farm entry in projects. It's of local interest.
+I'll sync notes on this to emerson.farm entry in projects. It's of local interest. I'm giving it a 3/5 because it's a darn neat resource, but I can't make the claim that this will change anyone's life.
 
 # notes
 
