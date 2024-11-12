@@ -4,10 +4,10 @@
 @font-face { font-family: 'nnixmono'; src: url("/fonts/nnixmono.woff") format("woff"); }
 main { max-width: 80ch; padding: 2ch; margin: auto; font-family: 'nnixbook'; font-size: 100%; }
 code, pre, tt, kbd, samp { font-size: 85%; font-family: "nnixmono"; background-color:#F2F2F2; }
-h1 { font-family: 'nnixbold'; font-weight: normal; font-size: 2.56em; }
-h2 { font-family: 'nnixbold'; font-weight: normal; font-size: 1.92em; }
-h3 { font-family: 'nnixitalic'; font-weight: normal; font-size: 1.44em; }
-emph { font-family: 'nnixbook'; font-weight: normal; font-size: 1.44em; }
+h1 { font-family: 'nnixbold'; font-weight: normal; font-size: 2.30em; }
+h2 { font-family: 'nnixbold'; font-weight: normal; font-size: 1.72em; }
+h3 { font-family: 'nnixitalic'; font-weight: normal; font-size: 1.296em; }
+emph { font-family: 'nnixbook'; font-weight: normal; font-size: 1.296em; }
 b { font-family: 'nnixbold'; font-weight: normal; font-size: inherit; }
 footer { max-width: 80ch; padding: 2ch; margin: auto; font-family: 'nnixfont'; }
 a:link, a:visited { color: inherit; }
