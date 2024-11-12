@@ -19,5 +19,5 @@ ul li::before { content: "+"; padding-right: 4px; }
 ul.ing li::before { content: none; padding-right: 0; }
 li ul { margin-left: 2em;}
 table { border-collapse:collapse; }
-td{ background-color:#FFFFFF; overflow:hidden; text-align:left; word-break:normal; padding:5px 20px; }
-th{ font-family: 'nnixbold'; font-weight: normal; background-color:#F2F2F2; overflow:hidden; text-align:left; word-break:normal; padding:8px 15px; border-radius:15px; border:8px solid white; }
+td{ background-color:#FFFFFF; overflow:hidden; text-align:left; word-break:normal; padding:5px 20px; font-size: 100%; }
+th{ font-family: 'nnixbold'; font-weight: normal; background-color:#F2F2F2; overflow:hidden; text-align:left; word-break:normal; padding:8px 15px; border-radius:15px; border:8px solid white; font-size: 100%; }
