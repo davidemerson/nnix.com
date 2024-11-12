@@ -3,11 +3,11 @@
 @font-face { font-family: 'nnixbold'; src: url("/fonts/nnixbold.woff2") format("woff2"); }
 @font-face { font-family: 'nnixmono'; src: url("/fonts/nnixmono.woff") format("woff"); }
 main { max-width: 80ch; padding: 2ch; margin: auto; font-family: 'nnixbook'; font-size: 100%; }
-code, pre, tt, kbd, samp { font-size: 85%; font-family: "nnixmono"; background-color:#F2F2F2; }
-h1 { font-family: 'nnixbold'; font-weight: normal; font-size: 2.30em; }
-h2 { font-family: 'nnixbold'; font-weight: normal; font-size: 1.72em; }
-h3 { font-family: 'nnixitalic'; font-weight: normal; font-size: 1.296em; }
-emph { font-family: 'nnixbook'; font-weight: normal; font-size: 1.296em; }
+code, pre, tt, kbd, samp { font-size: 90%; font-family: "nnixmono"; background-color:#F2F2F2; }
+h1 { font-family: 'nnixbold'; font-weight: normal; font-size: 2.07em; }
+h2 { font-family: 'nnixbold'; font-weight: normal; font-size: 1.54em; }
+h3 { font-family: 'nnixitalic'; font-weight: normal; font-size: 1.16em; }
+emph { font-family: 'nnixbook'; font-weight: normal; font-size: 1.16em; }
 b { font-family: 'nnixbold'; font-weight: normal; font-size: inherit; }
 footer { max-width: 80ch; padding: 2ch; margin: auto; font-family: 'nnixfont'; }
 a:link, a:visited { color: inherit; }
