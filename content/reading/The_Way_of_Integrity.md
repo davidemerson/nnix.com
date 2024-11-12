@@ -13,6 +13,8 @@ date = 2024-11-08
 
 Beck's references to Dante are tenuous at worst and unspecial at best. It doesn't ruin the book, but it's a bit of an unnecessary parallel, fluffy.
 
+Examples of "clients" are overwrought, in the style of many such books. It's annoying, though. No, nobody still alive takes hundreds of OxyContin pills daily, the minimum dose manufactured is 5mg and a lethal dose for even the tolerant is well under fifty of those. It doesn't change her points here, but it does distract from the message.
+
 Her core notion of dissonance causing distress is similar to other books I've read and incorporated in a positive sense, like Nir Eyal's "Indistractable", I don't find that objectionable.
 
 > "All motivation is a desire to escape discomfort. Traction moves you toward goals, distraction moves you away from goals, and triggers prompt actions which are distraction or traction. Consider each action and whether it is moving your toward or away from a goal as you consider whether it is something in which you want to engage." (Eyal, Indistractable)
