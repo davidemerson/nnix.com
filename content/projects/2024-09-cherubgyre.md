@@ -1,7 +1,7 @@
 +++
 title = "cherubgyre"
 slug = "cherubgyre"
-date = 2024-10-28
+date = 2024-11-11
 description = "anonymous community defense social network."
 [extra]
   toc = true
@@ -11,6 +11,10 @@ description = "anonymous community defense social network."
 My goal is to have a working alpha inside six months, the time it took [Andy Goldsworthy](https://www.glenstone.org/artist/andy-goldsworthy/) to complete “Boulder”, allegedly. I do not know if this is a long time or a short time, but there are professionals with strong opinions on the matter.† This seems like a small stone hut of a project with a clay sphere inside, so I'm going with six months to alpha.
 
 The project started in earnest on 20 September 2024.
+
+As of 11 November 2024,
+- Server deployment documentation (ECR/ECS/Fargate) created.
+- Test suite started in Postman
 
 As of 28 October 2024,
 - API documentation updated
