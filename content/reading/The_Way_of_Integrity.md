@@ -1,14 +1,14 @@
 +++
 title = "The Way of Integrity"
-date = 2024-11-08
+date = 2024-11-15
 # if you don't use a taxonomy, delete it
 # empty fields not allowed
 [taxonomies]
-  readstate = ["reading"]
+  readstate = ["read"]
   authorname = ["Beck, Martha"]
   pubyear = ["2021"]
   recommender = ["Julian P."]
-  rating = ["NR"]
+  rating = ["2"]
 +++
 
 Beck's references to Dante are tenuous at worst and unspecial at best. It doesn't ruin the book, but it's a bit of an unnecessary parallel, fluffy.
@@ -23,3 +23,6 @@ Also no different than any of the many notions of cognitive dissonance. One shou
 
 "Don't ever mention the rules" is an excellent way to describe a lot of cultural pretense, I like that. Like secrecy, politeness is technically unnecessary but practically helpful at times. I don't believe there should never be cultural pretense, but I do believe it's helpful to recognize what pretense exists, and when that pretense is not of service.
 
+I know she's not advocating that we all revert to a hedonistic goblin mode, but it's hard to reconcile her notion of integrity and the possibility of existing in the presence of others. She doesn't offer a solution either.
+
+Ultimately, I think this is 1/3rd of a good book about dissonance stuffed with 2/3rds woo and superfluous metaphor. I'm conflicted about rating it, I'd give it a 2.5 if I allowed non integer ratings, but I don't, so it truncates to a 2.
