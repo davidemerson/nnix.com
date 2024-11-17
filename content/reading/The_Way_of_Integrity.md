@@ -25,4 +25,6 @@ Also no different than any of the many notions of cognitive dissonance. One shou
 
 I know she's not advocating that we all revert to a hedonistic goblin mode, but it's hard to reconcile her notion of integrity and the possibility of existing in the presence of others. She doesn't offer a solution either.
 
-Ultimately, I think this is 1/3rd of a good book about dissonance stuffed with 2/3rds woo and superfluous metaphor. I'm conflicted about rating it, I'd give it a 2.5 if I allowed non integer ratings, but I don't, so it truncates to a 2.
+This book reads as one person's life experience passed on to an audience which may or may not relate. I'm not a person escaping religious and sexual repression, and so I don't feel the same pressures she did, nor the satisfaction of resolution she may. I relate to dissonance, of course.
+
+Ultimately, I think this is 1/3rd of a good book about dissonance stuffed with 2/3rds woo, myopia, and superfluous metaphor. I'm conflicted about rating it, I'd give it a 2.5 if I allowed non integer ratings, but I don't, so it truncates to a 2.
