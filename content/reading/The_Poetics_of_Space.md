@@ -19,5 +19,6 @@ It features synthesis and intertextual reference and metaphor and it's just fun 
 
 Man, what a cool book. An instant promotion to my desert-island collection.
 
-> "Sometimes a house grows and spreads so that, in order to live in it, greater elasticity of daydreaming, a daydream that is less clearly outlined, are needed. 'My house,' writes Georges Spyridaki, 'is diaphanous, but not of glass. It is more of the nature of vapor. Its walls contract and expand as I desire. At times, I draw them close about me like protective armor ... but at others, I let the wall of my house blossom out in their own space, which is infinitely extensible.' "
+> "Sometimes a house grows and spreads so that, in order to live in it, greater elasticity of daydreaming, a daydream that is less clearly outlined, are needed. 'My house,' writes Georges Spyridaki, 'is diaphanous, but not of glass. It is more of the nature of vapor. Its walls contract and expand as I desire. At times, I draw them close about me like protective armor ... but at others, I let the walls of my house blossom out in their own space, which is infinitely extensible.' "
+
 > (p. 71-72)
