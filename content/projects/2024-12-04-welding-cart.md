@@ -39,6 +39,11 @@ I'm working in inches on this project because steel locally is sold in inches, a
   </tr></thead>
 <tbody>
   <tr>
+    <td>24" ⥊ 36" ⥌</td>
+    <td>4mm perforated steel sheet</td>
+    <td>1</td>
+  </tr>
+  <tr>
     <td>24" ⥊ 28" ⥌</td>
     <td>0.125" steel sheet</td>
     <td>1</td>
@@ -66,7 +71,7 @@ I'm working in inches on this project because steel locally is sold in inches, a
   <tr>
     <td>36" ⥌</td>
     <td>1.50" x 1.50" x 0.125" square tube steel</td>
-    <td>9</td>
+    <td>6</td>
   </tr>
 </tbody></table>
 
