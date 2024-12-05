@@ -21,6 +21,10 @@ The cart will have space to hold at least one 40 cubic foot gas cylinder, for wh
 
 There is a space reserved for a plasma cutter next to the multiprocess welding machine.
 
+There are four 120VAC 20A receptacles for small appliances like grinders and sanders.
+
+The top plate has fixture clamp holes at regular intervals for fixing workpieces in places when welding. It's also at a very convenient height for getting close to something while standing.
+
 I'm working in inches on this project because steel locally is sold in inches, and it's hard to convert accurately when ordering.
 
 ## drawing
