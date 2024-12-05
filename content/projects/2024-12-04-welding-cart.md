@@ -30,6 +30,8 @@ I'm working in inches on this project because steel locally is sold in inches, a
 ## drawing
 {{ img(id="/images/cart-drawing.jpeg", alt="a pencil drawing of the first draft of a cart concept for welding supplies and a multiprocess welder and up to two gas cylinders") }}
 
+Note that I added a cross member to each of the 36" (full length) shelves, which are the base and the top. This is not in the draft drawing, but it is in the cutlist here.
+
 ## cutlist
 <table><thead>
   <tr>
@@ -66,7 +68,7 @@ I'm working in inches on this project because steel locally is sold in inches, a
   <tr>
     <td>23" ⥌</td>
     <td>1.50" x 1.50" x 0.125" square tube steel</td>
-    <td>9</td>
+    <td>11</td>
   </tr>
   <tr>
     <td>36" ⥌</td>
