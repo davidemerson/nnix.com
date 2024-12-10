@@ -1,14 +1,14 @@
 +++
 title = "emerson.farm"
 slug = "cabin"
-date = 2024-11-11
+date = 2024-12-10
 description = "plans for a ridgetop woods home."
 [extra]
   toc = true
 +++
 
 # overview
-Were one to have a woodland, one might need a cabin. Feel free to steal my design if you'd like.
+Were one to own a wood, one might need a cabin. Feel free to steal my design if you'd like.
 
 # concept
 The site is a ridgetop on a tree farm in a very remote location. This will be sporadically occupied, so a lot of the design is dedicated to low maintenance and low probability of damage from the elements when unattended.
@@ -23,23 +23,39 @@ The site is a ridgetop on a tree farm in a very remote location. This will be sp
 * (not pictured) I cut a driveway which goes up to the build site. It has a switchback radius intended for second-gear tail-out slides when going up hill. It should be a blast.
 * Skylights where necessary are the sealed light-tube kind, so they don't present as large a leak hazard.
 
-## notes for the future
+# work
+## acquisition
+The site was purchased in September 2021.
+
+## old house (demolition)
+In 2021-2022 a small home on the site was demolished and the materials reused for livestock enclosures by a neighbor. The home was built in 1971, but it was not in good condition, and was visible from the public road, which is unsuitable.
+
+## stone
+Stone for the surround of a wood heating system was purchased in January 2022. The stone came from the deconstruction of the Weatherford-Lane House, built in 1814.
+
+## driveway & trails
+In December 2023, a driveway was cut to the build site, and trails cut and improved on the propoerty. The driveway has a switchback intended to be the correct radius for a second-gear fishtail on the way up.
+
+## bridge
+In December 2024, a large polymer culvert (and gravel) was installed in the creek at the build side to bridge the creek for vehicular traffic.
+
+# notes for the future
 There are a few things I still need to resolve:
-* The center is labyrinthine. I need to perhaps scale things up a modest bit just to give more room in there.
+* The center is labyrinthine. I need to perhaps scale things modestly to get elbow room.
 * I'm violating my own requirement for at least two walls of each room having natural light. This is an easy fix where it's an issue, but it needs to be done because it drastically improves the experience of light in a room.
 * Small stuff, like insetting the thresholds on the office doors in the slab, so I don't trip.
 * Medium stuff, like building a plan for an accessible raceway in the slab to make maintenance of the plumbing and electrical easier. I don't want to pour this stuff straight into the concrete, I'd rather have it be in conduit so it can be redone as needed without trenching.
 
-## soil survey
+# soil survey
 * You have a soil survey book which features this build site
 * On the ridge, you have "CpD" or Colyer-Trappist complex, at 12-20% slope.
 * Nearer the road, you have "FfE2" (Faywood-Fairmount-Rock outcrop complex, 20-30% slope) and "FdD2" (Faywood silt loam, 12-20% slope)
 
-### Colyer Series
+## Colyer Series
 (p. 69 in Soil Survey)
 > "The Colyer series consists of shallow, well drained, slowly permeable doils. These soils formed in material weathered from black, fissile shale. They are on narrow ridgetops and side slopes in the uplands, mainly in the northern part of the county. Slopes range from 12% to 50%. The soils are clayey-skeletal, mixed, mesic Lithic Dystrochrepts."
 
-### Faywood Series
+## Faywood Series
 (p. 72 in Soil Survey)
 > "The faywood series consists of moderately deep, well drained, moderately slowly permeable or slowly permeable soils. These soils formed in material weathered from limestone and mudstone interbeddded with thin layers of calcareous shale. They are on narrow ridgetops and side slopes in the uplands. Slopes range from 12% to 30%. The soils are fine, mixed, mesic Typic Hapludalfs."
 
