@@ -47,13 +47,14 @@ Leadership is service. You are a catalyst, not a director, and to lead with posi
 
 (Not What It Should Be But What It Is)
 
-# thingness
+# being
 ## Carlo Rovelli
 > "Even the things that are most “thinglike” are nothing more than long events. The hardest stone, in the light of what we have learned from chemistry, from physics, from mineralogy, from geology, from psychology, is in reality a complex vibration of quantum fields, a momentary interaction of forces, a process that for a brief moment manages to keep its shape, to hold itself in equilibrium before disintegrating again into dust, a brief chapter in the history of interactions between the elements of the planet, a trace of Neolithic humanity, a weapon used by a gang of kids, an example in a book about time, a metaphor for an ontology, a part of a segmentation of the world that depends more on how our bodies are structured to perceive than on the object of perception—and, gradually, an intricate knot in that cosmic game of mirrors that constitutes reality. The world is not so much made of stones as of fleeting sounds, or of waves moving through the sea."
-
 > "We understand the world in its becoming, not in its being."
-
 (The Order of Time)
+
+## Anne Rice
+> "None of us really changes over time. We only become more fully what we are."
 
 # discipline
 ## Will Durant
