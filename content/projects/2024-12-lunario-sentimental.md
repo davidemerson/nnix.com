@@ -19,4 +19,5 @@ Spanish to English translation was done by Oskarina Perez. I chose her for her f
 # typesetting
 I typeset the work in XeLaTeX, to provide modern font support. EB Garamond was chosen for its wide character support and handsome form.
 
-#
+# publication
+TBD (almost certainly on demand, but I'm looking for a decent quality service.)
