@@ -40,7 +40,7 @@ Since this stuff matters, here's how I've configured EB Garamond in `fontspec`:
         Numbers = OldStyle
     ]
 ```
-I wanted very much to set `Ligatures=Rare` because it looks awesome, but I can't justify it ergonomically for the readers I suspect will want this book. Some day maybe, on another less modern work.
+I wanted very much to set `Ligatures = Rare` because it looks awesome, but I can't justify it ergonomically for the readers I suspect will want this book. Some day maybe, on another less modern work.
 
 # publication
 TBD (almost certainly on demand, but I'm looking for a decent quality service.)
