@@ -27,5 +27,18 @@ I did some subsequent English editing work, in consultation with Oskarina.
 # typesetting
 I typeset the work in XeLaTeX, to provide modern font support. EB Garamond was chosen for its wide character support and, well, because it's beautiful.
 
+Since this stuff matters, here's how I've configured EB Garamond in `fontspec`:
+```
+\setmainfont{EB Garamond}
+[UprightFont=EB Garamond Regular,
+ItalicFont= EB Garamond Italic,
+BoldFont= EB Garamond Bold,
+Ligatures=Common,
+StylisticSet=6,
+Numbers=Proportional,
+Numbers=OldStyle]
+```
+I wanted very much to set `Ligatures=Rare` because it looks awesome, but I can't justify it ergonomically for the readers I suspect will want this book. Some day maybe, on another less modern work.
+
 # publication
 TBD (almost certainly on demand, but I'm looking for a decent quality service.)
