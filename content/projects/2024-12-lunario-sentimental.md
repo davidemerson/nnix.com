@@ -19,10 +19,19 @@ I am intrigued! Let's get a translation out in the world.
 # original
 The original work was published in 1909, and has since entered the public domain. You can download it [here](https://nnix.com/images/lunariosentimental/lunario_sentimental_original.pdf).
 
+The work contains 37 pieces:
+- four plays
+- four works of prose
+- 29 poems
+
+{{ img(id="/images/lunariosentimental/chapter-list.jpeg", alt="an index of 37 pieces of prose, poetry and plays in Lunario Sentimental") }}
+
 # translation
 Spanish to English translation was done by Oskarina Perez. I hired her for her familiarity with the genre and the author.
 
 I did some subsequent English editing work, in consultation with Oskarina.
+
+As of 24 December 2024, we're up to page 71 in translation work. Typesetting and proofreading is behind a bit.
 
 # typesetting
 I typeset the work in XeLaTeX, to provide modern font support. EB Garamond was chosen for its wide character support and, well, because it's beautiful.
