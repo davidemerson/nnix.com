@@ -4,9 +4,11 @@ date = 2024-12-01
 # if you don't use a taxonomy, delete it
 # empty fields not allowed
 [taxonomies]
-  readstate = ["reading"]
+  readstate = ["read"]
   authorname = ["Various"]
   pubyear = ["2024"]
   recommender = ["Carrie N."]
-  rating = ["NR"]
+  rating = ["2"]
 +++
+
+This is a collection of stories from the McSweeney's Internet Tendency. Many of them funny, but nothing extraordinarily literary.
