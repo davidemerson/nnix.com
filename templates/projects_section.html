@@ -10,7 +10,7 @@
 <ul>
 {% for page in pages %}
   <li>
-    {{ page.extra.decimal }} <a href="{{ page.permalink | safe }}">{{ page.title }}</a>: {{ page.description }}
+    {{ extra.decimal }} <a href="{{ page.permalink | safe }}">{{ page.title }}</a>: {{ page.description }}
   </li>
 {% endfor %}
 </ul>
