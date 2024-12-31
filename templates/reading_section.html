@@ -76,21 +76,10 @@
 
 <h2>by recommender</h2>
 <ul>
-{% set recommenders = pages | map(attribute="taxonomies.recommender[0]") | filter %} 
+{% set recommenders = pages | map(attribute="taxonomies.recommender[0]") | filter %}
 {% set unique_recommenders = recommenders | unique %}
 {% for recommender in unique_recommenders %}
-  <h3>{{ recommender }}</h3>
-  <ul>
-  {% for page in pages %}
-    {% if page.taxonomies.recommender and page.taxonomies.recommender[0] == recommender %}
-    <p><li>
-      {{ page.taxonomies.authorname[0] | default(value="") }}.
-      ({{ page.taxonomies.pubyear[0] | default(value="") }}).
-      <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
-    </li></p>
-    {% endif %}
-  {% endfor %}
-  </ul>
+  <p><li><a href="/recommender/{{ recommender | lower | safe }}">{{ recommender }}</a></li></p>
 {% endfor %}
 </ul>
 
