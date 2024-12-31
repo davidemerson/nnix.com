@@ -58,6 +58,16 @@
 {% endfor %}
 </ul>
 
+<h1>tagged books</h1>
+<ul>
+  <p><li>
+    <a href="https://nnix.com/recommender/">by recommender</a>
+  </li></p>
+  <p><li>
+    <a href="https://nnix.com/rating/">by rating</a>
+  </li></p>
+</ul
+
 <h1>unread (queue)</h1>
 <ul>
 {% for page in pages %}
@@ -71,15 +81,6 @@
     {% endif %}
   </li></p>
   {% endif %}
-{% endfor %}
-</ul>
-
-<h2>by recommender</h2>
-<ul>
-{% set recommenders = pages | map(attribute="taxonomies.recommender[0]") | filter %}
-{% set unique_recommenders = recommenders | unique %}
-{% for recommender in unique_recommenders %}
-  <p><li><a href="/recommender/{{ recommender | lower | safe }}">{{ recommender }}</a></li></p>
 {% endfor %}
 </ul>
 
