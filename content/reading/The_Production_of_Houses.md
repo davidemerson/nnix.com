@@ -6,7 +6,7 @@ date = 2023-05-02
 [taxonomies]
   readstate = ["read"]
   authorname = ["Alexander, Christopher"]
-  pubyear = ["1785"]
+  pubyear = ["1985"]
   rating = ["4"]
 +++
 
