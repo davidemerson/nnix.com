@@ -1,7 +1,7 @@
 +++
 title = "Lunario sentimental"
 slug = "lunario-sentimental"
-date = 2025-01-02
+date = 2025-01-06
 description = "an English translation of the Lugones work."
 [extra]
   toc = true
@@ -31,9 +31,11 @@ Spanish to English translation was done by Oskarina Perez. I hired her for her f
 
 I did some subsequent English editing work, in consultation with Oskarina.
 
-As of 24 December 2024, we're up to page 71 in translation work. Typesetting and proofreading is behind a bit.
+As of 24 December 2024, we're up to page 71 in translation work. Typesetting design complete, awaiting content.
 
 As of 01 January 2025, we're up to page 201 in translation work.
+
+As of 06 January 2025, we're finished with translation work. Typesetting and proofreading begins in earnest.
 
 # typesetting
 I typeset the work in XeLaTeX, to provide modern font support. EB Garamond was chosen for its wide character support and, well, because it's beautiful.
