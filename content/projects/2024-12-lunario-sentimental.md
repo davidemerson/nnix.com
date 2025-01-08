@@ -53,7 +53,13 @@ Since this stuff matters, here's how I've configured EB Garamond in `fontspec`:
         Numbers = OldStyle
     ]
 ```
-I wanted very much to set `Ligatures = Rare` because it looks awesome, but I can't justify it ergonomically for the readers I suspect will want this book. Some day maybe, on another less modern work.
+I wanted very much to set `Ligatures = Rare` because it looks awesome, but I can't justify it ergonomically for the readers I suspect will want this book. Some day maybe, on another less modern work. Here's Rare:
+
+{{ img(id="/images/lunariosentimental/ligatures.png", alt="lots of rare st ligatures") }}
+
+You can't say these common ones aren't sick though, still. Here's Common:
+
+{{ img(id="/images/lunariosentimental/ligatures.png", alt="a sick ligature on a Q") }}
 
 # publication
 TBD (almost certainly on demand, but I'm looking for a decent quality service.)
