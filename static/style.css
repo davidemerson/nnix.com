@@ -2,9 +2,9 @@
 @font-face { font-family: 'nnixitalic'; src: url("/fonts/nnixitalic.woff2") format("woff2"); }
 @font-face { font-family: 'nnixbold'; src: url("/fonts/nnixbold.woff2") format("woff2"); }
 @font-face { font-family: 'nnixmono'; src: url("/fonts/nnixmono.woff") format("woff"); }
-* { background-color: #F2F2F2; }
+* { background-color: #f2f2f2; }
 main { max-width: 80ch; padding: 2ch; margin: auto; font-family: 'nnixbook'; font-size: 100%; }
-code, pre, tt, kbd, samp { font-size: 90%; font-family: "nnixmono"; background-color:#F2F2F2; }
+code, pre, tt, kbd, samp { font-size: 90%; font-family: "nnixmono"; background-color:#d9d9d9; }
 h1 { font-family: 'nnixbold'; font-weight: normal; font-size: 2.07em; }
 h2 { font-family: 'nnixbold'; font-weight: normal; font-size: 1.54em; }
 h3 { font-family: 'nnixitalic'; font-weight: normal; font-size: 1.16em; }
@@ -20,5 +20,5 @@ ul li::before { content: "+"; padding-right: 4px; }
 ul.ing li::before { content: none; padding-right: 0; }
 li ul { margin-left: 2em;}
 table { border-collapse:collapse; }
-td{ background-color:#FFFFFF; overflow:hidden; text-align:left; word-break:normal; padding:5px 20px; font-size: 100%; }
+td{ background-color:#f2f2f2; overflow:hidden; text-align:left; word-break:normal; padding:5px 20px; font-size: 100%; }
 th{ font-family: 'nnixbold'; font-weight: normal; background-color:#d9d9d9; overflow:hidden; text-align:left; word-break:normal; padding:8px 15px; border-radius:15px; border:8px solid white; font-size: 100%; }
