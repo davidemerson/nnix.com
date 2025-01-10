@@ -35,6 +35,15 @@ Leadership is service. You are a catalyst, not a director, and to lead with posi
 * maximize value to everybody
 * do it all with humor and obvious good will
 
+## communicating
+
+* communicate with active voice, in written and spoken form
+* words have meaning, use fewer of them, carefully chosen
+* overcommunicating can be confusing and constraining
+
+### on constraints
+Like specifying constraints and dimensions in a parametric model, you should refrain from overcooking instructions. Ask for the things you know you want, and let the professional you hired fill in the blanks. You don't know enough to specify everything about a delegation, or you'd have done it yourself. Give the professional freedom, ownership, and the ability to iron out the wrinkles in your idea.
+
 # personal responsibility
 ## Alan Watts
 > "This is therefore to say that the transformation of human consciousness through meditation is frustrated so long as we think of it as something that I by myself can bring about, by some sort of wangle, by some sort of gimmick. Because, you see, it leads to endless games of spiritual one-up-man-ship. And of guru competition. Of my guru being more effective than your guru. My yogas are faster than your yoga. I am more aware of myself than you are. I am humbler than you are. I am sorrier for my sins than you are. I love you more than you love me. There’s this interminable goings on where people fight and wonder whether they are a bit more evolved than somebody else and so on."
