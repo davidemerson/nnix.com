@@ -10,4 +10,8 @@ date = 2025-01-09
   recommender = ["Julian P."]
 +++
 
-Pages 89-163 are particularly recommended. If the pagination is wrong, check your messages for the correct sections instead.
+# First Part: Critique of the Aesthetic Power of Judgment
+
+## First Section, First Book: Analytic of the Beautiful
+
+## First Section, Second Book: Analytic of the Sublime
