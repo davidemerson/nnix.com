@@ -30,8 +30,8 @@
   </li>
   {% endfor %}
 </ul>
-
 {% endif %}
+
 <div>
  <table>
     {% if page.taxonomies.authorname and page.taxonomies.authorname | length > 0 %}
@@ -55,7 +55,11 @@
     {% if page.taxonomies.recommender and page.taxonomies.recommender | length > 0 %}
     <tr>
         <td><b>Recommender</b></td>
-        <td>{{ page.taxonomies.recommender[0] }}</td>
+        <td>
+          <a href="{{ get_taxonomy_url(kind="recommender", name=page.taxonomies.recommender[0]) }}">
+            {{ page.taxonomies.recommender[0] }}
+          </a>
+        </td>
     </tr>
     {% endif %}
     {% if page.taxonomies.rating and page.taxonomies.rating | length > 0 %}
