@@ -23,8 +23,12 @@ jobs:
         id: get_epoch
         run: echo "epoch=$(date +%s)" >> $GITHUB_ENV
 
+      - name: Inject Unix Epoch into config.toml
+        run: |
+          sed -i "s/PLACEHOLDER/$epoch/" config.toml
+
       - name: Build Zola Site
-        run: zola build --extra "{\"epoch\": \"$epoch\"}"
+        run: zola build
 
       - name: Deploy to S3
         uses: reggionick/s3-deploy@v4
