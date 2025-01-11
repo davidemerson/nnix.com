@@ -12,8 +12,11 @@ jobs:
       - uses: taiki-e/install-action@v2
         with:
           tool: zola@0.17.2
-      - name: Build
-        run: zola build
+      - name: Generate Current Unix Epoch
+        id: get_epoch
+        run: echo "epoch=$(date +%s)" >> $GITHUB_ENV
+    - name: Build Zola Site
+      run: zola build --extra "{\"epoch\": \"$epoch\"}"
       - uses: reggionick/s3-deploy@v4
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
