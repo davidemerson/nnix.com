@@ -1,23 +1,33 @@
 name: Build and Publish to AWS
+
 on:
   push:
     branches:
       - main
+
 jobs:
   run:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: taiki-e/install-action@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Zola
+        uses: taiki-e/install-action@v2
         with:
           tool: zola@0.17.2
+
       - name: Generate Current Unix Epoch
         id: get_epoch
         run: echo "epoch=$(date +%s)" >> $GITHUB_ENV
-    - name: Build Zola Site
-      run: zola build --extra "{\"epoch\": \"$epoch\"}"
-      - uses: reggionick/s3-deploy@v4
+
+      - name: Build Zola Site
+        run: zola build --extra "{\"epoch\": \"$epoch\"}"
+
+      - name: Deploy to S3
+        uses: reggionick/s3-deploy@v4
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
