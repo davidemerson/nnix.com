@@ -5,6 +5,7 @@
 * { background-color: #f2f2f2; }
 main { max-width: 80ch; padding: 2ch; margin: auto; font-family: 'nnixbook'; font-size: 100%; }
 code, pre, tt, kbd, samp { font-size: 90%; font-family: "nnixmono"; background-color:#d9d9d9; }
+subtle { font-size: 90%; font-family: "nnixmono"; color:#d9d9d9; }
 h1 { font-family: 'nnixbold'; font-weight: normal; font-size: 2.07em; }
 h2 { font-family: 'nnixbold'; font-weight: normal; font-size: 1.54em; }
 h3 { font-family: 'nnixitalic'; font-weight: normal; font-size: 1.16em; }

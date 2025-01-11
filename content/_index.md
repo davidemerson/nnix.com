@@ -1,8 +1,10 @@
 +++
 +++
-This is my web dumping ground.
-I upload something when it strikes my fancy.
+<p>
+This is my web dumping ground.<br />
+I upload something when it strikes my fancy.<br />
 Herein are numerous gaps and omissions.
+</p>
 
 <ul>
 	<li>
