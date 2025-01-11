@@ -29,3 +29,4 @@ internal_level = "warn"
 author = "David Emerson"
 default_theme = "light"
 twitter_card = true
+epoch = "PLACEHOLDER"
