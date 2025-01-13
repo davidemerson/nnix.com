@@ -26,8 +26,8 @@ li ul { margin-left: 2em; }
 table { border-collapse: collapse; }
 td { background-color: var(--bg-color); overflow: hidden; text-align: left; word-break: normal; padding: 5px 20px; font-size: 100%; }
 th { font-family: 'nnixbold'; font-weight: normal; background-color: var(--secondary-bg-color); text-align: left; padding: 8px 15px; border-radius: var(--border-radius); border: 2px solid var(--bg-color); font-size: 100%; }
-.timeline { max-width: 600px; margin: 0 auto; padding: 0; border-left: 2px solid #007acc; }
+.timeline { max-width: 600px; margin: 0 auto; padding: 0; border-left: 2px solid #000000; }
 .timeline-item { position: relative; margin: 20px 0; padding-left: 20px; }
-.timeline-item::before { content: ""; position: absolute; top: 0; left: -6px; width: 12px; height: 12px; background-color: #007acc; border-radius: 50%; }
-.date { font-weight: bold; margin-bottom: 5px; color: #007acc; }
-.event { background: #fff; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+.timeline-item::before { content: ""; position: absolute; top: 0; left: -6px; width: 12px; height: 12px; background-color: #000000; border-radius: 50%; }
+.date { font-family: 'nnixmedium'; margin-bottom: 5px; color: inherit; }
+.event { background: #fff; padding: 10px; border-radius: var(--border-radius); }
