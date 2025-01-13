@@ -7,7 +7,7 @@ date = 2025-01-13
   readstate = ["read"]
   authorname = ["Palmieri, Luca"]
   pubyear = ["2022"]
-  rating = ["3/5"]
+  rating = ["3"]
 +++
 
 I picked this up as part of my work on [cherubgyre](https://cherubgyre.com). It's a really good, practical textbook on using Rust for web applications, which is not a native use case. I like the opinionation of the author, it's helpful to someone new to a language.
