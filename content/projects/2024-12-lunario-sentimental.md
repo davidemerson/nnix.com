@@ -17,14 +17,15 @@ One of my favorite books, [a lecture](https://nnix.com/reading/this-craft-of-ver
 I am intrigued! Let's get a translation out in the world.
 
 # timeline
-{{ timeline(items=[
-    {date="24 December 2024", event="we're up to page 71 in translation work"},
-    {date="25 December 2024", event="poetry typesetting template complete"},
-    {date="01 January 2025", event="we're up to page 201 in translation work"},
-    {date="06 January 2025", event="we're finished with initial translation work"},
-    {date="7 January 2025", event="typesetting all poetry begins"},
-    {date="13 January 2025", event="the poetry typesetting is progressing well, about 50%, and I've developed a typesetting method for the plays, which was something of a task, since the `dramatist` package does not get along well with XeTeX inside of a `book` document type."}
-]) }}
+{{% timeline %}}
+    {{% timeline-item date="24 December 2024" event="we're up to page 71 in translation work" %}}
+    {{% timeline-item date="25 December 2024" event="poetry typesetting template complete" %}}
+    {{% timeline-item date="01 January 2025" event="we're up to page 201 in translation work" %}}
+    {{% timeline-item date="06 January 2025" event="we're finished with initial translation work" %}}
+    {{% timeline-item date="7 January 2025" event="typesetting all poetry begins" %}}
+    {{% timeline-item date="13 January 2025" event="the poetry typesetting is progressing well, about 50%, and I've developed a typesetting method for the plays, which was something of a task, since the `dramatist` package does not get along well with XeTeX inside of a `book` document type." %}}
+{{% end %}}
+
 
 # original
 The original work was published in 1909, and has since entered the public domain. You can download it [here](https://nnix.com/images/lunariosentimental/lunario_sentimental_original.pdf).
