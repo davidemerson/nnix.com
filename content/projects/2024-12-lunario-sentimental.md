@@ -1,7 +1,7 @@
 +++
 title = "Lunario sentimental"
 slug = "lunario-sentimental"
-date = 2025-01-06
+date = 2025-01-13
 description = "an English translation of the Lugones work."
 [extra]
   toc = true
@@ -37,8 +37,13 @@ As of 01 January 2025, we're up to page 201 in translation work.
 
 As of 06 January 2025, we're finished with translation work. Typesetting and proofreading begins in earnest.
 
+As of 13 January 2025, the poetry typesetting is progressing well, about 50%, and I've developed a typesetting method for the plays, which was something of a task, since the `dramatist` package does not get along well with XeTeX inside of a `book` document type.
+
 # typesetting
-I typeset the work in XeLaTeX, to provide modern font support. EB Garamond was chosen for its wide character support and, well, because it's beautiful.
+I typeset the work in XeLaTeX, to provide modern font support.
+
+## body font
+[EB Garamond](https://en.wikipedia.org/wiki/EB_Garamond) was chosen for its wide character support and, well, because it's beautiful.
 
 Since this stuff matters, here's how I've configured EB Garamond in `fontspec`:
 ```
@@ -60,6 +65,107 @@ I wanted very much to set `Ligatures = Rare` because it looks awesome, but I can
 You can't say these common ones aren't sick though, still. Here's Common:
 
 {{ img(id="/images/lunariosentimental/ligatures.png", alt="a sick ligature on a Q") }}
+
+## title font
+[HFF High Tension](https://www.dafont.com/hff-high-tension.font) was chosen for the title font. It has a very simple character set, so we can't really use it outside titles.
+
+{{ img(id="/images/lunariosentimental/high_tension.png", alt="LUNARIO SENTIMENTAL in High Tension font.") }}
+
+## poetry
+The poetry is set using the `poetry` package. There's really no trick to this, a poem looks as follows in the code,
+
+```
+\poemlinenumsfalse
+\centerpoemoff
+\begin{poem}
+\textit{Che cotesta córtese opinione} \\
+\textit{Ti fian chiavata in mezzo della testa.} \\!
+\end{poem}
+```
+
+## plays
+Plays were a bigger deal. I like the `dramatist` package a lot, but it doesn't work inside a `book` document type in XeLaTeX. So I made my own environment to format the plays, headers, and dramatis personae sections. Here's what it looks like in the preamble:
+```
+% Play environment with acts and scenes
+\newenvironment{play}[1]{
+    \section*{#1} % Title of the play
+    \setlength{\parindent}{0pt} % No indentation
+    \setlength{\parskip}{1em} % Space between paragraphs
+}{
+    \setlength{\parindent}{1em} % Restore default indentation
+    \setlength{\parskip}{0pt} % Restore default spacing
+}
+
+% Commands for structured formatting of plays
+\newcommand{\act}[1]{%
+    \bigskip
+    \centerline{\textsc{\Large\textbf{Act #1}}} % Large centered act header
+    \bigskip
+}
+\newcommand{\scene}[1]{%
+    \bigskip
+    \centerline{\textsc{Scene #1}} % Centered small caps scene header
+    \medskip
+}
+\newcommand{\character}[1]{%
+    \textbf{#1.---}\hspace{1em} % Character names with em dash
+}
+\newcommand{\stage}[1]{%
+    \textit{(#1)} % Italics for stage directions
+}
+
+% Dramatis Personae Environment (Corrected)
+\newenvironment{dramatispersonae}{
+    \medskip
+    \centerline{\textsc{Dramatis Personae:}} % Centered small caps title
+    \medskip
+    \begin{list}{}{
+        \setlength{\labelwidth}{3cm}  % Adjust label width
+        \setlength{\leftmargin}{3.5cm} % Adjust left margin
+        \setlength{\labelsep}{0.5em}   % Spacing between label and text
+        \setlength{\itemsep}{0.5em}    % Space between items
+    }
+}{
+    \end{list}
+}
+
+% Character listing command
+\newcommand{\characterline}[2]{%
+    \item[\textit{#1,}] #2 % Add \item for each character entry
+}
+```
+
+And here's what a play looks like in code:
+```
+\begin{play}{ }
+
+\begin{dramatispersonae}
+    \characterline{Dalinda}{23 years old, blonde. Sister of Jacinto.}
+    \characterline{Jacinto}{26 years old. Brother of Dalinda.}
+    \characterline{Reinaldo}{20 years old. Friend of Jacinto and Dalinda's fiancé.}
+\end{dramatispersonae}
+
+\act{I}
+
+\scene{1}
+
+\character{Jacinto} This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. 
+
+\character{Reinaldo} \stage{Turning to Jacinto} This is another example. This is another example. This is another example. This is another example. This is another example. This is another example. This is another example. This is another example. This is another example. This is another example. This is another example. 
+
+\scene{2}
+\stage{It's really dark and foggy, the ground is on fire here and there.}
+
+\character{Jacinto} says something else
+
+\character{Reinaldo} indeed, another line
+
+\character{Dalinda} \stage{Karate kicking Reinaldo}
+```
+
+This ends up looking as follows when compiled:
+
+{{ img(id="/images/lunariosentimental/play_example.png", alt="The first page of a play to illustrate compiled formatting.") }}
 
 # publication
 TBD (almost certainly on demand, but I'm looking for a decent quality service.)

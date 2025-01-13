@@ -5,7 +5,7 @@
 @font-face { font-family: 'nnixmedium'; src: url("/fonts/nnixmedium.woff2") format("woff2"); }
 * { background-color: #f2f2f2; }
 main { max-width: 80ch; padding: 2ch; margin: auto; font-family: 'nnixbook'; font-size: 100%; }
-code, pre, tt, kbd, samp { font-size: 90%; font-family: "nnixmono"; background-color:#d9d9d9; }
+code, pre, tt, kbd, samp { overflow-wrap: break-word; font-size: 90%; font-family: "nnixmono"; background-color:#d9d9d9; }
 .subtle-mono { font-size: 90%; font-family: "nnixmono"; color:#d9d9d9; }
 h1 { font-family: 'nnixbold'; font-weight: normal; font-size: 2.07em; }
 h2 { font-family: 'nnixbold'; font-weight: normal; font-size: 1.54em; }
