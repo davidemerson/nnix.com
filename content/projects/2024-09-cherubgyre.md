@@ -26,17 +26,15 @@ My goal is to have a working alpha inside six months, the time it took [Andy Gol
         </div>
         <div class="timeline-item">
             <div class="date">14 October 2024</div>
-            <div class="event">
-            * API development started
-            * App wireframes at about 85%, on Penpot
-            * Server development started
-            * Deployment documents started (AWS Lambda / API Gateway)
-            * Database development started
-            * Rust code started merging into [repository](https://github.com/davidemerson/cherubgyre/)
-            * CI pipeline and tests built
-            * Put up a [security.txt](https://cherubgyre.com/.well-known/security.txt) and a [public pgp key for security@cherubgyre.com](https://cherubgyre.com/.well-known/pgp-key.txt) just in case
-            * Moved a couple open items to Issues, we'll use those more now that the repo is running a bit
-            </div>
+            <div class="event">API development started</div>
+            <div class="event">App wireframes at about 85%, on Penpot</div>
+            <div class="event">Server development started</div>
+            <div class="event">Deployment documents started (AWS Lambda / API Gateway)</div>
+            <div class="event">Database development started</div>
+            <div class="event">Rust code started merging into [repository](https://github.com/davidemerson/cherubgyre/)</div>
+            <div class="event">CI pipeline and tests built</div>
+            <div class="event">Put up a [security.txt](https://cherubgyre.com/.well-known/security.txt) and a [public pgp key for security@cherubgyre.com](https://cherubgyre.com/.well-known/pgp-key.txt) just in case</div>
+            <div class="event">Moved a couple open items to Issues, we'll use those more now that the repo is running a bit</div>
         </div>
         <div class="timeline-item">
             <div class="date">12 January 2025</div>
