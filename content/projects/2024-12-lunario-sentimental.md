@@ -16,6 +16,36 @@ One of my favorite books, [a lecture](https://nnix.com/reading/this-craft-of-ver
 
 I am intrigued! Let's get a translation out in the world.
 
+# timeline
+<body>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="date">24 December 2024</div>
+            <div class="event">we're up to page 71 in translation work</div>
+        </div>
+        <div class="timeline-item">
+            <div class="date">25 December 2024</div>
+            <div class="event">poetry typesetting template complete</div>
+        </div>
+        <div class="timeline-item">
+            <div class="date">01 January 2025</div>
+            <div class="event">we're up to page 201 in translation work</div>
+        </div>
+        <div class="timeline-item">
+            <div class="date">06 January 2025</div>
+            <div class="event">we're finished with initial translation work</div>
+        </div>
+        <div class="timeline-item">
+            <div class="date">7 January 2025</div>
+            <div class="event">typesetting all poetry begins</div>
+        </div>
+        <div class="timeline-item">
+            <div class="date">13 January 2025</div>
+            <div class="event">the poetry typesetting is progressing well, about 50%, and I've developed a typesetting method for the plays, which was something of a task, since the `dramatist` package does not get along well with XeTeX inside of a `book` document type.</div>
+        </div>
+    </div>
+</body>
+
 # original
 The original work was published in 1909, and has since entered the public domain. You can download it [here](https://nnix.com/images/lunariosentimental/lunario_sentimental_original.pdf).
 
@@ -29,15 +59,7 @@ The work contains 37 pieces:
 # translation
 Spanish to English translation was done by Oskarina Perez. I hired her for her familiarity with the genre and the author.
 
-I did some subsequent English editing work, in consultation with Oskarina.
-
-As of 24 December 2024, we're up to page 71 in translation work. Typesetting design complete, awaiting content.
-
-As of 01 January 2025, we're up to page 201 in translation work.
-
-As of 06 January 2025, we're finished with translation work. Typesetting and proofreading begins in earnest.
-
-As of 13 January 2025, the poetry typesetting is progressing well, about 50%, and I've developed a typesetting method for the plays, which was something of a task, since the `dramatist` package does not get along well with XeTeX inside of a `book` document type.
+I did English editing work, in consultation with Oskarina.
 
 # typesetting
 I typeset the work in XeLaTeX, to provide modern font support.
