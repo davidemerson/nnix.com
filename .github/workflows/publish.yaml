@@ -14,10 +14,24 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Install Zola
-        uses: taiki-e/install-action@v2
+      - name: Get Latest Zola Version
+        id: zola_version
+        run: |
+          LATEST_ZOLA=$(curl -s https://api.github.com/repos/getzola/zola/releases/latest | jq -r .tag_name)
+          echo "LATEST_ZOLA=${LATEST_ZOLA}" >> $GITHUB_ENV
+
+      - name: Cache Zola Binary
+        uses: actions/cache@v3
         with:
-          tool: zola@0.17.2
+          path: ~/.cargo/bin/zola
+          key: zola-${{ env.LATEST_ZOLA }}-${{ runner.os }}
+
+      - name: Install Latest Zola (if not cached)
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          curl -sL https://github.com/getzola/zola/releases/download/${LATEST_ZOLA}/zola-${LATEST_ZOLA#v}-x86_64-unknown-linux-gnu.tar.gz | tar xz
+          mkdir -p ~/.cargo/bin
+          mv zola ~/.cargo/bin/
 
       - name: Generate Current Unix Epoch
         id: get_epoch
@@ -28,17 +42,26 @@ jobs:
           sed -i "s/PLACEHOLDER/$epoch/" config.toml
 
       - name: Build Zola Site
-        run: zola build
+        run: ~/.cargo/bin/zola build
 
       - name: Deploy to S3
-        uses: reggionick/s3-deploy@v4
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        with:
-          folder: public
-          bucket: nnix.com
-          private: true
-          bucket-region: us-east-1
-          dist-id: E4DE96M2EUA2N
-          invalidation: /*
+        run: |
+          aws s3 sync public/ s3://nnix.com \
+            --region us-east-1 \
+            --delete \
+            --cache-control max-age=86400 \
+            --exclude ".DS_Store" \
+            --exclude "*.tmp" \
+            --exclude "debug/*"
+
+      - name: Invalidate CloudFront Cache
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id E4DE96M2EUA2N \
+            --paths "/*"
