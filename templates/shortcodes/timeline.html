@@ -1,0 +1,8 @@
+<div class="timeline">
+    {% for item in items %}
+    <div class="timeline-item">
+        <div class="date">{{ item.date }}</div>
+        <div class="event">{{ item.event | safe }}</div>
+    </div>
+    {% endfor %}
+</div>
