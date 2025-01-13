@@ -1,15 +1,13 @@
 +++
 title = "cherubgyre"
 slug = "cherubgyre"
-date = 2024-11-11
+date = 2025-01-12
 description = "anonymous community defense social network."
 [extra]
   toc = true
 +++
 
-# status
-My goal is to have a working alpha inside six months, the time it took [Andy Goldsworthy](https://www.glenstone.org/artist/andy-goldsworthy/) to complete “Boulder”, allegedly. I do not know if this is a long time or a short time, but there are professionals with strong opinions on the matter.† This seems like a small stone hut of a project with a clay sphere inside, so I'm going with six months to alpha.
-
+# timeline
 <body>
     <div class="timeline">
         <div class="timeline-item">
@@ -31,9 +29,9 @@ My goal is to have a working alpha inside six months, the time it took [Andy Gol
             <div class="event">Server development started</div>
             <div class="event">Deployment documents started (AWS Lambda / API Gateway)</div>
             <div class="event">Database development started</div>
-            <div class="event">Rust code started merging into [repository](https://github.com/davidemerson/cherubgyre/)</div>
+            <div class="event">Rust code started merging into main on git</div>
             <div class="event">CI pipeline and tests built</div>
-            <div class="event">Put up a [security.txt](https://cherubgyre.com/.well-known/security.txt) and a [public pgp key for security@cherubgyre.com](https://cherubgyre.com/.well-known/pgp-key.txt) just in case</div>
+            <div class="event">Put up a security.txt and a public pgp key for security@cherubgyre.com just in case</div>
             <div class="event">Moved a couple open items to Issues, we'll use those more now that the repo is running a bit</div>
         </div>
         <div class="timeline-item">
@@ -42,6 +40,8 @@ My goal is to have a working alpha inside six months, the time it took [Andy Gol
         </div>
     </div>
 </body>
+
+My goal is to have a working alpha inside six months, the time it took [Andy Goldsworthy](https://www.glenstone.org/artist/andy-goldsworthy/) to complete “Boulder”, allegedly. I do not know if this is a long time or a short time, but there are professionals with strong opinions on the matter.† This seems like a small stone hut of a project with a clay sphere inside, so I'm going with six months to alpha.
 
 † - I know at least one.
 
