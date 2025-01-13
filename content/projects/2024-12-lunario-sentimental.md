@@ -41,7 +41,7 @@ I am intrigued! Let's get a translation out in the world.
         </div>
         <div class="timeline-item">
             <div class="date">13 January 2025</div>
-            <div class="event">the poetry typesetting is progressing well, about 50%, and I've developed a typesetting method for the plays, which was something of a task, since the dramatist package does not get along well with XeTeX inside of a book document type.</div>
+            <div class="event">the poetry typesetting is progressing well, about 50%, and I've developed a typesetting method for the plays, which was something of a task, since the dramatist package does not get along well with XeLaTeX inside of a book document type.</div>
         </div>
     </div>
 </body>

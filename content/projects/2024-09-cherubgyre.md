@@ -10,25 +10,40 @@ description = "anonymous community defense social network."
 # status
 My goal is to have a working alpha inside six months, the time it took [Andy Goldsworthy](https://www.glenstone.org/artist/andy-goldsworthy/) to complete “Boulder”, allegedly. I do not know if this is a long time or a short time, but there are professionals with strong opinions on the matter.† This seems like a small stone hut of a project with a clay sphere inside, so I'm going with six months to alpha.
 
-The project started in earnest on 20 September 2024.
-
-As of 11 November 2024,
-- Server deployment documentation (ECR/ECS/Fargate) created.
-- Test suite started in Postman
-
-As of 28 October 2024,
-- API documentation updated
-
-As of 14 October 2024,
-- API development started
-- App wireframes at about 85%, on Penpot
-- Server development started
-- Deployment documents started (AWS Lambda / API Gateway)
-- Database development started
-- Rust code started merging into [repository](https://github.com/davidemerson/cherubgyre/)
-- CI pipeline and tests built
-- Put up a [security.txt](https://cherubgyre.com/.well-known/security.txt) and a [public pgp key for security@cherubgyre.com](https://cherubgyre.com/.well-known/pgp-key.txt) just in case
-- Moved a couple open items to Issues, we'll use those more now that the repo is running a bit
+<body>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="date">20 September 2024</div>
+            <div class="event">The project started in earnest</div>
+        </div>
+        <div class="timeline-item">
+            <div class="date">11 November 2024</div>
+            <div class="event">Server deployment documentation (ECR/ECS/Fargate) created. Test suite started in Postman.</div>
+        </div>
+        <div class="timeline-item">
+            <div class="date">28 October 2024</div>
+            <div class="event">API documentation updated</div>
+        </div>
+        <div class="timeline-item">
+            <div class="date">14 October 2024</div>
+            <div class="event">
+            * API development started
+            * App wireframes at about 85%, on Penpot
+            * Server development started
+            * Deployment documents started (AWS Lambda / API Gateway)
+            * Database development started
+            * Rust code started merging into [repository](https://github.com/davidemerson/cherubgyre/)
+            * CI pipeline and tests built
+            * Put up a [security.txt](https://cherubgyre.com/.well-known/security.txt) and a [public pgp key for security@cherubgyre.com](https://cherubgyre.com/.well-known/pgp-key.txt) just in case
+            * Moved a couple open items to Issues, we'll use those more now that the repo is running a bit
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="date">12 January 2025</div>
+            <div class="event">Optimized the Rust build process, becuase it's taking like 1600 seconds to make a build, and that's nutty. Got it down to 687 seconds, but I'm not totally impressed yet. Getting annoyed.</div>
+        </div>
+    </div>
+</body>
 
 † - I know at least one.
 
