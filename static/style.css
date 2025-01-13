@@ -2,6 +2,7 @@
 @font-face { font-family: 'nnixitalic'; src: url("/fonts/nnixitalic.woff2") format("woff2"); }
 @font-face { font-family: 'nnixbold'; src: url("/fonts/nnixbold.woff2") format("woff2"); }
 @font-face { font-family: 'nnixmono'; src: url("/fonts/nnixmono.woff") format("woff"); }
+@font-face { font-family: 'nnixmedium'; src: url("/fonts/nnixmedium.woff2") format("woff2"); }
 * { background-color: #f2f2f2; }
 main { max-width: 80ch; padding: 2ch; margin: auto; font-family: 'nnixbook'; font-size: 100%; }
 code, pre, tt, kbd, samp { font-size: 90%; font-family: "nnixmono"; background-color:#d9d9d9; }
@@ -12,7 +13,7 @@ h3 { font-family: 'nnixitalic'; font-weight: normal; font-size: 1.16em; }
 emph { font-family: 'nnixbook'; font-weight: normal; font-size: 1.16em; }
 b { font-family: 'nnixbold'; font-weight: normal; font-size: inherit; }
 footer { max-width: 80ch; padding: 2ch; margin: auto; font-family: 'nnixfont'; }
-a:link, a:visited { color: inherit; font-family: 'nnixbold'; }
+a:link, a:visited { color: inherit; font-family: 'nnixmedium'; }
 img { border-radius: 15px; max-width: 100%; }
 .smallfeature { border-radius: 15px; display: block; margin-left: auto; margin-right: auto; padding-left: 20%; padding-right: 20%; max-width: 50%; height: auto; }
 figure { margin: 0 0 1em }
