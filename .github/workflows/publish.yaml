@@ -44,7 +44,7 @@ jobs:
             --exclude ".DS_Store" \
             --exclude "*.tmp" \
             --exclude "debug/*" \
-            --exact-timestamps
+            --size-only
 
       - name: Invalidate CloudFront Cache
         env:
