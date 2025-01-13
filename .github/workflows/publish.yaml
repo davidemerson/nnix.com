@@ -17,8 +17,11 @@ jobs:
       - name: Get Latest Zola Version
         id: zola_version
         run: |
-          LATEST_ZOLA=$(curl -s https://api.github.com/repos/getzola/zola/releases/latest | jq -r .tag_name)
+          LATEST_ZOLA=$(curl -s https://api.github.com/repos/getzola/zola/releases/latest | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
           echo "LATEST_ZOLA=${LATEST_ZOLA}" >> $GITHUB_ENV
+
+      - name: Debug Latest Zola Version
+        run: echo "Latest Zola Version: ${{ env.LATEST_ZOLA }}"
 
       - name: Cache Zola Binary
         uses: actions/cache@v3
@@ -29,9 +32,13 @@ jobs:
       - name: Install Latest Zola (if not cached)
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
-          curl -sL https://github.com/getzola/zola/releases/download/${LATEST_ZOLA}/zola-${LATEST_ZOLA#v}-x86_64-unknown-linux-gnu.tar.gz | tar xz
+          DOWNLOAD_URL="https://github.com/getzola/zola/releases/download/${LATEST_ZOLA}/zola-${LATEST_ZOLA#v}-x86_64-unknown-linux-gnu.tar.gz"
+          echo "Downloading Zola from $DOWNLOAD_URL"
+          curl -fSL "$DOWNLOAD_URL" -o zola.tar.gz
+          tar -xzf zola.tar.gz
           mkdir -p ~/.cargo/bin
           mv zola ~/.cargo/bin/
+          zola --version
 
       - name: Generate Current Unix Epoch
         id: get_epoch
