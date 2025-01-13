@@ -30,4 +30,4 @@ th { font-family: 'nnixbold'; font-weight: normal; background-color: var(--secon
 .timeline-item { position: relative; margin: 40px 0; padding-left: 30px; }
 .timeline-item::before { content: ""; position: absolute; top: 0; left: -6px; width: 12px; height: 12px; background-color: #000000; border-radius: 50%; }
 .date { font-family: 'nnixmedium'; margin-bottom: 5px; color: inherit; position: absolute; top: -5px; left: 30px; }
-.event { background-color: var(--secondary-bg-color); padding: 10px; border-radius: var(--border-radius); margin-left: 50px; margin-top: -20px; }
+.event { background-color: var(--secondary-bg-color); padding: 10px; border-radius: var(--border-radius); margin-left: 30px; margin-top: 0px; }
