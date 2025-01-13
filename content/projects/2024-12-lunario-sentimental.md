@@ -17,14 +17,34 @@ One of my favorite books, [a lecture](https://nnix.com/reading/this-craft-of-ver
 I am intrigued! Let's get a translation out in the world.
 
 # timeline
-{{% timeline %}}
-    {{% timeline-item date="24 December 2024" event="we're up to page 71 in translation work" %}}
-    {{% timeline-item date="25 December 2024" event="poetry typesetting template complete" %}}
-    {{% timeline-item date="01 January 2025" event="we're up to page 201 in translation work" %}}
-    {{% timeline-item date="06 January 2025" event="we're finished with initial translation work" %}}
-    {{% timeline-item date="7 January 2025" event="typesetting all poetry begins" %}}
-    {{% timeline-item date="13 January 2025" event="the poetry typesetting is progressing well, about 50%, and I've developed a typesetting method for the plays, which was something of a task, since the `dramatist` package does not get along well with XeTeX inside of a `book` document type." %}}
-{{% end %}}
+<body>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="date">24 December 2024</div>
+            <div class="event">we're up to page 71 in translation work</div>
+        </div>
+        <div class="timeline-item">
+            <div class="date">25 December 2024</div>
+            <div class="event">poetry typesetting template complete</div>
+        </div>
+        <div class="timeline-item">
+            <div class="date">01 January 2025</div>
+            <div class="event">we're up to page 201 in translation work</div>
+        </div>
+        <div class="timeline-item">
+            <div class="date">06 January 2025</div>
+            <div class="event">we're finished with initial translation work</div>
+        </div>
+        <div class="timeline-item">
+            <div class="date">7 January 2025</div>
+            <div class="event">typesetting all poetry begins</div>
+        </div>
+        <div class="timeline-item">
+            <div class="date">13 January 2025</div>
+            <div class="event">the poetry typesetting is progressing well, about 50%, and I've developed a typesetting method for the plays, which was something of a task, since the dramatist package does not get along well with XeTeX inside of a book document type.</div>
+        </div>
+    </div>
+</body>
 
 
 # original
