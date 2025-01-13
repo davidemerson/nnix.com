@@ -114,7 +114,7 @@ Plays were a bigger deal. I like the `dramatist` package a lot, but it doesn't w
     \textit{(#1)} % Italics for stage directions
 }
 
-% Dramatis Personae Environment (Corrected)
+% Dramatis Personae Environment
 \newenvironment{dramatispersonae}{
     \medskip
     \centerline{\textsc{Dramatis Personae:}} % Centered small caps title
@@ -149,9 +149,9 @@ And here's what a play looks like in code:
 
 \scene{1}
 
-\character{Jacinto} This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. 
+\character{Jacinto} This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line. This is an example dialogue line.
 
-\character{Reinaldo} \stage{Turning to Jacinto} This is another example. This is another example. This is another example. This is another example. This is another example. This is another example. This is another example. This is another example. This is another example. This is another example. This is another example. 
+\character{Reinaldo} \stage{Turning to Jacinto} This is another example. This is another example. This is another example. This is another example. This is another example. This is another example. This is another example. This is another example. This is another example. This is another example. This is another example.
 
 \scene{2}
 \stage{It's really dark and foggy, the ground is on fire here and there.}
