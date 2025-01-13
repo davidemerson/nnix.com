@@ -43,7 +43,8 @@ jobs:
             --cache-control max-age=86400 \
             --exclude ".DS_Store" \
             --exclude "*.tmp" \
-            --exclude "debug/*"
+            --exclude "debug/*" \
+            --exact-timestamps
 
       - name: Invalidate CloudFront Cache
         env:
