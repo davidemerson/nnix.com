@@ -14,8 +14,8 @@ h3 { font-family: 'nnixitalic'; font-weight: normal; font-size: 1.16em; }
 emph { font-family: 'nnixbook'; font-weight: normal; font-size: 1.16em; }
 b { font-family: 'nnixbold'; font-weight: normal; font-size: inherit; }
 footer { max-width: 80ch; padding: 2ch; margin: auto; font-family: 'nnixfont'; }
-a:link, a:visited { color: inherit; font-family: 'nnixmedium'; text-decoration: none; }
-a:hover, a:focus { text-decoration: underline; outline: 2px dashed #000; }
+a:link, a:visited { color: inherit; font-family: 'nnixmedium'; text-decoration: underline; }
+a:hover, a:focus { text-decoration: none; color:#00008B; }
 img { border-radius: var(--border-radius); max-width: 100%; height: auto; }
 .smallfeature { border-radius: var(--border-radius); display: block; margin: 1rem auto; width: clamp(50%, 80%, 300px); }
 figure { margin: 0 0 1em; }
