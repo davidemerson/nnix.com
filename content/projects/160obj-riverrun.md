@@ -92,3 +92,37 @@ Configuration should be accomplished through a config file, plaintext. The follo
 - total queued maximum size limit, in GB
 - total queued maximum time limit, in seconds
 - metadata retention time, in seconds
+- storage directory, absolute path on disk (e.g /mnt/music/)
+- directory for html/css playlist page, absolute path on disk (/var/www)
+
+# building
+
+## streamer
+The streamer program grabs the oldest file in the directory and streams it. It also manages the metadata in the database.
+
+- download source code, `streamer.go`
+- in your install folder, `go mod init streamer`
+- get any dependencies, `go tidy`
+- build `go build`
+- make a config file
+```
+AcceptedFileTypes [.ogg,.flac] # ogg and flac by default
+MetadataRetentionSec [86400]  # 86400 by default
+StorageDir [/path/to/storage] # set to [local] for same directory as the script
+SegmentDuration [10]          # duration of each MPEG-DASH segment in seconds
+MPDOutputPath [/path/to/dir   # set to [local] for same directory as the script
+StreamBaseURL [http://localhost:8080/] # Base URL for streaming
+StreamBandwidth [96000]       # Bandwidth in bits per second
+StreamDuration [3600]         # Total media presentation duration in seconds
+```
+- run program with path to config `./streamer /path/to/config`
+
+## uploader
+The uploader program receives uploads and checks them against the limits set by the operator, readying them for the streamer.
+
+- I haven't gotten to this one yet, started work on the streamer.
+
+## dashboard
+The dashboard program grabs metadata about things which have been played from the streamer database and displays it as a playlist to the public, so they know what's playing now, and what was playing in the past.
+
+- I haven't gotten to this one yet, started work on the streamer
