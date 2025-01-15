@@ -7,7 +7,7 @@ description = "an infinite community stream."
   toc = true
 +++
 
-{{ img(id="/images/160.obj/origin.png", alt="a toot from wakest which says, <there should really be a 24/7 merveilles radio stream>) }}
+{{ img(id="/images/160.obj/origin.png", alt="a toot from wakest which says, -there should really be a 24/7 merveilles radio stream-" }}
 
 # concept
 
