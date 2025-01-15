@@ -11,6 +11,8 @@ description = "an infinite community stream."
 
 # concept
 
+code is committed in [GitHub here](https://github.com/davidemerson/riverrun).
+
 Community is hard to build and coordinate. Radio stations require community, but largely because they require coordination and try to structure their programs too tightly. What if we let go of that structure, and allowed a community stream of music, collaboratively DJ'd?
 
 - Make a directory of music somewhere.
@@ -110,7 +112,7 @@ AcceptedFileTypes [.ogg,.flac] # ogg and flac by default
 MetadataRetentionSec [86400]  # 86400 by default
 StorageDir [/path/to/storage] # set to [local] for same directory as the script
 SegmentDuration [10]          # duration of each MPEG-DASH segment in seconds
-MPDOutputPath [/path/to/dir   # set to [local] for same directory as the script
+MPDOutputPath [/path/to/dir]  # set to [local] for same directory as the script
 StreamBaseURL [http://localhost:8080/] # Base URL for streaming
 StreamBandwidth [96000]       # Bandwidth in bits per second
 StreamDuration [3600]         # Total media presentation duration in seconds
