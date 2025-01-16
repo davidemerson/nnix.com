@@ -27,7 +27,7 @@ Community is hard to build and coordinate. Radio stations require community, but
 # some details
 
 ## stream
-The stream should be a public url. MPEG-DASH, I suppose, since HLS is closed source.
+The stream should be a public url. It'll stream ogg, but we can convert a lot of stuff from original format to ogg, so upload formats will be somewhat flexible.
 
 ## playlist
 A database should keep a metadata record of all tracks played in the last 48 hours. This can be posted publicly as a playlist. Metadata older than 48 hours will be truncated to avoid retention and maintenance.
@@ -89,18 +89,6 @@ Ok, let's call it 50 GB limit on storage, total. When the service has this much 
 
 We should set a time limit too, which hopefully makes the storage limit only a secondary control. When the total playtime of all music in storage reaches 172,800 seconds, the upload mechanism is closed to authentication until the total playtime of all music in storage drops below 150,000 seconds. A message is displayed on the playlist UI (public web page) during this time.
 
-## configuration
-Configuration should be accomplished through a config file, plaintext. The following configuration parameters should be set in that file for the app:
-
-- per user file size limit, in MB per day
-- per user time length limit, in seconds per day
-- file types accepted, by extension
-- total queued maximum size limit, in GB
-- total queued maximum time limit, in seconds
-- metadata retention time, in seconds
-- storage directory, absolute path on disk (e.g /mnt/music/)
-- directory for html/css playlist page, absolute path on disk (/var/www)
-
 # building
 
 ## config file
@@ -150,7 +138,7 @@ The streamer program grabs the oldest file in the directory and streams it. It a
 - in your install folder, `go mod init streamer`
 - get any dependencies, `go tidy`
 - build `go build`
-- modify the `[streamer]` section of your riverrun.toml file as appropriate
+- modify the `[streamer]` section of your `riverrun.toml` file as appropriate
 - run program with path to config `./streamer /path/to/riverrun.toml`
 
 ## converter
@@ -161,7 +149,7 @@ The converter checks the uploads folder and converts acceptable file types to og
 - in your install folder, `go mod init streamer`
 - get any dependencies, `go tidy`
 - build `go build`
-- modify the `[converter]` section of your riverrun.toml file as appropriate
+- modify the `[converter]` section of your `riverrun.toml` file as appropriate
 - run program with path to config `./converter /path/to/riverrun.toml`
 
 We still need to figure out where to implement limits. I think that'll be at the converter, but it depends on how we manage uploads. There might be an uploader program too.
