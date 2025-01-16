@@ -9,6 +9,8 @@ description = "an infinite community stream."
 
 {{ img(id="/images/160.obj/origin.png", alt="a toot from wakest which says, -there should really be a 24/7 merveilles radio stream-") }}
 
+> "riverrun, past Eve and Adam's, from swerve of shore to bend of bay, brings us by a commodius vicus of recirculation back to Howth Castle and Environs."
+
 # concept
 
 code is committed in [GitHub here](https://github.com/davidemerson/riverrun).
@@ -99,6 +101,42 @@ Configuration should be accomplished through a config file, plaintext. The follo
 
 # building
 
+## config file
+The configuration file is called riverrun.toml, and here's an example file.
+```
+[streamer]
+# Where to find files to stream
+StorageDir = "../queue/"
+
+# Port for streaming
+StreamPort = 8080
+
+# Output directory for m3u file to configure streaming clients
+m3uDirectory = "../"
+
+[converter]
+# Accepted File Types, comma separated
+AcceptedFileTypes = [ 
+          .ogg,
+          .flac,
+          .wav,
+          .aac
+          ]
+
+# Bitrate of channel, in kbps
+Bitrate = 256
+
+# Where the files uploaded by users will be stored
+UploadDirectory = "../uploads/"
+
+# Where the files converted will be stored
+StreamDirectory = "../queue/"
+
+[dashboard]
+# How long to keep metadata records in database after they've been played, in seconds
+MetadataRetentionSec = 86400
+```
+
 ## streamer
 The streamer program grabs the oldest file in the directory and streams it. It also manages the metadata in the database.
 
@@ -106,25 +144,21 @@ The streamer program grabs the oldest file in the directory and streams it. It a
 - in your install folder, `go mod init streamer`
 - get any dependencies, `go tidy`
 - build `go build`
-- make a config file
-```
-AcceptedFileTypes [.ogg,.flac] # ogg and flac by default
-MetadataRetentionSec [86400]  # 86400 by default
-StorageDir [/path/to/storage] # set to [local] for same directory as the script
-SegmentDuration [10]          # duration of each MPEG-DASH segment in seconds
-MPDOutputPath [/path/to/dir]  # set to [local] for same directory as the script
-StreamBaseURL [http://localhost:8080/] # Base URL for streaming
-StreamBandwidth [96000]       # Bandwidth in bits per second
-StreamDuration [3600]         # Total media presentation duration in seconds
-```
-- run program with path to config `./streamer /path/to/config`
+- modify the `[streamer]` section of your riverrun.toml file as appropriate
+- run program with path to config `./streamer /path/to/riverrun.toml`
 
-## uploader
-The uploader program receives uploads and checks them against the limits set by the operator, readying them for the streamer.
+## converter
+The converter checks the uploads folder and converts acceptable file types to ogg, names them something random, then places them into the streamer folder.
 
-- I haven't gotten to this one yet, started work on the streamer.
+- install ffmpeg and get it in your PATH
+- download source code, `converter.go`
+- in your install folder, `go mod init streamer`
+- get any dependencies, `go tidy`
+- build `go build`
+- modify the `[converter]` section of your riverrun.toml file as appropriate
+- run program with path to config `./converter /path/to/riverrun.toml`
 
 ## dashboard
 The dashboard program grabs metadata about things which have been played from the streamer database and displays it as a playlist to the public, so they know what's playing now, and what was playing in the past.
 
-- I haven't gotten to this one yet, started work on the streamer
+- I haven't gotten to this one yet, started work on the streamer and converter
