@@ -40,9 +40,11 @@ If a user's upload exceeds the size limits of the service (see limits > file siz
 If a user's upload exceeds the time limit (see limits > time below), the first-uploaded files will be kept, and those in excess of the time limit will be deleted. If the upload consisted of a single file in excess of the file size limit, it will be deleted.
 
 ## selection
-The streaming application will select the next file according to the order in which the file was uploaded to the storage directory. Oldest file gets played next, and the metadata for that file gets written to the playlist database when it is selected for play.
+The streaming application will select the next file according to the order in which the file was uploaded to the storage directory. Oldest file gets played next.
 
 When a file has been played on the public stream, it will be deleted from storage, and the next-oldest file selected for play.
+
+If there's nothing to play, the application waits until there is something to play.
 
 ## authentication
 Authentication need only be at the upload here, since the metadata is not sensitive. Community members should understand that the metadata of their tracks, and their usernames, will be public information.
@@ -109,7 +111,7 @@ The configuration file is called riverrun.toml, and here's an example file.
 StorageDir = "../queue/"
 
 # Port for streaming
-StreamPort = 8080
+StreamPort = 8000
 
 # Output directory for m3u file to configure streaming clients
 m3uDirectory = "../"
@@ -117,10 +119,10 @@ m3uDirectory = "../"
 [converter]
 # Accepted File Types, comma separated
 AcceptedFileTypes = [ 
-          .ogg,
-          .flac,
-          .wav,
-          .aac
+          ".ogg",
+          ".flac",
+          ".wav",
+          ".aac"
           ]
 
 # Bitrate of channel, in kbps
@@ -132,13 +134,17 @@ UploadDirectory = "../uploads/"
 # Where the files converted will be stored
 StreamDirectory = "../queue/"
 
+[playlist]
+# How long to keep metadata after play, seconds
+Bitrate = 86400
+
 [dashboard]
-# How long to keep metadata records in database after they've been played, in seconds
-MetadataRetentionSec = 86400
+# Should we display upcoming songs?
+DisplayUpcoming = Yes
 ```
 
 ## streamer
-The streamer program grabs the oldest file in the directory and streams it. It also manages the metadata in the database.
+The streamer program grabs the oldest file in the directory and streams it. It also tells the playlist program when it starts playing something.
 
 - download source code, `streamer.go`
 - in your install folder, `go mod init streamer`
@@ -158,7 +164,14 @@ The converter checks the uploads folder and converts acceptable file types to og
 - modify the `[converter]` section of your riverrun.toml file as appropriate
 - run program with path to config `./converter /path/to/riverrun.toml`
 
+We still need to figure out where to implement limits. I think that'll be at the converter, but it depends on how we manage uploads. There might be an uploader program too.
+
+## playlist
+The playlist program manages a tiny sqlite database of metadata, receives currently-playing notices from the streamer program, and prunes the metadata database to avoid over retention.
+
+- I haven't gotten to this one yet, started work on the streamer and converter
+
 ## dashboard
-The dashboard program grabs metadata about things which have been played from the streamer database and displays it as a playlist to the public, so they know what's playing now, and what was playing in the past.
+The dashboard program grabs metadata about things which have been played from the playlist database and displays it to the public, so they know what's playing now, and what was playing in the past.
 
 - I haven't gotten to this one yet, started work on the streamer and converter
