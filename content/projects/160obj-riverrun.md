@@ -89,9 +89,8 @@ Ok, let's call it 50 GB limit on storage, total. When the service has this much 
 
 We should set a time limit too, which hopefully makes the storage limit only a secondary control. When the total playtime of all music in storage reaches 172,800 seconds, the upload mechanism is closed to authentication until the total playtime of all music in storage drops below 150,000 seconds. A message is displayed on the playlist UI (public web page) during this time.
 
-# building
 
-## config file
+# toml configuration
 The configuration file is called riverrun.toml, and here's an example file.
 ```
 [streamer]
@@ -131,19 +130,128 @@ Bitrate = 86400
 DisplayUpcoming = Yes
 ```
 
-## streamer
-The streamer program grabs the oldest file in the directory and streams it. It also tells the playlist program when it starts playing something.
 
-- download source code, `streamer.go`
-- in your install folder, `go mod init streamer`
-- get any dependencies, `go tidy`
-- build `go build`
-- modify the `[streamer]` section of your `riverrun.toml` file as appropriate
-- run program with path to config `./streamer /path/to/riverrun.toml`
+# converter
+The `converter` program is a Go-based utility that processes audio files from a specified upload directory, converts them to the Ogg Vorbis format, and stores the converted files in a specified stream directory. The program continuously monitors the upload directory for new files and processes them as they appear. Unsupported files are deleted automatically.
 
-## converter
-The converter checks the uploads folder and converts acceptable file types to ogg, names them something random, then places them into the streamer folder.
+## features
+- Converts only the specified audio file types defined in the configuration.
+- Converts audio files to Ogg Vorbis with a specified bitrate.
+- Waits for files to appear in the upload directory if none are present.
+- Generates unique filenames for the converted files using UUID v7.
+- Retains metadata from the original files during conversion.
+- Provides detailed error messages for failed conversions.
+- Verifies the presence of `ffmpeg` before execution.
 
+## configuration
+The program uses a section of the TOML configuration shared with all these other components of riverrun. Here's an example:
+
+```toml
+[converter]
+AcceptedFileTypes = [
+    ".ogg",
+    ".flac",
+    ".wav",
+    ".aac"
+]
+Bitrate = 256
+UploadDirectory = "path/to/uploads"
+StreamDirectory = "path/to/stream"
+```
+
+### configuration parameters
+- **AcceptedFileTypes**: List of file extensions the program will process. Extensions must include the leading dot (e.g., `.ogg`, `.flac`).
+- **Bitrate**: Target bitrate (in kbps) for the Ogg Vorbis conversion.
+- **UploadDirectory**: Path to the directory where files to be processed are uploaded.
+- **StreamDirectory**: Path to the directory where converted files will be stored.
+
+## execution
+Run the program with the following command:
+```bash
+go run main.go <config-file>
+```
+
+## workflow
+1. The program verifies the presence of `ffmpeg`.
+2. Reads the configuration file specified as the first argument.
+3. Monitors the `UploadDirectory` for files to process.
+4. Converts valid files to Ogg Vorbis format.
+5. Deletes processed files from the upload directory and stores the converted files in the `StreamDirectory`.
+6. Waits for new files to appear if none are initially present.
+
+## error handling
+- If `ffmpeg` is not installed or accessible, the program exits with an error message.
+- If a file cannot be converted, the program logs the detailed error output from `ffmpeg` and moves on to the next file.
+- Unsupported file types are automatically deleted.
+
+## directory monitoring
+The program waits for files to appear in the upload directory by repeatedly checking every 5 seconds:
+```go
+for {
+    files, err := ioutil.ReadDir(uploadDir)
+    if err != nil {
+        return fmt.Errorf("failed to read upload directory: %v", err)
+    }
+
+    if len(files) == 0 {
+        fmt.Println("No files to process. Waiting for files to appear...")
+        time.Sleep(5 * time.Second)
+        continue
+    }
+
+    // Process files...
+}
+```
+
+## file conversion
+Uses `ffmpeg` for audio conversion:
+```go
+cmd := exec.Command(
+    "ffmpeg",
+    "-i", inputPath,
+    "-c:a", "libvorbis",
+    "-b:a", fmt.Sprintf("%dk", bitrate),
+    outputPath,
+)
+```
+
+## uuid-based file naming
+Ensures unique filenames for converted files:
+```go
+func generateUUID() (string, error) {
+    uuid := make([]byte, 16)
+    _, err := rand.Read(uuid)
+    if err != nil {
+        return "", err
+    }
+    uuid[6] = (uuid[6] & 0x0f) | 0x70
+    uuid[8] = (uuid[8] & 0x3f) | 0x80
+    return hex.EncodeToString(uuid), nil
+}
+```
+
+## dependencies
+- **FFmpeg**: Required for audio file conversion. Ensure it is installed and accessible from the command line.
+
+## logging and debugging
+- The program provides detailed logs for each operation, including file processing, conversions, and errors.
+- Example log output:
+```plaintext
+Running command: ffmpeg -i input.flac -c:a libvorbis -b:a 256k output.ogg
+Failed to convert file input.flac: conversion failed
+No files to process. Waiting for files to appear...
+```
+
+## contemplated
+- Extend the `AcceptedFileTypes` to include new file extensions.
+- Adjust the polling interval or use file system event listeners for real-time monitoring.
+- Integrate a library for modifying metadata in converted files.
+
+## issues
+- The program uses a 5-second delay between directory scans, which may introduce slight processing delays.
+- The program requires `ffmpeg` and does not currently include a fallback or alternative conversion tool.
+
+## building
 - install ffmpeg and get it in your PATH
 - download source code, `converter.go`
 - in your install folder, `go mod init streamer`
@@ -152,14 +260,91 @@ The converter checks the uploads folder and converts acceptable file types to og
 - modify the `[converter]` section of your `riverrun.toml` file as appropriate
 - run program with path to config `./converter /path/to/riverrun.toml`
 
-We still need to figure out where to implement limits. I think that'll be at the converter, but it depends on how we manage uploads. There might be an uploader program too.
 
-## playlist
+
+# streamer
+The streamer is a Go-based application designed to stream `.ogg` files over HTTP. It ensures reliable file handling by managing conflicts and avoiding interruptions caused by files being copied or used during runtime. The program supports dynamic configurations via a TOML file.
+
+## features
+- Streams `.ogg` files from a specified directory to HTTP clients.
+- Reads runtime configurations such as the streaming directory, port, and playlist directory from a TOML file.
+- Waits to ensure files are not in use (e.g., being copied) before streaming.
+- Delays deletion of previously streamed files until the next file begins streaming.
+- Automatically detects the server's local IP address for constructing M3U playlists and streaming URLs.
+- Generates an `.m3u` playlist with the streaming URL for easy integration with client players.
+
+## configuration
+The program uses a section of the TOML configuration shared with all these other components of riverrun. Here's an example:
+
+```toml
+[streamer]
+# Directory containing files to stream
+StorageDir = "../queue/"
+
+# Port for the HTTP server
+StreamPort = 8080
+
+# Directory where the .m3u playlist will be saved
+M3uDirectory = "../"
+```
+
+## function
+1. The program reads its configuration from the TOML file specified as a command-line argument.
+2. The `StorageDir` directory is monitored for `.ogg` files to stream.
+
+## workflow
+- The oldest `.ogg` file in the `StorageDir` directory is selected for streaming.
+- Before streaming, the program waits to ensure the file is not being copied or written to by other processes.
+- The selected file is streamed to clients via an HTTP endpoint (`/stream`).
+- An `.m3u` playlist containing the streaming URL is generated and saved to the `M3uDirectory`.
+- After streaming, the program retains the last streamed file until the next file begins streaming to avoid conflicts.
+
+
+## endpoint
+
+- url: `http://<local_ip>:<stream_port>/stream`
+- method: GET
+- content: `audio/ogg`
+
+## execution
+- Install Go on your system.
+- Ensure the TOML configuration file is ready.
+- Use the following command to run the program:
+```bash
+./streamer /path/to/config.toml
+```
+
+## errors
+- The program retries accessing files that are temporarily unavailable.
+- Logs errors related to binding or streaming and exits gracefully.
+
+## notes
+- Utilizes `sync.Mutex` to ensure file access and streaming operations are thread-safe.
+- Dynamically determines the server's IP address for constructing streaming URLs.
+
+## contemplated
+- Add support for additional file formats by modifying the `getOldestFile` function.
+- Implement additional logging or monitoring features as required.
+- We still need to figure out where to implement limits. I think that'll be at the converter, but it depends on how we manage uploads. There might be an uploader program too.
+- We need to think about people with low bandwidth. If you lower the stream quality, it'll sound bad. If you offer a bunch of different qualities, complexity increases. I think the best path might be to allow uploaders to mark music which they own for persistent availability as a download. We'll have to think this through.
+
+## building
+- download source code, `streamer.go`
+- in your install folder, `go mod init streamer`
+- get any dependencies, `go tidy`
+- build `go build`
+- modify the `[streamer]` section of your `riverrun.toml` file as appropriate
+- run program with path to config `./streamer /path/to/riverrun.toml`
+
+
+
+# playlist
 The playlist program manages a tiny sqlite database of metadata, receives currently-playing notices from the streamer program, and prunes the metadata database to avoid over retention.
 
 - I haven't gotten to this one yet, started work on the streamer and converter
 
-## dashboard
+
+# dashboard
 The dashboard program grabs metadata about things which have been played from the playlist database and displays it to the public, so they know what's playing now, and what was playing in the past.
 
 - I haven't gotten to this one yet, started work on the streamer and converter
