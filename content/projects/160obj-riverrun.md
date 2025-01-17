@@ -158,8 +158,6 @@ Bitrate = 256
 UploadDirectory = "path/to/uploads"
 StreamDirectory = "path/to/stream"
 ```
-
-### configuration parameters
 - **AcceptedFileTypes**: List of file extensions the program will process. Extensions must include the leading dot (e.g., `.ogg`, `.flac`).
 - **Bitrate**: Target bitrate (in kbps) for the Ogg Vorbis conversion.
 - **UploadDirectory**: Path to the directory where files to be processed are uploaded.
