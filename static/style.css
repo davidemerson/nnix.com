@@ -1,7 +1,7 @@
 @font-face { font-family: 'nnixbook'; src: url("/fonts/nnixbook.woff2") format("woff2"); }
 @font-face { font-family: 'nnixitalic'; src: url("/fonts/nnixitalic.woff2") format("woff2"); }
 @font-face { font-family: 'nnixbold'; src: url("/fonts/nnixbold.woff2") format("woff2"); }
-@font-face { font-family: 'nnixmono'; src: url("/fonts/nnixmono.woff") format("woff"); }
+@font-face { font-family: 'nnixmono'; src: url("/fonts/nnixmono.woff2") format("woff2"); }
 @font-face { font-family: 'nnixmedium'; src: url("/fonts/nnixmedium.woff2") format("woff2"); }
 :root { --bg-color: #f2f2f2; --secondary-bg-color: #d9d9d9; --border-radius: 15px; }
 html, body { background-color: var(--bg-color); margin: 0; padding: 0; }
