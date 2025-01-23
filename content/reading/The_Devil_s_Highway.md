@@ -1,12 +1,13 @@
 +++
 title = "The Devil's Highway"
-date = 2023-05-02
+date = 2025-01-22
 # if you don't use a taxonomy, delete it
 # empty fields not allowed
 [taxonomies]
-  readstate = ["queue"]
+  readstate = ["reading"]
   authorname = ["Urrea, Luis Alberto"]
   pubyear = ["2004"]
   recommender = ["Cynthia P."]
+  rating = ["NR"]
 +++
 
