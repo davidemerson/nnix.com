@@ -1,7 +1,7 @@
 +++
 title = "cherubgyre"
 slug = "cherubgyre"
-date = 2025-01-12
+date = 2025-02-07
 description = "anonymous community defense social network."
 [extra]
   toc = true
@@ -37,6 +37,10 @@ description = "anonymous community defense social network."
         <div class="timeline-item">
             <div class="date">12 January 2025</div>
             <div class="event">Optimized the Rust build process, becuase it's taking like 1600 seconds to make a build, and that's nutty. Got it down to 687 seconds, but I'm not totally impressed yet. Getting annoyed.</div>
+        </div>
+        <div class="timeline-item">
+            <div class="date">7 February 2025</div>
+            <div class="event">Yeah, I moved this to Heroku and we'll be rewriting in Golang. You live and learn, Rust was cool but not for this app. Repo is at the same url, just a rewrite.</div>
         </div>
     </div>
 </body>
@@ -82,7 +86,7 @@ The API is documented using Swagger in OpenAPI 3.0.3 format, [hosted at this url
 # server
 The server code will be [hosted at this url](https://github.com/davidemerson/cherubgyre), but work is focused on the API at the moment.
 
-The server will be written in Rust. It’s not the optimal language ergonomically for implementing an API, but it’s reasonably accessible and [extremely resource efficient](https://greenlab.di.uminho.pt/wp-content/uploads/2017/10/sleFinal.pdf). Writing in Rust for an application intended to scale is an environmentally and architecturally sound decision.
+The server will be written in Go. It’s reasonably accessible and [extremely resource efficient](https://greenlab.di.uminho.pt/wp-content/uploads/2017/10/sleFinal.pdf). Writing in Go for an application intended to scale is an environmentally and architecturally sound decision.
 
 # website
 There's a rudimentary placeholder website [here for now](https://cherubgyre.com).
