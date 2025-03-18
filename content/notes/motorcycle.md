@@ -27,9 +27,31 @@ description = "a haynes manual for me"
     <td>⬢5</td>
     <td>20</td>
   </tr>
+  <tr>
+    <td>oil filter</td>
+    <td>filter-wrench</td>
+    <td>11</td>
+  </tr>
+  <tr>
+    <td>bar riser mount</td>
+    <td>⬡15</td>
+    <td>60</td>
+  </tr>
+  <tr>
+    <td>bar clamp</td>
+    <td>⬢6</td>
+    <td>24</td>
+  </tr>
 </table>
 </div>
 
 ## maintenance procedures
 ### oil change
 ### air filter change
+
+## handlebar drilling
+When changing handlebars on this motorcycle, you will need to drill three precise holes in the new bar. They should be at the locations documented here, measured from the right-hand or left-hand end of the bar, and at angles measured as a clock face, with noon at the topmost surface of the bar.
+
+1. To engage the left-hand button cluster, a 5 mm ø hole drilled at 174 mm from left edge of bar at 8:00.
+2. To engage the right-hand button cluster, a 5 mm ø hole drilled at 194 mm from right edge of bar at 4:00.
+4. To engage the throttle control pod, a 4 mm ø hole drilled at 156 mm from right edge of bar at 3:00.
