@@ -84,3 +84,6 @@ Like specifying constraints and dimensions in a parametric model, you should ref
 > At the first gate, ask yourself, is it true.
 > At the second gate ask, is it necessary.
 > At the third gate ask, is it kind.
+
+# product
+Sell me potable water. That's a commodity. It's comparable. Expand to exotic incomparables once I like your water and your delivery staff (basics are saleable, fluff is experiential)
