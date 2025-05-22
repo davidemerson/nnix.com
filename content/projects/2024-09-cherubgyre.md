@@ -1,7 +1,7 @@
 +++
 title = "cherubgyre"
 slug = "cherubgyre"
-date = 2025-04-16
+date = 2025-05-21
 description = "anonymous community defense social network."
 [extra]
   toc = true
@@ -41,9 +41,14 @@ description = "anonymous community defense social network."
         <div class="timeline-item">
             <div class="date">7 February 2025</div>
             <div class="event">Yeah, I moved this to Heroku and we'll be rewriting in Golang. You live and learn, Rust was cool but not for this app. Repo is at the same url, just a rewrite.</div>
+        </div>
         <div class="timeline-item">
             <div class="date">16 April 2025</div>
             <div class="event">Rewritten test available in golang.</div>
+        </div>
+        <div class="timeline-item">
+            <div class="date">20 May 2025</div>
+            <div class="event">Mobile App Development started.</div>
         </div>
     </div>
 </body>
