@@ -9,6 +9,8 @@ description = "a haynes manual for me"
 
 # Ducati 821
 
+[This article](https://nnix.com/reading/song-of-the-sausage-creature/) captures what this bike feels like to ride.
+
 ## fasteners & torque values
 <div>
 <table>

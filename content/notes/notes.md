@@ -1,7 +1,7 @@
 +++
 title = "notes"
 slug = "notes"
-date = 2024-11-04
+date = 2025-06-11
 description = "existence and management of the same"
 [extra]
   toc = true
@@ -84,6 +84,9 @@ Like specifying constraints and dimensions in a parametric model, you should ref
 > At the first gate, ask yourself, is it true.
 > At the second gate ask, is it necessary.
 > At the third gate ask, is it kind.
+
+## Frank Herbert
+Give as few orders as possible. Once you give orders on a subject, you'll always have to give orders on that subject.
 
 # product
 Sell me potable water. That's a commodity. It's comparable. Expand to exotic incomparables once I like your water and your delivery staff (basics are saleable, fluff is experiential)

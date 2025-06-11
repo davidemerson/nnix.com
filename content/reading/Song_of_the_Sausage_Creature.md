@@ -5,7 +5,7 @@ date = 2025-06-11
 # empty fields not allowed
 [taxonomies]
   readstate = ["read"]
-  authorname = ["Thompson, Hunter S."]
+  authorname = ["Thompson, Hunter S"]
   pubyear = ["1995"]
   rating = ["4"]
 +++
