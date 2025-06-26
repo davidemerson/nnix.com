@@ -2,7 +2,7 @@
 title = "Steak"
 slug = "steak"
 date = 2025-06-26
-description = "Recipe featuring "top loin" or "ny strip" roast cut into 1.5-2in steaks"
+description = "Recipe featuring top loin or ny strip roast cut into steaks"
 [extra]
   category = "main"
 +++

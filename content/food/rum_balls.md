@@ -2,7 +2,7 @@
 title = "Rum Balls"
 slug = "rum-balls"
 date = 2025-06-26
-description = "Recipe featuring 3 1/2 cups vanilla wafer crumbs"
+description = "Recipe featuring vanilla wafer crumbs"
 [extra]
   category = "desserts-snacks"
 +++

@@ -2,7 +2,7 @@
 title = "Acorn Flour"
 slug = "acorn-flour"
 date = 2025-06-26
-description = "Recipe featuring some acorns. as fresh off the tree as you can (not ones that are sprouted or cracked or have been on the ground a few days)."
+description = "Recipe featuring fresh acorns for making flour"
 [extra]
   category = "bread-pastry"
 +++
