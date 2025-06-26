@@ -3,8 +3,8 @@ title = "Ginger Lemon Elixir"
 slug = "ginger-lemon-elixir"
 date = 2025-06-26
 description = "Recipe featuring 16 lemons (convert to juice quantity)"
-[extra]
-  category = "drinks"
+[taxonomies]
+  foodcategory = ["drinks"]
 +++
 
 # Ginger-Lemon Elixir

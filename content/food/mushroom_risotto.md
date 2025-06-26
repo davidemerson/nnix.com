@@ -3,8 +3,8 @@ title = "Mushroom Risotto"
 slug = "mushroom-risotto"
 date = 2025-06-26
 description = "Recipe featuring 946ml chicken stock or broth"
-[extra]
-  category = "main"
+[taxonomies]
+  foodcategory = ["main"]
 +++
 
 # Mushroom Risotto

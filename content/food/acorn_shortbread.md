@@ -3,8 +3,8 @@ title = "Acorn Shortbread"
 slug = "acorn-shortbread"
 date = 2025-06-26
 description = "Recipe featuring 140g acorn flour"
-[extra]
-  category = "desserts-snacks"
+[taxonomies]
+  foodcategory = ["desserts-snacks"]
 +++
 
 # Acorn Shortbread

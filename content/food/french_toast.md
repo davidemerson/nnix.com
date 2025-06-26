@@ -3,8 +3,8 @@ title = "French Toast"
 slug = "french-toast"
 date = 2025-06-26
 description = "Recipe featuring 0.5t ground nutmeg"
-[extra]
-  category = "main"
+[taxonomies]
+  foodcategory = ["main"]
 +++
 
 # French Toast

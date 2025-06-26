@@ -3,8 +3,8 @@ title = "Acorn Flour"
 slug = "acorn-flour"
 date = 2025-06-26
 description = "Recipe featuring fresh acorns for making flour"
-[extra]
-  category = "bread-pastry"
+[taxonomies]
+  foodcategory = ["bread-pastry"]
 +++
 
 # Acorn Flour

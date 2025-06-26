@@ -3,8 +3,8 @@ title = "White Dip"
 slug = "white-dip"
 date = 2025-06-26
 description = "Recipe featuring 450g large curd cottage cheese"
-[extra]
-  category = "dips-spreads"
+[taxonomies]
+  foodcategory = ["dips-spreads"]
 +++
 
 # Pandemic White Dip

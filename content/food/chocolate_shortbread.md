@@ -2,8 +2,8 @@
 title = "Chocolate Shortbread"
 slug = "chocolate-shortbread"
 date = 2025-06-26
-[extra]
-  category = "desserts-snacks"
+[taxonomies]
+  foodcategory = ["desserts-snacks"]
 +++
 
 # Dorie Greenspan's World Peace Cookies 2.0

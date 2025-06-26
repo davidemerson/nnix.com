@@ -3,8 +3,8 @@ title = "Lentils"
 slug = "lentils"
 date = 2025-06-26
 description = "Recipe featuring 3 small tomatoes"
-[extra]
-  category = "main"
+[taxonomies]
+  foodcategory = ["main"]
 +++
 
 # Lentils

@@ -3,8 +3,8 @@ title = "Gin"
 slug = "gin"
 date = 2025-06-26
 description = "Recipe featuring 750ml vodka (russian standard)"
-[extra]
-  category = "drinks"
+[taxonomies]
+  foodcategory = ["drinks"]
 +++
 
 # Gin

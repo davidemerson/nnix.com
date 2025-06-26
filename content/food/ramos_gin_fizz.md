@@ -3,8 +3,8 @@ title = "Ramos Gin Fizz"
 slug = "ramos-gin-fizz"
 date = 2025-06-26
 description = "Recipe featuring 2 ounces gin (old tom gin if you can get it)"
-[extra]
-  category = "drinks"
+[taxonomies]
+  foodcategory = ["drinks"]
 +++
 
 # Ramos Gin Fizz

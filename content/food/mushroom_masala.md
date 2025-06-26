@@ -3,8 +3,8 @@ title = "Mushroom Masala"
 slug = "mushroom-masala"
 date = 2025-06-26
 description = "Recipe featuring 340g baby bella mushrooms (may be substituted freely)"
-[extra]
-  category = "main"
+[taxonomies]
+  foodcategory = ["main"]
 +++
 
 # Mushroom Masala

@@ -3,8 +3,8 @@ title = "Tax Lawyer"
 slug = "tax-lawyer"
 date = 2025-06-26
 description = "Recipe featuring 2 oz genever"
-[extra]
-  category = "drinks"
+[taxonomies]
+  foodcategory = ["drinks"]
 +++
 
 # The Tax Lawyer

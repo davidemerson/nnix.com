@@ -3,8 +3,8 @@ title = "Sourdough Biscuits"
 slug = "sourdough-biscuits"
 date = 2025-06-26
 description = "Recipe featuring 120g all-purpose flour"
-[extra]
-  category = "bread-pastry"
+[taxonomies]
+  foodcategory = ["bread-pastry"]
 +++
 
 # Sourdough Biscuits

@@ -3,8 +3,8 @@ title = "Red Beans Rice"
 slug = "red-beans-rice"
 date = 2025-06-26
 description = "Recipe featuring 1 pound red kidney beans"
-[extra]
-  category = "main"
+[taxonomies]
+  foodcategory = ["main"]
 +++
 
 # Red Beans & Rice

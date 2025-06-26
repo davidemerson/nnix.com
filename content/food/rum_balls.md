@@ -3,8 +3,8 @@ title = "Rum Balls"
 slug = "rum-balls"
 date = 2025-06-26
 description = "Recipe featuring vanilla wafer crumbs"
-[extra]
-  category = "desserts-snacks"
+[taxonomies]
+  foodcategory = ["desserts-snacks"]
 +++
 
 # Holiday Rumballs

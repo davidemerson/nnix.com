@@ -3,8 +3,8 @@ title = "Emmy Dip"
 slug = "emmy-dip"
 date = 2025-06-26
 description = "Recipe featuring 225g cream cheese"
-[extra]
-  category = "dips-spreads"
+[taxonomies]
+  foodcategory = ["dips-spreads"]
 +++
 
 # Emmy's Dip

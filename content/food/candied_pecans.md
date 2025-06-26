@@ -3,8 +3,8 @@ title = "Candied Pecans"
 slug = "candied-pecans"
 date = 2025-06-26
 description = "Recipe featuring 1lb pecans"
-[extra]
-  category = "desserts-snacks"
+[taxonomies]
+  foodcategory = ["desserts-snacks"]
 +++
 
 # Candied Pecans

@@ -3,8 +3,8 @@ title = "Chocolate Chip Cookies"
 slug = "chocolate-chip-cookies"
 date = 2025-06-26
 description = "Recipe featuring 450g (4 sticks) unsalted butter"
-[extra]
-  category = "desserts-snacks"
+[taxonomies]
+  foodcategory = ["desserts-snacks"]
 +++
 
 # Chocolate Chip Cookies

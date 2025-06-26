@@ -1,10 +1,10 @@
-+++
+﻿+++
 title = "Denser Sourdough Bread"
 slug = "sourdough-bread"
 date = 2025-06-26
 description = "Recipe featuring sourdough starter"
-[extra]
-  category = "bread-pastry"
+[taxonomies]
+  foodcategory = ["bread-pastry"]
 +++
 
 # Denser Sourdough Bread

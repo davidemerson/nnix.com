@@ -2,8 +2,8 @@
 title = "Cinnamon Rolls"
 slug = "cinnamon-rolls"
 date = 2025-06-26
-[extra]
-  category = "desserts-snacks"
+[taxonomies]
+  foodcategory = ["desserts-snacks"]
 +++
 
 # Cinnamon Rolls, Fluffy

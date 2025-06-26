@@ -3,8 +3,8 @@ title = "Smoky Bonfire"
 slug = "smoky-bonfire"
 date = 2025-06-26
 description = "Recipe featuring 6oz smoked corn whiskey from tenth ward distillery (or some appropriate blended scotch)"
-[extra]
-  category = "drinks"
+[taxonomies]
+  foodcategory = ["drinks"]
 +++
 
 # Smoky Bonfire

@@ -3,8 +3,8 @@ title = "Dutch Connection"
 slug = "dutch-connection"
 date = 2025-06-26
 description = "Recipe featuring 1 oz genever"
-[extra]
-  category = "drinks"
+[taxonomies]
+  foodcategory = ["drinks"]
 +++
 
 # Dutch Connection

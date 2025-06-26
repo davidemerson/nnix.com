@@ -3,8 +3,8 @@ title = "Beef Bourguignonne"
 slug = "beef-bourguignonne"
 date = 2025-06-26
 description = "Recipe featuring 750ml red wine (beaujolais-villages works well)"
-[extra]
-  category = "main"
+[taxonomies]
+  foodcategory = ["main"]
 +++
 
 # Beef Bourguignonne

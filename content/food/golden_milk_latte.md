@@ -3,8 +3,8 @@ title = "Golden Milk Latte"
 slug = "golden-milk-latte"
 date = 2025-06-26
 description = "Recipe featuring 500ml oat milk"
-[extra]
-  category = "drinks"
+[taxonomies]
+  foodcategory = ["drinks"]
 +++
 
 # Golden Milk Latte

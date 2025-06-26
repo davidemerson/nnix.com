@@ -2,8 +2,8 @@
 title = "Margarita"
 slug = "margarita"
 date = 2025-06-26
-[extra]
-  category = "drinks"
+[taxonomies]
+  foodcategory = ["drinks"]
 +++
 
 # Margarita

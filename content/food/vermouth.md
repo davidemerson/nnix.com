@@ -3,8 +3,8 @@ title = "Vermouth"
 slug = "vermouth"
 date = 2025-06-26
 description = "Recipe featuring 5.87g star anise"
-[extra]
-  category = "drinks"
+[taxonomies]
+  foodcategory = ["drinks"]
 +++
 
 # David's Vermouth

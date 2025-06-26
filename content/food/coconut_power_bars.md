@@ -3,8 +3,8 @@ title = "Coconut Power Bars"
 slug = "coconut-power-bars"
 date = 2025-06-26
 description = "Recipe featuring 125g oats"
-[extra]
-  category = "desserts-snacks"
+[taxonomies]
+  foodcategory = ["desserts-snacks"]
 +++
 
 # Coconut Power Bars

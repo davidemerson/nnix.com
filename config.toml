@@ -10,7 +10,8 @@ taxonomies = [
 	{ name = "authorname" },
 	{ name = "pubyear" },
 	{ name = "rating" },
-	{ name = "readstate" }
+	{ name = "readstate" },
+	{ name = "foodcategory" }
 ]
 
 [slugify]

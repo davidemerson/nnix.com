@@ -3,8 +3,8 @@ title = "Steak"
 slug = "steak"
 date = 2025-06-26
 description = "Recipe featuring top loin or ny strip roast cut into steaks"
-[extra]
-  category = "main"
+[taxonomies]
+  foodcategory = ["main"]
 +++
 
 # Black & Blue NY Strip

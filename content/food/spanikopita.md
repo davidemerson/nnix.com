@@ -2,8 +2,8 @@
 title = "Spanikopita"
 slug = "spanikopita"
 date = 2025-06-26
-[extra]
-  category = "main"
+[taxonomies]
+  foodcategory = ["main"]
 +++
 
 # Spanakopita

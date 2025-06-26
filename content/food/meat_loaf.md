@@ -2,8 +2,8 @@
 title = "Meat Loaf"
 slug = "meat-loaf"
 date = 2025-06-26
-[extra]
-  category = "main"
+[taxonomies]
+  foodcategory = ["main"]
 +++
 
 # Meat Loaf

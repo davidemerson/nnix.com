@@ -3,8 +3,8 @@ title = "Mint Ginger Iced Tea"
 slug = "mint-ginger-iced-tea"
 date = 2025-06-26
 description = "Recipe featuring 200g fresh mint"
-[extra]
-  category = "drinks"
+[taxonomies]
+  foodcategory = ["drinks"]
 +++
 
 # Mint Ginger Iced Tea

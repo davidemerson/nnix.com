@@ -2,8 +2,8 @@
 title = "Butter Chicken"
 slug = "butter-chicken"
 date = 2025-06-26
-[extra]
-  category = "main"
+[taxonomies]
+  foodcategory = ["main"]
 +++
 
 # Butter Chicken

@@ -3,8 +3,8 @@ title = "Ghost Pepper Sauce"
 slug = "ghost-pepper-sauce"
 date = 2025-06-26
 description = "Recipe featuring 1t olive oil"
-[extra]
-  category = "dips-spreads"
+[taxonomies]
+  foodcategory = ["dips-spreads"]
 +++
 
 # Ghost Pepper Sauce

@@ -3,8 +3,8 @@ title = "Smashed Hamburgers"
 slug = "smashed-hamburgers"
 date = 2025-06-26
 description = "Recipe featuring 2t mayonnaise"
-[extra]
-  category = "main"
+[taxonomies]
+  foodcategory = ["main"]
 +++
 
 # Smashed Hamburgers

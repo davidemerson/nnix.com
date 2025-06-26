@@ -3,8 +3,8 @@ title = "Bourbon Milk Punch"
 slug = "bourbon-milk-punch"
 date = 2025-06-26
 description = "Recipe featuring 2 oz bourbon"
-[extra]
-  category = "drinks"
+[taxonomies]
+  foodcategory = ["drinks"]
 +++
 
 # Bourbon Milk Punch

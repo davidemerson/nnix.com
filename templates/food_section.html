@@ -7,15 +7,57 @@
 {{ section.content | safe }}
 {% set pages = section.pages %}
 
-<h2>recipes</h2>
+<h2>categories</h2>
+<ul>
+  <p><li><a href="/foodcategory/bread-pastry/">bread & pastry</a></li></p>
+  <p><li><a href="/foodcategory/desserts-snacks/">desserts & snacks</a></li></p>
+  <p><li><a href="/foodcategory/dips-spreads/">dips & spreads</a></li></p>
+  <p><li><a href="/foodcategory/drinks/">drinks</a></li></p>
+  <p><li><a href="/foodcategory/main/">main dishes</a></li></p>
+</ul>
+
+<h2 id="bread-pastry">bread & pastry</h2>
 <ul>
 {% for page in pages %}
-  <p><li>
-    <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-    {% if page.description %}
-    - {{ page.description }}
-    {% endif %}
-  </li></p>
+  {% if page.taxonomies.foodcategory and page.taxonomies.foodcategory[0] == "bread-pastry" %}
+  <p><li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li></p>
+  {% endif %}
+{% endfor %}
+</ul>
+
+<h2 id="desserts-snacks">desserts & snacks</h2>
+<ul>
+{% for page in pages %}
+  {% if page.taxonomies.foodcategory and page.taxonomies.foodcategory[0] == "desserts-snacks" %}
+  <p><li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li></p>
+  {% endif %}
+{% endfor %}
+</ul>
+
+<h2 id="dips-spreads">dips & spreads</h2>
+<ul>
+{% for page in pages %}
+  {% if page.taxonomies.foodcategory and page.taxonomies.foodcategory[0] == "dips-spreads" %}
+  <p><li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li></p>
+  {% endif %}
+{% endfor %}
+</ul>
+
+<h2 id="drinks">drinks</h2>
+<ul>
+{% for page in pages %}
+  {% if page.taxonomies.foodcategory and page.taxonomies.foodcategory[0] == "drinks" %}
+  <p><li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li></p>
+  {% endif %}
+{% endfor %}
+</ul>
+
+<h2 id="main">main dishes</h2>
+<ul>
+{% for page in pages %}
+  {% if page.taxonomies.foodcategory and page.taxonomies.foodcategory[0] == "main" %}
+  <p><li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li></p>
+  {% endif %}
 {% endfor %}
 </ul>
 

@@ -3,8 +3,8 @@ title = "Bearnaise Hollandaise"
 slug = "bearnaise-hollandaise"
 date = 2025-06-26
 description = "Recipe featuring 5 egg yolks"
-[extra]
-  category = "main"
+[taxonomies]
+  foodcategory = ["main"]
 +++
 
 # Sauces Bearnaise & Hollandaise

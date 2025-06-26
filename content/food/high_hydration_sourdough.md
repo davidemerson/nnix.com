@@ -3,8 +3,8 @@ title = "High Hydration Sourdough"
 slug = "high-hydration-sourdough"
 date = 2025-06-26
 description = "Recipe featuring 900g white bread flour"
-[extra]
-  category = "bread-pastry"
+[taxonomies]
+  foodcategory = ["bread-pastry"]
 +++
 
 # Sourdough Bread, 75% Hydration

@@ -3,8 +3,8 @@ title = "Nut Granola Bars"
 slug = "nut-granola-bars"
 date = 2025-06-26
 description = "Recipe featuring 200g walnuts"
-[extra]
-  category = "desserts-snacks"
+[taxonomies]
+  foodcategory = ["desserts-snacks"]
 +++
 
 # Nut Granola Bars

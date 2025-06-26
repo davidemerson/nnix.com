@@ -3,8 +3,8 @@ title = "Ginger Limeade"
 slug = "ginger-limeade"
 date = 2025-06-26
 description = "Recipe featuring 150ml lime juice"
-[extra]
-  category = "drinks"
+[taxonomies]
+  foodcategory = ["drinks"]
 +++
 
 # Limeade or Ginger Limeade

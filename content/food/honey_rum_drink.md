@@ -2,8 +2,8 @@
 title = "Honey Rum Drink"
 slug = "honey-rum-drink"
 date = 2025-06-26
-[extra]
-  category = "drinks"
+[taxonomies]
+  foodcategory = ["drinks"]
 +++
 
 # David's Honey-Rum Drink

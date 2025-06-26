@@ -3,8 +3,8 @@ title = "Coffee"
 slug = "coffee"
 date = 2025-06-26
 description = "Recipe featuring 22g ground coffee"
-[extra]
-  category = "drinks"
+[taxonomies]
+  foodcategory = ["drinks"]
 +++
 
 # Aeropress

@@ -3,8 +3,8 @@ title = "Toronto"
 slug = "toronto"
 date = 2025-06-26
 description = "Recipe featuring 2oz rye"
-[extra]
-  category = "drinks"
+[taxonomies]
+  foodcategory = ["drinks"]
 +++
 
 # Toronto

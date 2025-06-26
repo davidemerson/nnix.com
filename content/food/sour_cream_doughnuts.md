@@ -2,8 +2,8 @@
 title = "Sour Cream Doughnuts"
 slug = "sour-cream-doughnuts"
 date = 2025-06-26
-[extra]
-  category = "bread-pastry"
+[taxonomies]
+  foodcategory = ["bread-pastry"]
 +++
 
 # Sour Cream Doughnuts
