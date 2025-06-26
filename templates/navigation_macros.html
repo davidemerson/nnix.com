@@ -1,0 +1,33 @@
+{% macro back_nav() %}
+<div><a href=".."><<<</a></div>
+{% endmacro back_nav %}
+
+{% macro section_header(title, content) %}
+{{ self::back_nav() }}
+<h1>{{ title }}</h1>
+{{ content | safe }}
+{% endmacro section_header %}
+
+{% macro page_header(title, date, show_toc=false, toc=null) %}
+{{ self::back_nav() }}
+<h1>{{ title }}</h1>
+{% if date %}
+<p><emph><time datetime="{{ date }}">↻ {{ date }}</time></emph></p>
+{% endif %}
+{% if show_toc and toc %}
+<ul>
+  {% for h1 in toc %}
+  <li>
+    <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+    {% if h1.children %}
+    <ul>
+      {% for h2 in h1.children %}
+      <li><a href="{{ h2.permalink | safe }}">{{ h2.title }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
+{% endmacro page_header %}

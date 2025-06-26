@@ -1,0 +1,25 @@
+{% macro simple_page_list(pages, show_descriptions=true) %}
+<ul>
+{% for page in pages %}
+  <li>
+    <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+    {% if show_descriptions and page.description %}
+    : {{ page.description }}
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
+{% endmacro simple_page_list %}
+
+{% macro categorized_page_list(pages, category_field, categories) %}
+{% for category in categories %}
+<h2 id="{{ category.slug }}">{{ category.name }}</h2>
+<ul>
+{% for page in pages %}
+  {% if page.taxonomies[category_field] and page.taxonomies[category_field][0] == category.slug %}
+  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+{% endfor %}
+{% endmacro categorized_page_list %}

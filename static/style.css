@@ -3,7 +3,19 @@
 @font-face { font-family: 'nnixbold'; src: url("/fonts/nnixbold.woff2") format("woff2"); }
 @font-face { font-family: 'nnixmono'; src: url("/fonts/nnixmono.woff2") format("woff2"); }
 @font-face { font-family: 'nnixmedium'; src: url("/fonts/nnixmedium.woff2") format("woff2"); }
-:root { --bg-color: #f2f2f2; --secondary-bg-color: #d9d9d9; --border-radius: 15px; }
+/* CSS Custom Properties for easier theming */
+:root { 
+  --bg-color: #f2f2f2; 
+  --secondary-bg-color: #d9d9d9; 
+  --border-radius: 15px;
+  --font-family-text: 'nnixbook';
+  --font-family-bold: 'nnixbold';
+  --font-family-italic: 'nnixitalic';
+  --font-family-mono: 'nnixmono';
+  --font-family-medium: 'nnixmedium';
+  --max-width: 80ch;
+  --spacing-unit: 2ch;
+}
 html, body { background-color: var(--bg-color); margin: 0; padding: 0; }
 main { max-width: 80ch; padding: 2ch; margin: auto; font-family: 'nnixbook'; font-size: 100%; line-height: 1.6; min-height: 100vh; }
 code, pre, tt, kbd, samp { overflow-wrap: break-word; word-wrap: break-word; white-space: pre-wrap; overflow-x: auto; width: 100%; box-sizing: border-box; background-color: var(--secondary-bg-color); font-family: "nnixmono"; font-size: 90%; font-weight: 500; }

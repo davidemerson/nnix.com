@@ -31,3 +31,17 @@ author = "David Emerson"
 default_theme = "light"
 twitter_card = true
 epoch = "PLACEHOLDER"
+
+# Site sections configuration
+[extra.sections]
+projects = { title = "projects", description = "Things I've built and made" }
+reading = { title = "reading", description = "Books I've read and want to read" }
+food = { title = "food", description = "Recipes and cooking experiments" }
+
+# Food categories for cleaner template logic
+[extra.food_categories]
+bread-pastry = "bread & pastry"
+desserts-snacks = "desserts & snacks"
+dips-spreads = "dips & spreads"
+drinks = "drinks"
+main = "main dishes"
