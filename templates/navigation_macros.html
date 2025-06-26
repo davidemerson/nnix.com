@@ -8,7 +8,7 @@
 {{ content | safe }}
 {% endmacro section_header %}
 
-{% macro page_header(title, date, show_toc=false, toc=null) %}
+{% macro page_header(title, date, show_toc=false, toc) %}
 {{ self::back_nav() }}
 <h1>{{ title }}</h1>
 {% if date %}
