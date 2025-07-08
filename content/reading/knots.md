@@ -4,7 +4,7 @@ date = 2025-06-16
 # if you don't use a taxonomy, delete it
 # empty fields not allowed
 [taxonomies]
-  readstate = ["queue"]
+  readstate = ["reading"]
   authorname = ["Liang, R.D"]
   pubyear = ["1970"]
   rating = ["NR"]
