@@ -11,8 +11,12 @@ date = 2025-07-01
   rating = ["NR"]
 +++
 
-# Chapter 12, it's so good
-You can see how this book has reached a great boundary that was called 1900. Another Hundred years were ground up and churned, and what had happened was all muddied by the way folks wanted it to be - more rich and meaningful the farther back it was. In the books of some memories it was the best time that ever sloshed over the world - the old time, the gay time, sweet and simple, as though time were young and fearless. Old men who didn't know whether they were going to stagger over the boundary of the century looked forward to it with distaste. For the world was changing, and sweetness was gone, and virtue too. Worry had crept on a corroding world, and what was lost - good manner, ease, and beauty? Ladies were not ladies any more, and you couldn't trust a gentleman's word.
+East of Eden is one of the best books I have read. The language is tight, the themes accessible, and yet never simplistic. Excellent.
+
+I'm still reading it, but Chapter 12 is best chapter so far, and short enough to put here in full.
+
+# Chapter 12
+You can see how this book has reached a great boundary that was called 1900. Another hundred years were ground up and churned, and what had happened was all muddied by the way folks wanted it to be - more rich and meaningful the farther back it was. In the books of some memories it was the best time that ever sloshed over the world - the old time, the gay time, sweet and simple, as though time were young and fearless. Old men who didn't know whether they were going to stagger over the boundary of the century looked forward to it with distaste. For the world was changing, and sweetness was gone, and virtue too. Worry had crept on a corroding world, and what was lost - good manner, ease, and beauty? Ladies were not ladies any more, and you couldn't trust a gentleman's word.
 
 There was a time when people kept their fly-buttons fastened. And man's freedom was boiling off. And even childhood was not good any more - not the way it was. No worry then but how to find a good stone, not round exactly but flattened and water-shaped, to use in a sling pouch cut from a discarded shoe. Where did all the good stones go, and all simplicity?
 
