@@ -1,21 +1,25 @@
 +++
 title = "East of Eden"
-date = 2025-07-29
+date = 2025-08-20
 # if you don't use a taxonomy, delete it
 # empty fields not allowed
 [taxonomies]
-  readstate = ["reading"]
+  readstate = ["read"]
   authorname = ["Steinbeck, John"]
   pubyear = ["1952"]
   recommender = ["Elizabeth B."]
-  rating = ["NR"]
+  rating = ["5"]
 +++
 
 East of Eden is one of the best books I have read. The language is tight, the themes accessible, and yet never simplistic. Excellent.
 
 Lovable, flawed, evil, virtue. It's a kind of timeless book that doesn't stake itself in a particular morality, and will be readable a hundred years from now without feeling foreign because it leaves so much interpretation to the reader.
 
-I've put a few especially good excerpts here.
+The parts with the children are weakest. In fact, the last third of the book up until the final five chapters or so is notably weaker, in my opinion. This does not weaken the whole book, only makes it long in parts.
+
+"Timshel" might be iconic (for its use and its incorrectness) but don't worry much about that. The message of the book just needed a symbol, why not a made up word?
+
+I've put a few especially good excerpts here. I was a big fan of the short 'interlude' chapters.
 
 # Chapter 12
 

@@ -1,14 +1,22 @@
 +++
 title = "Critique of the Power of Judgment"
-date = 2025-01-09
+date = 2025-08-20
 # if you don't use a taxonomy, delete it
 # empty fields not allowed
 [taxonomies]
-  readstate = ["reading"]
+  readstate = ["read"]
   authorname = ["Kant, Immanuel"]
   pubyear = ["1790"]
   recommender = ["Julian P."]
+  rating = ["4"]
 +++
+
+# the message
+"The powers of cognition that are set into play by this representation are hereby in a free play, since no determinate concept restricts them to a particular rule of cognition. Thus the state of mind in this representation must be that of a feeling of the free play of the powers of representation in a given representation for a cognition in general. Now there belongs to a representation by which an object is given, in order for there to be cognition of it in general, imagination for the composition of the manifold of intuition and understanding for the unity of the concept that unifies the representations. This state of a free play of the faculties of cognition with a representation through which an object is given must be able to be universally communicated, because cognition, as a determination of the object with which given representations (in whatever subject it may be) should agree, is the only kind of representation that is valid for everyone." [...] "That is beautiful which pleases universally without a concept." (5:217+ / Section 9)
+
+To be fair, I was pointed at the above, but I agree it's the poignant bit. Interplay, between understanding and imagination, is the process through which judgment occurs, and ultimately through which beauty may be derived universally.
+
+# notes
 
 How do we judge aesthetic objects, whether beautiful or sublime, and what is the role of our faculties in making these judgments?
 
