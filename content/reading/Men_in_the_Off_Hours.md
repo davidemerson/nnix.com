@@ -7,7 +7,7 @@ date = 2025-09-29
   readstate = ["read"]
   authorname = ["Carson, Anne"]
   pubyear = ["2000"]
-  rating = ["5"]
+  rating = ["3"]
 +++
 
 Wrong Norma is more interesting, but you can't help love the unsettling feeling of Carson's language. She's a word wizard, and uses her powers to keep you feeling without ease.
