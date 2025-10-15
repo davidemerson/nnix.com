@@ -1,6 +1,6 @@
 base_url = "https://nnix.com"
 title = "nnix.com"
-description = "novo nilbud by swamplight: coal’s short but we got plenty of bog in the yard"
+description = "novo nilbud by swamplight: coal’s short but we've got plenty of bog in the yard"
 compile_sass = false
 minify_html = false
 default_language = "en"
