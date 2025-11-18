@@ -1,6 +1,171 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} – nnix.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% block content %}
+  <!-- use the site’s main stylesheet -->
+  <link rel="stylesheet" href="/style.css">
+
+  <style>
+    .oracle-header {
+      margin-bottom: 1.5rem;
+    }
+    .oracle-header h1 {
+      margin: 0 0 0.25rem;
+      text-transform: lowercase;
+    }
+    .oracle-header p {
+      margin: 0;
+    }
+
+    .oracle-controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 1ch;
+      margin: 2ch 0;
+    }
+
+    .oracle-controls button {
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid #000;
+      background: transparent;
+      font-family: var(--font-family-medium);
+      font-size: 0.95em;
+      text-transform: lowercase;
+      cursor: pointer;
+    }
+
+    .oracle-controls button:hover,
+    .oracle-controls button:focus-visible {
+      background-color: #000;
+      color: #f2f2f2;
+    }
+
+    .oracle-controls button:disabled {
+      opacity: 0.5;
+      cursor: default;
+      background: transparent;
+      color: inherit;
+    }
+
+    #castStatus {
+      font-family: var(--font-family-mono);
+      font-size: 0.85em;
+    }
+
+    .oracle-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2ch;
+      margin-bottom: 3ch;
+    }
+
+    @media (max-width: 800px) {
+      .oracle-columns {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .hex-box {
+      border-radius: var(--border-radius);
+      background-color: var(--secondary-bg-color);
+      padding: 1.5ch;
+    }
+
+    .hex-box h2 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      text-transform: lowercase;
+    }
+
+    .oracle-label {
+      margin: 0 0 1rem;
+      font-size: 0.95em;
+    }
+
+    .hex-lines {
+      display: flex;
+      flex-direction: column-reverse; /* show line 6 at top */
+      gap: 0.2rem;
+      font-family: var(--font-family-mono);
+      margin-bottom: 1rem;
+    }
+
+    .line {
+      display: flex;
+      align-items: center;
+      gap: 1ch;
+      font-size: 0.85em;
+    }
+
+    .line-num {
+      width: 3ch;
+      text-align: right;
+      color: #555;
+    }
+
+    .line-glyph {
+      flex: 1;
+      letter-spacing: 0.2ch;
+    }
+
+    .line-kind {
+      white-space: nowrap;
+      color: #555;
+    }
+
+    .line.changing .line-glyph {
+      text-decoration: underline;
+    }
+    .line.changing .line-kind {
+      font-family: var(--font-family-medium);
+    }
+
+    .oracle-meta {
+      font-size: 0.9em;
+      margin: 0.4rem 0;
+    }
+
+    .oracle-meta label {
+      display: block;
+      font-family: var(--font-family-mono);
+      font-size: 0.8em;
+      color: #666;
+      margin-bottom: 0.1rem;
+    }
+
+    .oracle-meta code {
+      display: inline-block;
+      padding: 0.1rem 0.4rem;
+      border-radius: 999px;
+      background-color: #f2f2f2;
+    }
+
+    .oracle-symbol {
+      font-size: 1.4em;
+      line-height: 1;
+    }
+
+    .oracle-notes h2 {
+      text-transform: lowercase;
+    }
+
+    .oracle-notes p {
+      margin-top: 0;
+    }
+
+    main {
+      max-width: 60rem;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+  </style>
+</head>
+<body>
 <main>
   <header class="oracle-header">
     <h1>I Ching hexagram oracle</h1>
@@ -82,138 +247,7 @@
     </p>
   </section>
 </main>
-{% endblock content %}
 
-{% block html_head %}
-  {{ super() }}
-  <style>
-    .oracle-header { margin-bottom: 1.5rem; }
-    .oracle-header h1 { margin: 0 0 0.25rem; text-transform: lowercase; }
-    .oracle-header p { margin: 0; }
-
-    .oracle-controls {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: baseline;
-      gap: 1ch;
-      margin: 2ch 0;
-    }
-
-    .oracle-controls button {
-      padding: 0.4rem 0.9rem;
-      border-radius: 999px;
-      border: 1px solid #000;
-      background: transparent;
-      font-family: var(--font-family-medium);
-      font-size: 0.95em;
-      text-transform: lowercase;
-      cursor: pointer;
-    }
-
-    .oracle-controls button:hover,
-    .oracle-controls button:focus-visible {
-      background-color: #000;
-      color: #f2f2f2;
-    }
-
-    .oracle-controls button:disabled {
-      opacity: 0.5;
-      cursor: default;
-      background: transparent;
-      color: inherit;
-    }
-
-    #castStatus {
-      font-family: var(--font-family-mono);
-      font-size: 0.85em;
-    }
-
-    .oracle-columns {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2ch;
-      margin-bottom: 3ch;
-    }
-
-    @media (max-width: 800px) {
-      .oracle-columns { grid-template-columns: 1fr; }
-    }
-
-    .hex-box {
-      border-radius: var(--border-radius);
-      background-color: var(--secondary-bg-color);
-      padding: 1.5ch;
-    }
-
-    .hex-box h2 {
-      margin-top: 0;
-      margin-bottom: 0.5rem;
-      text-transform: lowercase;
-    }
-
-    .oracle-label {
-      margin: 0 0 1rem;
-      font-size: 0.95em;
-    }
-
-    .hex-lines {
-      display: flex;
-      flex-direction: column-reverse;
-      gap: 0.2rem;
-      font-family: var(--font-family-mono);
-      margin-bottom: 1rem;
-    }
-
-    .line {
-      display: flex;
-      align-items: center;
-      gap: 1ch;
-      font-size: 0.85em;
-    }
-
-    .line-num {
-      width: 3ch;
-      text-align: right;
-      color: #555;
-    }
-
-    .line-glyph {
-      flex: 1;
-      letter-spacing: 0.2ch;
-    }
-
-    .line-kind {
-      white-space: nowrap;
-      color: #555;
-    }
-
-    .line.changing .line-glyph { text-decoration: underline; }
-    .line.changing .line-kind { font-family: var(--font-family-medium); }
-
-    .oracle-meta { font-size: 0.9em; margin: 0.4rem 0; }
-
-    .oracle-meta label {
-      display: block;
-      font-family: var(--font-family-mono);
-      font-size: 0.8em;
-      color: #666;
-      margin-bottom: 0.1rem;
-    }
-
-    .oracle-meta code {
-      display: inline-block;
-      padding: 0.1rem 0.4rem;
-      border-radius: 999px;
-      background-color: #f2f2f2;
-    }
-
-    .oracle-symbol { font-size: 1.4em; line-height: 1; }
-    .oracle-notes h2 { text-transform: lowercase; }
-    .oracle-notes p { margin-top: 0; }
-  </style>
-{% endblock html_head %}
-
-{% block scripts %}
-  {{ super() }}
-  <script src="{{ get_url(path='oracle.js') }}"></script>
-{% endblock scripts %}
+<script src="{{ get_url(path='oracle.js') }}"></script>
+</body>
+</html>
