@@ -40,3 +40,6 @@ description = "life for man was hard and cruel before metal"
 - a 3/8" (or thicker) top also has good magnetic properties for holding a mag drill, which can be used as a tabletop drill press
 
 ## squares
+- You cannot have too many locking plier clamps.
+- Fireball squares are the best design for clamping something square.
+- Square things up as much as you can for any given set of welds, don't just square on one axis or only one joint at a time. This means you need more squares and more clamps, but yes, you do.

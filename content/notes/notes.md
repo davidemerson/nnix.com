@@ -25,6 +25,7 @@ description = "existence and management of the same"
 * [responsibility] the world is becoming, never being (Rovelli)
 * [innovation] we sequester innovation, this is why expensive initial development is not wasteful if properly recorded
 * everyone is either an asshole or an imbecile
+* you are only as vulnerable as your darkest secret
 
 # leadership
 Leadership is service. You are a catalyst, not a director, and to lead with positional authority, without anyone appointing you, you must:
