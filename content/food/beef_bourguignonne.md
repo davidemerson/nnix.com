@@ -10,9 +10,10 @@ description = "Recipe featuring 750ml red wine (beaujolais-villages works well)"
 # Beef Bourguignonne
 
 ## Ingredients
+* 1.5kg beef chuck roast
 * 750mL red wine (Beaujolais-Villages works well)
 * six carrots
-* 15 medium onions
+* five medium onions
 * two stalks celery
 * two cloves garlic
 * 4 Tablespoons butter
@@ -29,11 +30,13 @@ description = "Recipe featuring 750ml red wine (beaujolais-villages works well)"
 * Make a bouquet garni: wrap peppercorns, parsley, thyme, and bay leaves in cheesecloth and tie to ensure they don't escape.
 * Skin onions but leave them whole.
 * Chop bacon or salt pork coarsley.
+* Cut beef chuck roast into pieces about the size of a golf ball (something you'd want to eat in two bites).
+* Place cut beef chuck roast pieces on paper towel to dry, pat dry all sides. and leave on paper towel until needed.
 * Peel and section carrots.
 * Chop celery.
 * In a large cast iron pot over medium-high heat, melt four tablespoons of butter and fry the salt pork or bacon until lightly brown.
 * Remove the salt pork/bacon, leaving the fat. In the fat over medium-high temperature, brown the whole onions, just the ends will be fine. Remove the onions.
-* Pat the meat dry and brown the meat in the same fat.
+* Brown the beef chuck roast pieces in the same fat.
 * When meat is brown on all sides, turn heat to low and re-add onion, carrots, celery, bouquet garni. Cover and simmer 20min.
 * After a 20min simmer, remove all solids from the pan, and you should have juice in the bottom. Make a roux with a small amount of the juice and the flour, then introduce the roux to the rest of the liquid and whisk over medium heat until thickened, perhaps four minutes.
 * Add tomato paste to liquid.
