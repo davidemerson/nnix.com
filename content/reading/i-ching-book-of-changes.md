@@ -4,7 +4,7 @@ date = 2026-01-15
 # if you don't use a taxonomy, delete it
 # empty fields not allowed
 [taxonomies]
-  readstate = ["reading"]
+  readstate = ["read"]
   authorname = ["Baynes, Cary"]
   pubyear = ["1967"]
   rating = ["2"]
