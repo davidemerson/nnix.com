@@ -91,3 +91,16 @@ Give as few orders as possible. Once you give orders on a subject, you'll always
 
 # product
 Sell me potable water. That's a commodity. It's comparable. Expand to exotic incomparables once I like your water and your delivery staff (basics are saleable, fluff is experiential)
+
+# doing things
+Use tools, not tool shaped objects. The output cannot be the operation of the tool - it’s got to be something else, or the tool is a tool shaped object. Even genuine tools can be tool shaped objects when used without purpose.
+
+# sayings
+"Nobody knows why you go to a picnic to be uncomfortable when it is so easy and pleasant to eat at home." - Steinbeck
+"The greatest good you can do for another is not just to share your riches, but to reveal to him his own." - Benjamin Disraeli
+"A camel is a horse designed by committee" - Alec Issigonis
+"Glittergates of elfinbone" - Joyce (FW)
+"Novo Nilbud by swamplight" - Joyce (FW)
+"Coal's short but we got plenty of bog in the yard." - Joyce (FW)
+"A crown is a hat that lets the rain in." - Frederick the Great
+"Bringing owls to Athens" - ?
