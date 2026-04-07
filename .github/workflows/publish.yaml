@@ -4,20 +4,24 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
-  run:
+  deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install Zola
         uses: taiki-e/install-action@v2
         with:
-          tool: zola@0.17.2
+          tool: zola@0.22.1
 
       - name: Generate Current Unix Epoch
         id: get_epoch
@@ -30,15 +34,33 @@ jobs:
       - name: Build Zola Site
         run: zola build
 
-      - name: Deploy to S3
-        uses: reggionick/s3-deploy@v4
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
         with:
-          folder: public
-          bucket: nnix.com
-          private: true
-          bucket-region: us-east-1
-          dist-id: E4DE96M2EUA2N
-          invalidation: /*
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Sync to S3
+        run: |
+          # HTML/XML/JSON: short cache
+          aws s3 sync public/ s3://nnix.com \
+            --delete \
+            --cache-control "max-age=300, must-revalidate" \
+            --exclude "*" \
+            --include "*.html" \
+            --include "*.xml" \
+            --include "*.json"
+
+          # Static assets: long cache
+          aws s3 sync public/ s3://nnix.com \
+            --cache-control "max-age=31536000, immutable" \
+            --exclude "*.html" \
+            --exclude "*.xml" \
+            --exclude "*.json"
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "/*"

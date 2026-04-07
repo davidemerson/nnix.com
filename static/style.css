@@ -1,8 +1,8 @@
-@font-face { font-family: 'nnixbook'; src: url("/fonts/nnixbook.woff2") format("woff2"); }
-@font-face { font-family: 'nnixitalic'; src: url("/fonts/nnixitalic.woff2") format("woff2"); }
-@font-face { font-family: 'nnixbold'; src: url("/fonts/nnixbold.woff2") format("woff2"); }
-@font-face { font-family: 'nnixmono'; src: url("/fonts/nnixmono.woff2") format("woff2"); }
-@font-face { font-family: 'nnixmedium'; src: url("/fonts/nnixmedium.woff2") format("woff2"); }
+@font-face { font-family: 'nnixbook'; src: url("/fonts/nnixbook.woff2") format("woff2"); font-display: swap; }
+@font-face { font-family: 'nnixitalic'; src: url("/fonts/nnixitalic.woff2") format("woff2"); font-display: swap; }
+@font-face { font-family: 'nnixbold'; src: url("/fonts/nnixbold.woff2") format("woff2"); font-display: swap; }
+@font-face { font-family: 'nnixmono'; src: url("/fonts/nnixmono.woff2") format("woff2"); font-display: swap; }
+@font-face { font-family: 'nnixmedium'; src: url("/fonts/nnixmedium.woff2") format("woff2"); font-display: swap; }
 /* CSS Custom Properties for easier theming */
 :root { 
   --bg-color: #f2f2f2; 

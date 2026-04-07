@@ -2,7 +2,7 @@ base_url = "https://nnix.com"
 title = "nnix.com"
 description = "novo nilbud by swamplight: coal’s short but we've got plenty of bog in the yard"
 compile_sass = false
-minify_html = false
+minify_html = true
 default_language = "en"
 
 taxonomies = [
@@ -22,7 +22,6 @@ anchors = "on"
 render_emoji = true
 external_links_target_blank = true
 smart_punctuation = true
-render_unsafe = true
 
 [link_checker]
 internal_level = "warn"
