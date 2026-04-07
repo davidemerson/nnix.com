@@ -1,7 +1,7 @@
 +++
 title = "nnix.com"
 slug = "nnix"
-date = 2024-10-07
+date = 2026-04-07
 description = "a cheap way to host a simple static blog."
 [extra]
   toc = true
@@ -12,7 +12,7 @@ I migrated from Gemini in September 2024, and not everything came along for the 
 
 The web isn't such a bad place if you have discretion.
 
-This site is a collection of plaintext markdown files stored in git (I use GitHub for this at writing). When I push a change to the main branch of the repository hosting these files, a GitHub action kicks off and compiles the markdown files into html using Zola, a static site generator.
+This site is a collection of plaintext markdown files stored in git (I use GitHub for this at writing). When I push a change to the main branch of the repository hosting these files, a GitHub action kicks off and compiles the markdown files into html using [Zola](https://www.getzola.org/), a static site generator. There's also a separate action that validates the build on pull requests, so I can catch breakage before it hits production.
 
 You don't need wordpress for a few pages. Heck, you don't need wordpress for even a hundred pages. I'm not saying it's a bad idea, just that it's convoluted to design, maybe more expensive, and definitely harder to administer than this kind of setup, which can be run in an S3 bucket from a github repository.
 
@@ -65,7 +65,7 @@ arn:aws:cloudfront::8986388484237:distribution/E4DE38M2FUA4N
 It points to the foo.com bucket origin above and has a foo.com CNAME attached to it with a custom certificate.
 
 # foo.com Certificate
-CloudFront needs a cert, so we have AWS ACM issue one for foo.com. It has to be RSA2048 to work properly for now, the EC options sound cool but they don't work as of September 2024 in CloudFront.
+CloudFront needs a cert, so we have AWS ACM issue one for foo.com. ECDSA P-256 certs now work with CloudFront, but RSA 2048 is still the safe default if you don't want to think about it.
 
 # foo.com A record
 We use the A record alias feature in Route53 to point to the CloudFront distribution for foo.com. This only works once the custom CNAME and certificate are in place, of course.
@@ -111,39 +111,114 @@ Once the policy is created you need to create a new user under IAM > Users. Give
 From the list of users click on your newly created account and then open the Security Credentials tab. Under Access keys select > Create access key and choose Command Line Interface (CLI). Click "I understand the above recommendation" and then Create access key. Note the Access Key ID and Secret Access Key.
 
 # GitHub Setup
-Next we need to create the Github Action to build and deploy our files to S3. We need to create a workflow file in .github/workflows directory of our repository. This can be done by navigating to the Actions tab in GitHub or by commiting the file from your machine.
+Next we need to create the Github Actions workflows. We need workflow files in the .github/workflows directory of our repository. This can be done by navigating to the Actions tab in GitHub or by committing the files from your machine.
 
-.github/workflows/publish.yml should look like this:
+First, store your AWS credentials and CloudFront distribution ID as GitHub secrets. Go to your repo's Settings > Secrets and variables > Actions, and add:
+* `AWS_ACCESS_KEY_ID` — the access key you recorded earlier
+* `AWS_SECRET_ACCESS_KEY` — the corresponding secret key
+* `CLOUDFRONT_DISTRIBUTION_ID` — the ID of your CloudFront distribution (e.g. `E4DE38M2FUA4N`)
+
+## deploy workflow
+
+.github/workflows/publish.yaml handles building and deploying on push to main:
 ```
 name: Build and Publish to AWS
+
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
 jobs:
-  run:
+  deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: taiki-e/install-action@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Zola
+        uses: taiki-e/install-action@v2
         with:
-          tool: zola@0.17.2
-      - name: Build
+          tool: zola@0.22.1
+
+      - name: Build Zola Site
         run: zola build
-      - uses: reggionick/s3-deploy@v4
-        env:
-          AWS_ACCESS_KEY_ID: your_access_key
-          AWS_SECRET_ACCESS_KEY: your_secret_key
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
         with:
-          folder: public
-          bucket: foo.com
-          private: true
-          bucket-region: us-east-1
-          dist-id: E4DE38M2FUA4N
-          invalidation: /*
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Sync to S3
+        run: |
+          # HTML/XML/JSON: short cache, revalidate often
+          aws s3 sync public/ s3://foo.com \
+            --delete \
+            --cache-control "max-age=300, must-revalidate" \
+            --exclude "*" \
+            --include "*.html" \
+            --include "*.xml" \
+            --include "*.json"
+
+          # Static assets: long cache, immutable
+          aws s3 sync public/ s3://foo.com \
+            --cache-control "max-age=31536000, immutable" \
+            --exclude "*.html" \
+            --exclude "*.xml" \
+            --exclude "*.json"
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "/*"
 ```
-Note, that you may need to change the branch name in the above snippet if you desire a different behavior, and you need to input the access key ID and secret which you recorded previously. Also put the correct dist-id (which is just the ID of your CloudFront Distribution for this site), and the correct bucket: value, which is just the name of the bucket, not the ARN.
+
+The S3 sync uses two passes with different cache-control headers. HTML and other frequently-changing files get a short 5-minute cache with must-revalidate, while static assets (images, CSS, fonts, JS) get a one-year immutable cache. CloudFront invalidation ensures the CDN picks up new content immediately after deploy.
+
+The `workflow_dispatch` trigger lets you kick off a deploy manually from the GitHub Actions tab, which is handy when you need to redeploy without a code change.
+
+## PR build check
+
+.github/workflows/pr-check.yaml validates the site builds on pull requests:
+```
+name: PR Build Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Zola
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.22.1
+
+      - name: Build Zola Site
+        run: zola build
+```
+
+This is just a build check — no deploy. It catches broken templates or bad markdown before you merge to main.
 
 # Zola init
 Clone your GitHub repo to a machine on which you can install Zola. This is easiest on a MacOS or Linux machine, but you can do it in Windows too.
@@ -189,4 +264,4 @@ I mainly use my website as a project listing. It's got one main directory for th
 Otherwise, there's a main page located at `/_index.md` which renders to `/index.html`, and it's just a landing page for my site.
 
 # note
-* I used secrets store for the variables in GitHub, but I didn't document it here for now. Secrets store is safer than just committing the key variables to the script, of course. Make sure your repo isn't public for now (mine is only because I don't have my variables in there).
+* Use GitHub secrets for all credentials and distribution IDs. The workflow examples above reference secrets, so nothing sensitive is committed to the repo. This means your repo can be public without leaking keys.
