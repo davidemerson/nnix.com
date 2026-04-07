@@ -1,6 +1,6 @@
 +++
 title = "Nonviolent Communication"
-date = 2026-02-23
+date = 2026-04-07
 # if you don't use a taxonomy, delete it
 # empty fields not allowed
 [taxonomies]
@@ -10,3 +10,5 @@ date = 2026-02-23
   rating = ["NR"]
   recommender = ["Julian P."]
 +++
+
+The anecdotes are sometimes hilarious, mostly in a stilted, awkward way.
