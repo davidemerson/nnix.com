@@ -17,6 +17,6 @@ This is the Calvino version of [This Craft of Verse](https://nnix.com/reading/th
 
 Oh, and Dante has beautiful words.
 
-> *Come per acqua cupa cosa grave*
-> (*Like some heavy thing in deep water*)
-> Paradiso III.123
+> Come per acqua cupa cosa grave / (Like some heavy thing in deep water)
+
+> *Paradiso* III.123
