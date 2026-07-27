@@ -10,3 +10,4 @@ date = 2023-05-02
   rating = ["3"]
 +++
 
+This is the Fitzgerald translation. See also [the Wilson translation](https://nnix.com/reading/odyssey-wilson/).
