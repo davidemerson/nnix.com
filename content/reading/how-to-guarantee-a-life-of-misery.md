@@ -14,24 +14,18 @@ Charlie Munger's commencement address to the Harvard School, Los Angeles, June 1
 
 Full text [here, via James Clear](https://jamesclear.com/great-speeches/how-to-guarantee-a-life-of-misery-by-charlie-munger).
 
-The whole speech is one joke taken seriously. Munger inherits the assignment from Johnny Carson, who had spoken at the same school and prescribed not happiness but misery, on the grounds that he couldn't tell anyone how to be happy but could speak from personal experience about the other thing. Carson's three prescriptions were chemicals, envy, and resentment. Munger adds four of his own: be unreliable; learn only from your own experience and never from anyone else's; go down and stay down at the first serious reverse; and refuse to think backwards.
+## be unreliable
 
-The device is the point, and Munger says so outright:
+> "Do not faithfully do what you have engaged to do. If you will only master this one habit you will more than counterbalance the combined effect of all your virtues, howsoever great. If you like being distrusted and excluded from the best human contribution and company, this prescription is for you. Master this one habit and you can always play the role of the hare in the fable, except that instead of being outrun by one fine turtle you will be outrun by hordes and hordes of mediocre turtles and even by some mediocre turtles on crutches."
 
-> "What Carson did was to approach the study of how to create X by turning the question backward, that is, by studying how to create non-X."
+## learn only from experience
 
-This is Jacobi's *invert, always invert*, and the speech is a demonstration of it rather than an explanation. "How do I have a good life" is too big and too vague to answer. "How do I reliably ruin one" is tractable, and the answers turn out to be the same answers wearing a coat. He runs the same move through Darwin, who trained himself to hunt for the evidence that would kill his own theories.
+> "You can see the results of not learning from others’ mistakes by simply looking about you. How little originality there is in the common disasters of mankind -drunk driving deaths, reckless driving maimings, incurable venereal diseases, conversion of bright college students into brainwashed zombies as members of destructive cults, business failures through repetition of obvious mistakes made by predecessors, various forms of crowd folly, and so on. I recommend as a memory clue to finding the way to real trouble from heedless, unoriginal error the modern saying: “If at first you don’t succeed, well, so much for hang gliding.”
 
-The best of the prescriptions is unreliability, because it's the one where inversion actually buys you something. Nobody remembers being told to be reliable. Everybody remembers this:
+## quit at the first, second, or third reverse
 
-> "If you will only master this one habit you will more than counterbalance the combined effect of all your virtues, howsoever great."
+> "there is so much adversity out there, even for the lucky and wise, this will guarantee that, in due course, you will be permanently mired in misery. Ignore at all cost the lesson contained in the accurate epitaph written for himself by Epictetus: 'Here lies Epictetus, a slave, maimed in body, the ultimate in poverty, and favoured by Gods.' "
 
-That's the whole argument for the technique in one sentence — a positive claim about reliability would have been a platitude, and the inverted version is a threat you can act on. On envy he is blunter and funnier:
+## minimize objectivity
 
-> "Envy, of course, joins chemicals in winning some sort of quantity prize for causing misery."
-
-The citations do real work rather than decorate. Samuel Johnson against envy, Epictetus against self-pity, Newton on standing on shoulders. And then he toasts the graduating class backwards, which is the only ending the thing could have had:
-
-> "Gentlemen, may each of you rise high by spending each day of a long life aiming low."
-
-A 4 rather than a 5 because it's short and it knows it's charming, and the charm covers some thin patches. The prescriptions aren't equally weighted; unreliability and inversion carry the speech, while the borrowed Carson material is mostly setup. But it's fifteen minutes long, it's funnier than it needs to be, and the inversion habit is one of the few pieces of practical epistemics that survives contact with an ordinary week.
+> "minimizing objectivity will help you lessen the compromises and burdens of owning worldly goods, because objectivity does not work only for great physicists and biologists. It also adds power to the work of a plumbing contractor in Bemidji. Therefore, if you interpret being true to yourself as requiring that you retain every notion of your youth you will be safely underway, not only toward maximizing ignorance, but also toward whatever misery can be obtained through unpleasant experiences in business."
