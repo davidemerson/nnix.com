@@ -11,7 +11,7 @@ date = 2025-09-02
   recommender = ["Julian P."]
 +++
 
-Picnic read. Get a blanket, steal a dog, skip the food because someone in the park will sell you baklava if you wait long enough.
+Picnic read, and yet a 5/5. Get a blanket, steal a dog, skip the food because someone in the park will sell you baklava if you wait long enough.
 
 This is the Calvino version of [This Craft of Verse](https://nnix.com/reading/this-craft-of-verse/) (Borges) and it's a lot of fun. The kind of book which expands your reading list because of its irresistable citations. For having read this, I am obliged now to read Paolo Zellini, Dante Aligheri, Carlo Emilio Gadda, Thomas Mann, Georges Perec, and perhaps Alfred Jarry (if I can find a translation).
 
@@ -27,9 +27,13 @@ Tons of notable passages,
 
 > Quickness, p. 45
 
+On the innovation of art,
+
 > ...we see how the sluggishness of the human consciousness in emerging from its anthropocentric parochialism can be abolished in an instant by poetic invention.
 
 > Lightness, p. 22
+
+On the lapidary work of editing,
 
 > On folio 265 of the Codex Atlanticus, Leonardo begins to jot down evidence to prove a theory of the growth of the earth.
 > After giving examples of buried cities swallowed up by the soil, he goes on to the marine fossils found in the mountains and in particular to certain bones that he supposes must have belonged to an antediluvian sea monster. At this moment his imagination must have been caught by a vision of the immense animal as it was swimming among the waves. At any rate, he turns the page upside down and tries to capture the image of the animal, three times attempting a sentence that will convey all the wonder of that evocation.
