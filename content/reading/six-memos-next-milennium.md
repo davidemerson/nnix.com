@@ -1,6 +1,6 @@
 +++
 title = "Six Memos for the Next Milennium"
-date = 2025-09-02
+date = 2026-09-02
 # if you don't use a taxonomy, delete it
 # empty fields not allowed
 [taxonomies]
