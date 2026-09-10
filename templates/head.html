@@ -16,34 +16,10 @@
 <!-- opengraph and favicons -->
 
 <meta name="robots" content="index, follow">
-{% if page.title %}
-{% set title = page.title %}
-{% elif section.title %}
-{% set title = section.title %}
-{% elif config.title %}
-{% set title = config.title %}
-{% endif %}
-{% if page.extra.author %}
-{% set author = page.extra.author %}
-{% elif section.extra.author %}
-{% set author = section.extra.author %}
-{% elif config.extra.author %}
-{% set author = config.extra.author %}
-{% endif %}
-{% if page.description %}
-{% set description = page.description | truncate(length=150) %}
-{% elif section.description %}
-{% set description = section.description | truncate(length=150) %}
-{% elif config.description %}
-{% set description = config.description | truncate(length=150) %}
-{% endif %}
-{% if page.permalink %}
-{% set url = page.permalink %}
-{% elif section.permalink %}
-{% set url = section.permalink %}
-{% elif config.base_url %}
-{% set url = config.base_url %}
-{% endif %}
+{% set title = page?.title or section?.title or config.title %}
+{% set author = page?.extra?.author or section?.extra?.author or config.extra.author %}
+{% set description = (page?.description or section?.description or config.description) | truncate(length=150) %}
+{% set url = page?.permalink or section?.permalink or config.base_url %}
 {% if title %}
 <title>{{ title }}</title>
 {% endif %}
@@ -67,9 +43,6 @@
 {% endif %}
 {% if description %}
 <meta property="og:description" content="{{ description }}">
-{% endif %}
-{% if image %}
-<meta property="og:image" content="{{ image }}">
 {% endif %}
 <link rel="canonical" href="{{ url | safe }}">
 {% endblock metatags %}

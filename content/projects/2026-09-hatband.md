@@ -30,7 +30,7 @@ Your persona is the full set of fields: name, company, phone, email, website, Gi
 
 A card is a QR code. Point a camera at it and you get a link to hatband.link with the card packed into the URL fragment, which a browser never sends to the server. The page decodes it in the browser, verifies the signature, and offers Add to contacts.
 
-{{ img(id="/images/hatband/link-molly-bloom.png", alt="hatband.link showing a scanned card for Molly Bloom") }}
+{{ <img id="/images/hatband/link-molly-bloom.png" alt="hatband.link showing a scanned card for Molly Bloom" /> }}
 what someone without the app sees. This one is a compact card, the Lock Screen kind, which carries a fingerprint of the key rather than a signature.
 
 The same card can go out as a `.hatband` file, as a bubble in Messages, or printed as SVG, PNG or a PDF card. Someone with the app lands in a review sheet, and those without get the web page.

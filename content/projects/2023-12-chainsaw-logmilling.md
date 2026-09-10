@@ -41,12 +41,12 @@ The effect is beautiful and subtle, the grain ends up with very nice flecks, fid
 I'll be making a desk or table out of these slabs. They're drying for now, though, before I properly finish them.
 
 # photos
-{{ img(id="/images/signal-2024-09-24-160156_002.jpeg", alt="Beginning a cut with the mill on a flattened log") }}
+{{ <img id="/images/signal-2024-09-24-160156_002.jpeg" alt="Beginning a cut with the mill on a flattened log" /> }}
 
-{{ img(id="/images/signal-2024-09-24-160156_003.jpeg", alt="Partway through a cut") }}
+{{ <img id="/images/signal-2024-09-24-160156_003.jpeg" alt="Partway through a cut" /> }}
 
-{{ img(id="/images/signal-2024-09-24-160156_004.jpeg", alt="Wedges to keep the top from binding the blade against the log") }}
+{{ <img id="/images/signal-2024-09-24-160156_004.jpeg" alt="Wedges to keep the top from binding the blade against the log" /> }}
 
-{{ img(id="/images/signal-2024-09-24-160156_005.jpeg", alt="Some of the slabs") }}
+{{ <img id="/images/signal-2024-09-24-160156_005.jpeg" alt="Some of the slabs" /> }}
 
-{{ img(id="/images/IMG_0668.jpg", alt="The sawmill frame set up for the first cut") }}
+{{ <img id="/images/IMG_0668.jpg" alt="The sawmill frame set up for the first cut" /> }}

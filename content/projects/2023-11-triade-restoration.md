@@ -35,8 +35,8 @@ I plan to replace the mirrors with titanium plate, polished to a mirror finish. 
 * The stripping took a long time. The best pads were the fiber pads on an angle grinder. The worst was the steel rope cup pad, which almost took off more than one of our appendages. Just use the fiber pads, and buy a couple 10-packs, so you can swap them out when needed easily.
 
 # photos
-{{ img(id="/images/triad-2.jpg", alt="the steel frame elements being stripped of paint with an angle grinder and an abrasive disc") }}
+{{ <img id="/images/triad-2.jpg" alt="the steel frame elements being stripped of paint with an angle grinder and an abrasive disc" /> }}
 
-{{ img(id="/images/triad-1.jpeg", alt="the assembled statue, three triangles, without mirror glass or paint (yet)") }}
+{{ <img id="/images/triad-1.jpeg" alt="the assembled statue, three triangles, without mirror glass or paint (yet)" /> }}
 
-{{ img(id="/images/IMG_0515.jpg", alt="measuring for mirror glass") }}
+{{ <img id="/images/IMG_0515.jpg" alt="measuring for mirror glass" /> }}

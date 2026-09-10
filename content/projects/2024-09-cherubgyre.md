@@ -62,7 +62,7 @@ This is a repository of design notes for an application I'm building, slowly and
 
 cherubgyre is an anonymous community defense social network. This app allows individuals to disclose details of their location and state of duress while remaining anonymous.
 
-{{ img(id="/images/IMG_2055.jpeg", alt="A Gyre of Cherubim etc.") }}
+{{ <img id="/images/IMG_2055.jpeg" alt="A Gyre of Cherubim etc." /> }}
 a gyre of cherub(im) and friends. Detail from the [original Doré](/images/empyrean.jpeg)
 
 # audience
@@ -100,20 +100,20 @@ The server will be written in Go. It’s reasonably accessible and [extremely re
 There's a rudimentary placeholder website [here for now](https://cherubgyre.com).
 
 # features
-{{ img(id="/images/cg/splash.png", alt="a splash screen") }}
-{{ img(id="/images/cg/mainpage_active_notification.png", alt="the mainpage with an active duress notification") }}
+{{ <img id="/images/cg/splash.png" alt="a splash screen" /> }}
+{{ <img id="/images/cg/mainpage_active_notification.png" alt="the mainpage with an active duress notification" /> }}
 ## registration
 ### invitation
 Registration is by invite from an existing community member only. The inviter gets a token which they communicate to the invitee. If a user is deregistered for some reason, they will need to be reinvited. A single user can only request five invite codes per 168 hour period.
-{{ img(id="/images/cg/invite_user.png", alt="inviting a user") }}
+{{ <img id="/images/cg/invite_user.png" alt="inviting a user" /> }}
 ### acceptance & registration
 Invitee enters the token given to them by their inviter.
-{{ img(id="/images/cg/invite_valid.png", alt="entering a valid invite code") }}
+{{ <img id="/images/cg/invite_valid.png" alt="entering a valid invite code" /> }}
 They then elect a duress pin code as well as a normal pin code.
-{{ img(id="/images/cg/register_pin.png", alt="entering a valid pin code") }}
-{{ img(id="/images/cg/register_duress.png", alt="entering a valid duress code") }}
+{{ <img id="/images/cg/register_pin.png" alt="entering a valid pin code" /> }}
+{{ <img id="/images/cg/register_duress.png" alt="entering a valid duress code" /> }}
 The invitee receives a username and a procedurally generated avatar in response.
-{{ img(id="/images/cg/welcome.png", alt="when you get your anon identity") }}
+{{ <img id="/images/cg/welcome.png" alt="when you get your anon identity" /> }}
 
 
 ## users
@@ -135,7 +135,7 @@ No identifying information is collected or stored by the system. This is intenti
 
 
 ## subscription
-{{ img(id="/images/cg/befriend.png", alt="when you're befriending someone, or managing your friends and followers") }}
+{{ <img id="/images/cg/befriend.png" alt="when you're befriending someone, or managing your friends and followers" /> }}
 ### following (befriend)
 Users can follow each other by friendly name or by UID, either one. When a user attempts to to follow another user, the followed user will need to authorize the follower.
 ### unfollowing
@@ -144,20 +144,20 @@ You can see who is following your status, and can remove them from following you
 ## duress
 ### duress pin code
 When launched, the app asks for an unlock code. The entry of the preconfigured duress code will plausibly unlock the app, but will reveal randomly generated settings and associations, to ensure that no identifying information is disclosed. Additionally, the entry of the preconfigured duress code will notify the network that your duress code was entered ("duress unlock").
-{{ img(id="/images/cg/duress_unlock.png", alt="the button turns red when you have entered a duress  unlock") }}
+{{ <img id="/images/cg/duress_unlock.png" alt="the button turns red when you have entered a duress  unlock" /> }}
 ### wrench attack
-{{ img(id="https://imgs.xkcd.com/comics/security.png", alt="the wrench attack") }}
+{{ <img id="https://imgs.xkcd.com/comics/security.png" alt="the wrench attack" /> }}
 The path at the bottom of the screen is red in duress mode, but all content is randomly generated, such that it discloses no information about the status or friend network of the user in duress, but looks plausibly unlocked while sending a duress status. This helps with the [wrench attack](https://xkcd.com/538).
-{{ img(id="/images/cg/duress_status.png", alt="here's what your duress-unlocked status page will look like") }}
-{{ img(id="/images/cg/duress_befriend.png", alt="likewise, your duress-unlocked befriend page, which has a red path and randomly generated friends and statuses") }}
+{{ <img id="/images/cg/duress_status.png" alt="here's what your duress-unlocked status page will look like" /> }}
+{{ <img id="/images/cg/duress_befriend.png" alt="likewise, your duress-unlocked befriend page, which has a red path and randomly generated friends and statuses" /> }}
 
 ### accelerometer duress
 If a phone is thrown, dropped, or experiences a large shock, the user will receive a notification from the app that they have one minute to unlock (using the pin code) the app, or a duress signal will be sent ("g force duress"). Of course, if the app is unlocked with the duress code, the duress signal will be published ("duress unlock")
 ### timeout duress
 The user can start a countdown timer. At the end of the timer, the app will publish a notification and the user will have five minutes confirm that they are ok. If they do not confirm that they are ok before the five minutes lapses, a duress signal will be published ("missed check-in")
-{{ img(id="/images/cg/timer_unset.png", alt="what it looks like when you're setting a timer") }}
-{{ img(id="/images/cg/timer_progress.png", alt="what it looks like when a timer is in progress") }}
-{{ img(id="/images/cg/duress_timeout.png", alt="what it looks like when someone is in a timeout duress state") }}
+{{ <img id="/images/cg/timer_unset.png" alt="what it looks like when you're setting a timer" /> }}
+{{ <img id="/images/cg/timer_progress.png" alt="what it looks like when a timer is in progress" /> }}
+{{ <img id="/images/cg/duress_timeout.png" alt="what it looks like when someone is in a timeout duress state" /> }}
 ### rate limit
 You can't have a duress alert sent more than once per hour.
 ### location based duress broadcast
@@ -168,7 +168,7 @@ An active duress status may be canceled by a user who enters their normal pin co
 The app allows users to enter a testing mode, in which they can check the duress, accelerometer, and other features without sending actual duress signals to the community. Instead, the app will notify the user when it would have sent a duress notification. Testing mode, when enabled, is active for five minutes, and then turns off automatically.
 
 ## deregistration
-{{ img(id="/images/cg/duress_left.png", alt="what it looks like when someone leaves") }}
+{{ <img id="/images/cg/duress_left.png" alt="what it looks like when someone leaves" /> }}
 ### launch lock
 If a user enters an incorrect pin code ten times, they are deregistered from the app, and their data is deleted. Friends will receive a message that they “left” which will appear similar to a duress message.
 ### expiration
@@ -181,7 +181,7 @@ For any account in duress state, users who follow that account can display a map
 
 ## configuration
 A number of configuration options are contemplated, such as the ability to turn off accelerometer duress, since that's not always helpful for folks who do things that involve shock regularly... like ride a bicycle with their phone in a basket.
-{{ img(id="/images/cg/config.png", alt="some config ideas on a page") }}
+{{ <img id="/images/cg/config.png" alt="some config ideas on a page" /> }}
 
 # license
 The server and the API are released under [GNU General Public License 3.0](https://www.gnu.org/licenses/gpl-3.0.html#license-text). This is intended to ensure that the service can be freely modified and economically provisioned by others. I'm not trying to make money on this, the intent is to support anonymous community safety.

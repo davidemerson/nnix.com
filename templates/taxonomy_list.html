@@ -1,16 +1,13 @@
 {% extends "index.html" %}
-{% import "index_macros.html" as index_macros %}
-{% import "taxonomy_macros.html" as taxonomy_macros %}
 
 {% block content %}
 <div><a href=".."><<<</a></div>
-    <!-- START HERO TITLE -->
-    {% if not title %}
-    {% set title = "all by " ~ taxonomy.name %}
-    {% endif %}
-    {{ index_macros::hero(title=title,primary=false) }}
-    <!-- END HERO TITLE -->
-    <!-- START TAXONOMY LIST -->
-    {{ taxonomy_macros::list(terms=terms) }}
-    <!-- END TAXONOMY LIST -->
+<h1 class="title">all by {{ taxonomy.name }}</h1>
+<ul>
+{% for term in terms %}
+    <p><li>
+        <a href="{{ term.permalink | safe }}">{{ term.name }}</a> ({{ term.pages | length }})
+    </li></p>
+{% endfor %}
+</ul>
 {% endblock content %}

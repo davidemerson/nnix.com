@@ -20,6 +20,6 @@ Then go make croissant. Or sell these on Etsy so other people can, I haven't pat
 
 I've made them in all sizes now, too, but keep in mind that the longer the bent edge, the harder this is to do with a modest brake. Mine can't handle more than about 400mm of length in 2mm sheet. Larger brakes are really expensive.
 
-{{ img(id="/images/signal-2024-09-24-160300_002.jpeg", alt="a titanium baking sheet") }}
+{{ <img id="/images/signal-2024-09-24-160300_002.jpeg" alt="a titanium baking sheet" /> }}
 
-{{ img(id="/images/signal-2024-09-24-160300_003.jpeg", alt="a few titanium baking sheets") }}
+{{ <img id="/images/signal-2024-09-24-160300_003.jpeg" alt="a few titanium baking sheets" /> }}

@@ -3,7 +3,7 @@
 {% block content %}
 <h1>{{ page.title }}</h1>
 
-{% if page.toc and page.extra.toc %}
+{% if page.toc and page.extra?.toc %}
 <ul>
 {% for h1 in page.toc %}
   <li>

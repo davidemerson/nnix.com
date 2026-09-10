@@ -33,33 +33,33 @@ The wood darkens over time. These pictures are from initial production and fitme
 
 # photos
 
-{{ img(id="/images/IMG_0052.png", alt="Base is compact, this is only partial disassembly") }}
+{{ <img id="/images/IMG_0052.png" alt="Base is compact, this is only partial disassembly" /> }}
 Base is compact, this is only partial disassembly
 
 
-{{ img(id="/images/IMG_2400.JPG", alt="CNC machined channels in the underside of the base") }}
+{{ <img id="/images/IMG_2400.JPG" alt="CNC machined channels in the underside of the base" /> }}
 CNC machined channels in the underside of the base
 
 
-{{ img(id="/images/IMG_2405.JPG", alt="CNC machined channels in the underside of the base") }}
+{{ <img id="/images/IMG_2405.JPG" alt="CNC machined channels in the underside of the base" /> }}
 C-channel steel installed
 
 
-{{ img(id="/images/IMG_2391.JPG", alt="CNC machining the slab to flat") }}
+{{ <img id="/images/IMG_2391.JPG" alt="CNC machining the slab to flat" /> }}
 CNC machining the slab to flat
 
 
-{{ img(id="/images/IMG_2393.JPG", alt="Shelves made from poorer-grain Sapele") }}
+{{ <img id="/images/IMG_2393.JPG" alt="Shelves made from poorer-grain Sapele" /> }}
 Shelves made from poorer-grain Sapele
 
 
-{{ img(id="/images/IMG_0054.png", alt="Base assembled, ready for top") }}
+{{ <img id="/images/IMG_0054.png" alt="Base assembled, ready for top" /> }}
 Base assembled, ready for top
 
 
-{{ img(id="/images/IMG_0066.png", alt="Finished product") }}
+{{ <img id="/images/IMG_0066.png" alt="Finished product" /> }}
 Finished product
 
 
-{{ img(id="/images/IMG_0062.png", alt="Close-up of grain") }}
+{{ <img id="/images/IMG_0062.png" alt="Close-up of grain" /> }}
 Close-up of grain

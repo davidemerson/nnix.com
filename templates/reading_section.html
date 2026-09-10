@@ -12,8 +12,8 @@
 {% for page in pages %}
   {% if page.taxonomies.readstate and page.taxonomies.readstate[0] == "reading" %}
   <p><li>
-    {{ page.taxonomies.authorname[0] | default(value="") }}.
-    ({{ page.taxonomies.pubyear[0] | default(value="") }}).
+    {{ page.taxonomies.authorname?[0] or "" }}.
+    ({{ page.taxonomies.pubyear?[0] or "" }}).
     <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
   </li></p>
   {% endif %}
@@ -29,8 +29,8 @@
   {% if page.taxonomies.readstate and page.taxonomies.readstate[0] == "read" %}
     {% if counter < 7 %}
       <p><li>
-        {{ page.taxonomies.authorname[0] | default(value="") }}.
-        ({{ page.taxonomies.pubyear[0] | default(value="") }}).
+        {{ page.taxonomies.authorname?[0] or "" }}.
+        ({{ page.taxonomies.pubyear?[0] or "" }}).
         <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>. 
         {% if page.taxonomies.rating and page.taxonomies.rating | length > 0 %}
         (rated {{ page.taxonomies.rating[0] }}/5)
@@ -50,8 +50,8 @@
 {% for page in pages %}
   {% if page.taxonomies.rating and page.taxonomies.rating[0] == "5" %}
   <p><li>
-    {{ page.taxonomies.authorname[0] | default(value="") }}.
-    ({{ page.taxonomies.pubyear[0] | default(value="") }}).
+    {{ page.taxonomies.authorname?[0] or "" }}.
+    ({{ page.taxonomies.pubyear?[0] or "" }}).
     <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
   </li></p>
   {% endif %}
@@ -79,8 +79,8 @@
 {% for page in pages %}
   {% if page.taxonomies.readstate and page.taxonomies.readstate[0] == "queue" %}
   <p><li>
-    {{ page.taxonomies.authorname[0] | default(value="") }}.
-    ({{ page.taxonomies.pubyear[0] | default(value="") }}).
+    {{ page.taxonomies.authorname?[0] or "" }}.
+    ({{ page.taxonomies.pubyear?[0] or "" }}).
     <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>. 
     {% if page.taxonomies.recommender and page.taxonomies.recommender | length > 0 %}
     (recommended by {{ page.taxonomies.recommender[0] }})

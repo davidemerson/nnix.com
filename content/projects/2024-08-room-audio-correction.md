@@ -68,4 +68,4 @@ Now that the crossover and individual PEQ is set, you're ready to integrate the 
 # figures
 You'll know you got it right when the speakers regularly get hugged.
 
-{{ img(id="/images/IMG_1617.jpg", alt="a child hugging a speaker which has been properly equalized") }}
+{{ <img id="/images/IMG_1617.jpg" alt="a child hugging a speaker which has been properly equalized" /> }}

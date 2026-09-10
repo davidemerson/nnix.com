@@ -1,9 +1,0 @@
-{% macro hero(title, primary) %}
-<h1 class="title">{{title}}</h1>
-{% endmacro hero %}
-
-{% macro list_articles(pages) %}
-            {% for page in pages %}
-            {{ post_macros::page_in_list(page=page) }}
-            {% endfor %}
-{% endmacro list_articles %}

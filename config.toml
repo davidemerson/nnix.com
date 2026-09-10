@@ -3,6 +3,7 @@ title = "nnix.com"
 description = "novo nilbud by swamplight: coal’s short but we've got plenty of bog in the yard"
 compile_sass = false
 minify_html = true
+skip_content_templating = ["projects/2024-09-static-website-github.md"]
 default_language = "en"
 
 taxonomies = [

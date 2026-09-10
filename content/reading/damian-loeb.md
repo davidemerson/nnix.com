@@ -17,4 +17,4 @@ A beautiful book of beautiful work. Look up Damian Loeb's other stuff, too: spac
 
 This joined my burgeoning space-art collection.
 
-{{ img(id="/images/space-art-books.jpg", alt="some books about space art on a persian carpet floor") }}
+{{ <img id="/images/space-art-books.jpg" alt="some books about space art on a persian carpet floor" /> }}

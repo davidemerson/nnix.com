@@ -13,5 +13,5 @@ This mold is intended to produce replicas of a tile I use to repair parts of my 
 # drawings
 The mold concept is illustrated here:
 
-{{ img(id="/images/patterned-tile.png", alt="block mold illustration I") }}
-{{ img(id="/images/pattern-tile-original.jpg", alt="the original tile") }}
+{{ <img id="/images/patterned-tile.png" alt="block mold illustration I" /> }}
+{{ <img id="/images/pattern-tile-original.jpg" alt="the original tile" /> }}

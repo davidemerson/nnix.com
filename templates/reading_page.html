@@ -6,7 +6,7 @@
 <h1>{{ page.title }}</h1>
 <p><emph><time datetime="{{ page.date }}">↻ {{ page.date }}</time></emph></p>
 
-{% if page.toc and page.extra.toc %}
+{% if page.toc and page.extra?.toc %}
 <ul>
   {% for h1 in page.toc %}
   <li>
@@ -56,7 +56,7 @@
     <tr>
         <td><b>Recommender</b></td>
         <td>
-          <a href="{{ get_taxonomy_url(kind="recommender", name=page.taxonomies.recommender[0]) }}">
+          <a href="{{ get_taxonomy_url(kind="recommender", term=page.taxonomies.recommender[0]) }}">
             {{ page.taxonomies.recommender[0] }}
           </a>
         </td>

@@ -58,5 +58,5 @@ Here's an example of a program I use to calculate the amount of concrete needed 
 Almost any function in the OS can be called in a program, and there are a dizzying array of them. If you require compatibility with the HP42 functions because you have old programs to port over, you should use the default DM42 OS. If you have upgraded to C47 like I did, though, the documentation is [here](https://47calc.com/documentation/combined/doc.html), and it is excellent.
 
 # photos
-{{ img(id="/images/IMG_2053.jpg", alt="A DM42 calculator, running C47 OS.") }}
+{{ <img id="/images/IMG_2053.jpg" alt="A DM42 calculator, running C47 OS." /> }}
 A DM42 calculator, running C47 OS.

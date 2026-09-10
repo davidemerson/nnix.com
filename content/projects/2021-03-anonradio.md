@@ -14,7 +14,7 @@ This is the setup I'm using.
 # Audio Hijack
 I run Audio Hijack on Mac OS X. It's really slick. My recording session consists of capture from both the onboard MacBook Pro microphone and my Tidal client, from which I stream a playlist I curate for each session, whether live or recorded.
 
-{{ img(id="/images/17-3.png", alt="Here's what the overall session looks like when configured.") }}
+{{ <img id="/images/17-3.png" alt="Here's what the overall session looks like when configured." /> }}
 
 Here's what the overall session looks like when configured.
 
@@ -23,7 +23,7 @@ Note that you may want to add an output block to this session so you can monitor
 ## live
 When I'm going to livestream a show, I add the Broadcast block, configured for Icecast to the aNONradio servers.
 
-{{ img(id="/images/17-1.png", alt="Here's what that block configuration looks like.") }}
+{{ <img id="/images/17-1.png" alt="Here's what that block configuration looks like." /> }}
 
 Here's what that block configuration looks like.
 
@@ -32,7 +32,7 @@ When I'm going to pre-record a show, I add the recording block as the final sess
 
 I record at the standard set for aNONradio.net, which is 192Kbps MP3 at 44.1 Hz Stereo. This is a custom setting in Audio Hijack.
 
-{{ img(id="/images/17-2.png", alt="Here's what that block configuration looks like.") }}
+{{ <img id="/images/17-2.png" alt="Here's what that block configuration looks like." /> }}
 
 Here's what that block configuration looks like.
 

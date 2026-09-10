@@ -11,11 +11,11 @@ description = "a concrete block mold with patterned sides."
 The blocks created should be useful for the production of mortarless low walls. They are designed as a facsimile of the Non-Interlocking Textile Block, but with interlocking properties for mortarless construction while maintaining the ortholinear patterns of the original when used in walls.
 
 # drawings
-{{ img(id="/images/isometric-il-block.png", alt="block mold illustration I") }}
-{{ img(id="/images/front-il-block.png", alt="block mold illustration I") }}
-{{ img(id="/images/top-il-block.png", alt="block mold illustration I") }}
-{{ img(id="/images/single-exploded-il.png", alt="block mold illustration I") }}
-{{ img(id="/images/stacked-mold-il.png", alt="block mold illustration I") }}
+{{ <img id="/images/isometric-il-block.png" alt="block mold illustration I" /> }}
+{{ <img id="/images/front-il-block.png" alt="block mold illustration I" /> }}
+{{ <img id="/images/top-il-block.png" alt="block mold illustration I" /> }}
+{{ <img id="/images/single-exploded-il.png" alt="block mold illustration I" /> }}
+{{ <img id="/images/stacked-mold-il.png" alt="block mold illustration I" /> }}
 
 # interlocking lugs
 The lugs designed into the top and bottom of each block are truncated pyramids. These are spaced at even intervals such that neighboring blocks above or below another block may be offset atop one another at any lug interval, though it is intended that four lugs from each block below will engage four of the eight lugs on the block above to produce the ortholinear pattern.

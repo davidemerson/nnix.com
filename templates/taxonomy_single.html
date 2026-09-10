@@ -1,16 +1,17 @@
 {% extends "index.html" %}
-{% import "post_macros.html" as post_macros %}
-{% import "index_macros.html" as index_macros %}
 
 {% block content %}
 <div><a href=".."><<<</a></div>
-    <!-- START HERO TITLE -->
-    {% if not title %}
-    {% set title = taxonomy.name ~ ": " ~ term.name %}
-    {% endif %}
-    {{ index_macros::hero(title=title,primary=false) }}
-    <!-- END HERO TITLE -->
-    <!-- START ARTICLE FEED -->
-    {{ index_macros::list_articles(pages=term.pages) }}
-    <!-- END ARTICLE FEED -->
+<h1 class="title">{{ taxonomy.name }}: {{ term.name }}</h1>
+{% for page in term.pages %}
+<header>
+    <ul>
+    <p><li>
+        {{ page.taxonomies.authorname?[0] or "" }}.
+        ({{ page.taxonomies.pubyear?[0] or "" }}).
+        <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
+    </li></p>
+    </ul>
+</header>
+{% endfor %}
 {% endblock content %}

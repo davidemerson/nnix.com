@@ -64,20 +64,20 @@ We also have Fairmount associations with the Faywood series indicated on the map
 > "Fairmont soils have a mollic epipedon and have bedrock at a depth of less than 20 inches."
 
 # figures
-{{ img(id="/images/cabin_iso_l.png", alt="Isometric left-side view") }}
+{{ <img id="/images/cabin_iso_l.png" alt="Isometric left-side view" /> }}
 
-{{ img(id="/images/cabin_iso_r.png", alt="Isometric right-side view") }}
+{{ <img id="/images/cabin_iso_r.png" alt="Isometric right-side view" /> }}
 
-{{ img(id="/images/cabin_above.png", alt="Overhead view") }}
+{{ <img id="/images/cabin_above.png" alt="Overhead view" /> }}
 
-{{ img(id="/images/living_room.png", alt="Living room from front porch") }}
+{{ <img id="/images/living_room.png" alt="Living room from front porch" /> }}
 
-{{ img(id="/images/walkway.png", alt="Breezeway between garage and residence") }}
+{{ <img id="/images/walkway.png" alt="Breezeway between garage and residence" /> }}
 
-{{ img(id="/images/floor_plan_1_75.png", alt="floorplan") }}
+{{ <img id="/images/floor_plan_1_75.png" alt="floorplan" /> }}
 
-{{ img(id="/images/north_south_elevations.png", alt="North & South Elevations") }}
+{{ <img id="/images/north_south_elevations.png" alt="North & South Elevations" /> }}
 
-{{ img(id="/images/west_east_elevations.png", alt="East & West Elevations") }}
+{{ <img id="/images/west_east_elevations.png" alt="East & West Elevations" /> }}
 
-{{ img(id="/images/coplanar_curtain_wall.png", alt="Glass curtain wall details") }}
+{{ <img id="/images/coplanar_curtain_wall.png" alt="Glass curtain wall details" /> }}
