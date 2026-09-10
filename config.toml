@@ -4,6 +4,8 @@ description = "novo nilbud by swamplight: coal’s short but we've got plenty of
 compile_sass = false
 minify_html = true
 skip_content_templating = ["projects/2024-09-static-website-github.md"]
+generate_feeds = true
+feed_filenames = ["rss.xml"]
 default_language = "en"
 
 taxonomies = [

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+{#-
+  One feed for projects, reading and food. notes and about stay out.
+
+  Zola hands `pages` over as every dated page on the site, newest `date` first,
+  with feed_limit unset so nothing is cut before we filter. Pages carrying an
+  `updated` date are listed first, newest update first, so a refreshed page never
+  drops off the end of the feed; the rest follow by `date` until the cap.
+  Readers order items by pubDate, so file order only matters for the cap.
+-#}
+{%- set wanted = ["projects", "reading", "food"] -%}
+{%- set cap = 50 -%}
+{%- set abs_src = 'src="' ~ config.base_url ~ '/' -%}
+{%- set abs_href = 'href="' ~ config.base_url ~ '/' -%}
+{%- set bumped = [p for p in pages if p.updated and p.components[0] in wanted] | sort(attribute="updated") | reverse -%}
+{%- set rest = [p for p in pages if not p.updated and p.components[0] in wanted] -%}
+{%- set items = [...bumped, ...rest] -%}
+{%- set items = items[:cap] -%}
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>{{ config.title }}</title>
+    <link>{{ config.base_url | escape_xml | safe }}</link>
+    <description>{{ config.description }}</description>
+    <generator>Zola</generator>
+    <language>{{ lang }}</language>
+    <atom:link href="{{ feed_url | safe }}" rel="self" type="application/rss+xml"/>
+    {% if last_updated is defined %}<lastBuildDate>{{ last_updated | date(format="%a, %d %b %Y %H:%M:%S %z") }}</lastBuildDate>{% endif %}
+    {%- for page in items %}
+    {%- set section = page.components[0] %}
+    {%- set title = page.title %}
+    {%- set body = page.content %}
+    {%- if section == "reading" %}
+      {%- set state = page.taxonomies.readstate?[0] or "" %}
+      {%- if state == "queue" %}{% set title = title ~ " (queued)" %}
+      {%- elif state == "reading" %}{% set title = title ~ " (reading)" %}{% endif %}
+      {%- set citation = (page.taxonomies.authorname?[0] or "") ~ ". (" ~ (page.taxonomies.pubyear?[0] or "") ~ ")." %}
+      {%- if page.taxonomies.rating?[0] %}{% set citation = citation ~ " (rated " ~ page.taxonomies.rating[0] ~ "/5)" %}{% endif %}
+      {%- if page.taxonomies.recommender?[0] %}{% set citation = citation ~ " (recommended by " ~ page.taxonomies.recommender[0] ~ ")" %}{% endif %}
+      {%- set body = "<p>" ~ citation ~ "</p>" ~ body %}
+    {%- endif %}
+    <item>
+      <title>{{ title }}</title>
+      <pubDate>{{ (page.updated or page.date) | date(format="%a, %d %b %Y %H:%M:%S %z") }}</pubDate>
+      <author>{{ config.extra.author }}</author>
+      <category>{{ section }}</category>
+      <link>{{ page.permalink | escape_xml | safe }}</link>
+      <guid>{{ page.permalink | escape_xml | safe }}</guid>
+      <description xml:base="{{ page.permalink | escape_xml | safe }}">{{ body | replace(from='src="/', to=abs_src) | replace(from='href="/', to=abs_href) }}</description>
+    </item>
+    {%- endfor %}
+  </channel>
+</rss>
