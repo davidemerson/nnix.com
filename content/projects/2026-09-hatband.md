@@ -9,7 +9,7 @@ description = "privacy first contact exchange."
 
 Source lives at [github.com/davidemerson/hatband](https://github.com/davidemerson/hatband). The site is [hatband.link](https://hatband.link).
 
-Hatband is a business card exchange app incapable of, an uninterested in, mining your data. It shows your contact details as a QR code, from the Lock Screen if you like, and remembers where you met the people you scan.
+Hatband is a business card exchange app incapable of, and uninterested in, mining your data. It shows your contact details as a QR code, from the Lock Screen if you like, and remembers where you met the people you scan.
 
 ### why
 
