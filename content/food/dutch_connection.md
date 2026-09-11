@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "Dutch Connection"
 slug = "dutch-connection"
 date = 2025-06-26

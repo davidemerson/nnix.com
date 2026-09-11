@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Install Zola
         uses: taiki-e/install-action@v2
@@ -29,6 +29,9 @@ jobs:
       - name: Inject Unix Epoch into config.toml
         run: |
           sed -i "s/PLACEHOLDER/$epoch/" config.toml
+
+      - name: Check internal links and templates
+        run: zola check --skip-external-links
 
       - name: Build Zola Site
         run: zola build

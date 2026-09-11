@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "Toronto"
 slug = "toronto"
 date = 2025-06-26

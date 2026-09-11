@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "High Hydration Sourdough"
 slug = "high-hydration-sourdough"
 date = 2025-06-26

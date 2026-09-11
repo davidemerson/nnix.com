@@ -1,7 +1,8 @@
-﻿+++
++++
 title = "Chocolate Shortbread"
 slug = "chocolate-shortbread"
 date = 2025-06-26
+description = "Recipe featuring Dorie Greenspan's world peace cookies with rye and cocoa nibs"
 [taxonomies]
   foodcategory = ["desserts-snacks"]
 +++

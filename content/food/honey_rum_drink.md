@@ -1,7 +1,8 @@
-﻿+++
++++
 title = "Honey Rum Drink"
 slug = "honey-rum-drink"
 date = 2025-06-26
+description = "Recipe featuring white rum, honey, lemon, and angostura"
 [taxonomies]
   foodcategory = ["drinks"]
 +++

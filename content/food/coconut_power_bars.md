@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "Coconut Power Bars"
 slug = "coconut-power-bars"
 date = 2025-06-26

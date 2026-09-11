@@ -1,7 +1,8 @@
-﻿+++
++++
 title = "Spanikopita"
 slug = "spanikopita"
 date = 2025-06-26
+description = "Recipe featuring spinach, feta, and oiled filo"
 [taxonomies]
   foodcategory = ["main"]
 +++

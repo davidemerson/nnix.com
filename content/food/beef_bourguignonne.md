@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "Beef Bourguignonne"
 slug = "beef-bourguignonne"
 date = 2025-06-26

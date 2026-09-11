@@ -53,7 +53,7 @@ description = "anonymous community defense social network."
     </div>
 </body>
 
-My goal is to have a working alpha inside six months, the time it took [Andy Goldsworthy](https://www.glenstone.org/artist/andy-goldsworthy/) to complete “Boulder”, allegedly. I do not know if this is a long time or a short time, but there are professionals with strong opinions on the matter.† This seems like a small stone hut of a project with a clay sphere inside, so I'm going with six months to alpha.
+My goal is to have a working alpha inside six months, the time it took [Andy Goldsworthy](https://www.glenstone.org/artists/andy-goldsworthy/) to complete “Boulder”, allegedly. I do not know if this is a long time or a short time, but there are professionals with strong opinions on the matter.† This seems like a small stone hut of a project with a clay sphere inside, so I'm going with six months to alpha.
 
 † - I know at least one.
 

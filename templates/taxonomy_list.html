@@ -3,11 +3,9 @@
 {% block content %}
 <div><a href=".."><<<</a></div>
 <h1 class="title">all by {{ taxonomy.name }}</h1>
-<ul>
+<ul class="spaced">
 {% for term in terms %}
-    <p><li>
-        <a href="{{ term.permalink | safe }}">{{ term.name }}</a> ({{ term.pages | length }})
-    </li></p>
+  <li><a href="{{ term.permalink | safe }}">{{ term.name }}</a> ({{ term.pages | length }})</li>
 {% endfor %}
 </ul>
 {% endblock content %}

@@ -1,7 +1,8 @@
-﻿+++
++++
 title = "Butter Chicken"
 slug = "butter-chicken"
 date = 2025-06-26
+description = "Recipe featuring instant pot chicken in a spiced tomato cream sauce"
 [taxonomies]
   foodcategory = ["main"]
 +++

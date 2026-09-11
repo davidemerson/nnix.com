@@ -1,16 +1,6 @@
 {% extends "base.html" %}
 
-{% block content %}
-<div><a href=".."><<<</a></div>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>{{ page.title }} – nnix.com</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- use the site’s main stylesheet -->
-  <link rel="stylesheet" href="/style.css">
+{% block head_extra %}
 <style>
   /* layout + header */
 
@@ -179,9 +169,10 @@
   margin-top: 0;
 }
 </style>
-</head>
-<body>
-<main>
+{% endblock head_extra %}
+
+{% block content %}
+<div><a href=".."><<<</a></div>
   <header class="oracle-header">
     <h1>hexagram oracle</h1>
       This is an accurate hexagram oracle cast using crypto-randomness.
@@ -259,9 +250,6 @@
       translation you prefer.
     </p>
   </section>
-</main>
 
 <script src="{{ get_url(path='oracle.js') }}" defer></script>
-</body>
-</html>
 {% endblock content %}

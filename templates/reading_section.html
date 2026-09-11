@@ -8,34 +8,34 @@
 {% set pages = section.pages %}
 
 <h2>currently</h2>
-<ul>
+<ul class="spaced">
 {% for page in pages %}
   {% if page.taxonomies.readstate and page.taxonomies.readstate[0] == "reading" %}
-  <p><li>
+  <li>
     {{ page.taxonomies.authorname?[0] or "" }}.
     ({{ page.taxonomies.pubyear?[0] or "" }}).
     <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
-  </li></p>
+  </li>
   {% endif %}
 {% endfor %}
 </ul>
 
 <h2>recently finished</h2>
-<ul>
+<ul class="spaced">
 {% set recent_books = section.pages | sort(attribute="date") | reverse %}
 {% set counter = 0 %}
 
 {% for page in recent_books %}
   {% if page.taxonomies.readstate and page.taxonomies.readstate[0] == "read" %}
     {% if counter < 7 %}
-      <p><li>
+      <li>
         {{ page.taxonomies.authorname?[0] or "" }}.
         ({{ page.taxonomies.pubyear?[0] or "" }}).
         <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>. 
         {% if page.taxonomies.rating and page.taxonomies.rating | length > 0 %}
         (rated {{ page.taxonomies.rating[0] }}/5)
         {% endif %}
-      </li></p>
+      </li>
       {% set_global counter = counter + 1 %}
     {% endif %}
   {% endif %}
@@ -46,46 +46,46 @@
 </ul>
 
 <h2>favorite all-time</h2>
-<ul>
+<ul class="spaced">
 {% for page in pages %}
   {% if page.taxonomies.rating and page.taxonomies.rating[0] == "5" %}
-  <p><li>
+  <li>
     {{ page.taxonomies.authorname?[0] or "" }}.
     ({{ page.taxonomies.pubyear?[0] or "" }}).
     <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
-  </li></p>
+  </li>
   {% endif %}
 {% endfor %}
 </ul>
 
 <h1>tagged books</h1>
-<ul>
-  <p><li>
+<ul class="spaced">
+  <li>
     <a href="https://nnix.com/recommender/">by recommender</a>
-  </li></p>
-  <p><li>
+  </li>
+  <li>
     <a href="https://nnix.com/rating/">by rating</a>
-  </li></p>
-  <p><li>
+  </li>
+  <li>
     <a href="https://nnix.com/pubyear/">by publication year</a>
-  </li></p>
-  <p><li>
+  </li>
+  <li>
     <a href="https://nnix.com/authorname/">by author</a>
-  </li></p>
+  </li>
 </ul>
 
 <h1>unread (queue)</h1>
-<ul>
+<ul class="spaced">
 {% for page in pages %}
   {% if page.taxonomies.readstate and page.taxonomies.readstate[0] == "queue" %}
-  <p><li>
+  <li>
     {{ page.taxonomies.authorname?[0] or "" }}.
     ({{ page.taxonomies.pubyear?[0] or "" }}).
     <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>. 
     {% if page.taxonomies.recommender and page.taxonomies.recommender | length > 0 %}
     (recommended by {{ page.taxonomies.recommender[0] }})
     {% endif %}
-  </li></p>
+  </li>
   {% endif %}
 {% endfor %}
 </ul>

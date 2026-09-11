@@ -1,7 +1,8 @@
-﻿+++
++++
 title = "Sour Cream Doughnuts"
 slug = "sour-cream-doughnuts"
 date = 2025-06-26
+description = "Recipe featuring sour cream dough fried in squares and glazed"
 [taxonomies]
   foodcategory = ["bread-pastry"]
 +++

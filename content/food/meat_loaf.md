@@ -1,7 +1,8 @@
-﻿+++
++++
 title = "Meat Loaf"
 slug = "meat-loaf"
 date = 2025-06-26
+description = "Recipe featuring ground beef with a ketchup and coriander glaze"
 [taxonomies]
   foodcategory = ["main"]
 +++

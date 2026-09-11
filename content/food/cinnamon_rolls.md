@@ -1,7 +1,8 @@
-﻿+++
++++
 title = "Cinnamon Rolls"
 slug = "cinnamon-rolls"
 date = 2025-06-26
+description = "Recipe featuring tangzhong dough with cinnamon and cardamom filling"
 [taxonomies]
   foodcategory = ["desserts-snacks"]
 +++

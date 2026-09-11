@@ -105,7 +105,7 @@ In my opinion, if you want beautiful "standard" English, read Nabokov's Lolita. 
 * Technique: Narrative, Young
 * Read "The Odyssey" Books 1-4
 * [Modernism Lab article on Telemachus](https://campuspress.yale.edu/modernismlab/telemachus/) 
-* [Telemachus Blog Posts on Telemachus](https://www.bloomsandbarnacles.com/blog/category/)
+* [Telemachus Blog Posts on Telemachus](https://bloomsandbarnacles.com/category/telemachus/)
 * [Mourning and Melancholia, Sigmund Freud](https://www.sas.upenn.edu/~cavitch/pdf-library/Freud_MourningAndMelancholia.pdf)
 
 > Stephen Dedalus, in part a self-portrait of the author, has just returned to Ireland from his studies in Paris (to which he was headed at the end of Joyce’s preceding work, A Portrait of the Artist as a Young Man). He shares lodgings with a medical student, Buck Mulligan, in the Martello tower at Sandycove, and the book opens with a rooftop exchange between Stephen and the irreverent Mulligan. Stephen has been kept awake by the nighttime ravings of Mulligan’s friend Haines, an Englishman with bad dreams, and wants to know when the latter is leaving. He also complains to Mulligan about his (Mulligan’s) distasteful comment on the recent death of Stephen’s mother. The two then go downstairs for breakfast with Haines. They leave the tower together for the swimming hole, where Mulligan, like a good usurper, asks the work-bound Stephen for his key and some money and sets a date for them to meet at half-past noon (to spend more of the latter’s earnings). (Smith)
@@ -137,7 +137,7 @@ In my opinion, if you want beautiful "standard" English, read Nabokov's Lolita. 
 * Technique: Monologue, Male
 * Read "The Odyssey" Books 5-8
 * [Modernism Lab article on Proteus](https://campuspress.yale.edu/modernismlab/proteus/) 
-* [Blog posts on Proteus](https://www.bloomsandbarnacles.com/blog/category/Proteus) 
+* [Blog posts on Proteus](https://bloomsandbarnacles.com/category/proteus/) 
 
 > Stephen wanders the beach, thinking of his past, his family (especially his dead mother), and the constant change and uncertainty of life. He knows he is seeking something, something that cannot be found in family life, in intellectual pursuits, but he still does not know what that something is. Stephen realizes the difﬁculty of connecting with other people, but also senses that he is part of the cycle of life and death. He sees this in the movement of the ocean and his own urination, and as he moves off down the beach, thinking of drowned men, we are ready for the next part of the book. (Smith)
 
@@ -154,7 +154,7 @@ In my opinion, if you want beautiful "standard" English, read Nabokov's Lolita. 
 * Technique: Narrative, Mature
 * Read "The Odyssey" Books 9-10
 * [Modernism Lab article on Calypso](https://campuspress.yale.edu/modernismlab/calypso/) 
-* [Blog posts on Calypso](https://www.bloomsandbarnacles.com/blog/category/Calypso) 
+* [Blog posts on Calypso](https://bloomsandbarnacles.com/category/calypso/) 
 
 > We ﬁnally meet Odysseus himself in his modern manifestation as Leopold Bloom, an endearing unheroic 38-year-old Dublin-born Jew of Hungarian ancestry who canvasses newspaper advertisements for a living. We see him ﬁrst at home and follow him on his domestic morning chores, buying himself a kidney at the butcher’s, delivering to his wife Molly a breakfast in bed with the morning mail (including, he notices, a note from her impresario Blazes Boylan, with whom she will have a romantic rendezvous at the house later in the day). Back down in the kitchen he reads a letter from their daughter Milly, then visits the outhouse in great detail before ﬁnally embarking upon his long-day’s wandering through the city on business, pleasure, respectful attendance at Dignam’s funeral, and the pursuit of not being at home when his wife’s lover calls. (Smith)
 
@@ -169,7 +169,7 @@ In my opinion, if you want beautiful "standard" English, read Nabokov's Lolita. 
 * Technique: Narcissism
 * Read "The Odyssey" Books 9-10
 * [Modernism Lab article on Lotus-Eaters](https://campuspress.yale.edu/modernismlab/the-lotus-eaters/)  
-* [Blog posts on Lotus-Eaters](https://www.bloomsandbarnacles.com/blog/category/Lotus+Eaters) 
+* [Blog posts on Lotus-Eaters](https://bloomsandbarnacles.com/category/lotus-eaters/) 
 
 > Bloom visits the post ofﬁce under his pseudonym Henry Flower to pick up a letter from his sentimentally amorous pen pal “Martha Clifford.” On his way to read the letter he bumps into the tiresome McCoy, whose conversation he suffers long enough to indulge himself in a pleasant voyeuristic distraction concerning an attractive woman boarding a carriage across from them. McCoy notices Bloom’s mourning attire and learns of Paddy Dignam’s funeral, asking Bloom to put his name down as having attended. McCoy out of the way, Bloom reads the letter, then allows himself a few minutes’ repose in All Hallows church where, watching the service, he muses upon religion to humorous ironic effect. On his way out Bloom decides to make use of the little time left before the funeral to get Molly’s lotion from the chemist. He buys a bar of soap for himself and walks towards the baths. He is interrupted by Lyons, who asks to see Bloom’s newspaper to look up a horse running that day. Lyons mistakes Bloom’s offer to give him the paper— “I was going to throw it away”—as a tip on the “dark horse” Throwaway. (Smith)
 
@@ -183,7 +183,7 @@ In my opinion, if you want beautiful "standard" English, read Nabokov's Lolita. 
 * Symbol: Caretaker
 * Technique: Incubism
 * Read "The Odyssey" Book 11
-* [Blog posts on Hades](https://www.bloomsandbarnacles.com/blog/category/Hades) 
+* [Blog posts on Hades](https://bloomsandbarnacles.com/category/hades/) 
 
 > Bloom’s odyssey through Dublin continues now by carriage (accompanied by Cunningham, Power and Stephen’s father Simon Dedalus) to the cemetery to attend Dignam’s funeral. Hynes the reporter buttonholes Bloom about the identity of a mystery man wearing a Mackintosh coat. Death is everywhere in this episode, explored from various perspectives via Bloom’s rambling, often fumbling ruminations on the nuts and bolts of spiritual beliefs and rites, and of decomposition and renewal. (Smith)
 
@@ -198,7 +198,7 @@ In my opinion, if you want beautiful "standard" English, read Nabokov's Lolita. 
 * Technique: Enthymemic
 * Review "The Odyssey" Book 10
 * [Modernism Lab article on Aeolus](https://campuspress.yale.edu/modernismlab/aeolus/) 
-* [Blog posts on Aeolus](https://www.bloomsandbarnacles.com/blog/category/Aeolus) 
+* [Blog posts on Aeolus](https://bloomsandbarnacles.com/category/aeolus/) 
 
 > In this humorous study of hot air, we discover Bloom pursuing a few minutes of actual work as he visits the newspaper to negotiate an ad for a client (the grocer Keyes). The editor’s ofﬁce is bustling with the confabulation among a changing consortium of hangers-on discussing the history of oration, rhetoric and journalism. Simon Dedalus leaves and is replaced by Stephen (with Deasy’s letter), who recites his “Parable of the Plums.” Crawford, impatient for a drink, waves Bloom off, describing to him the precise location of his royal Irish anatomy the latter’s client Keyes may kiss. (Smith)
 
@@ -239,7 +239,7 @@ In my opinion, if you want beautiful "standard" English, read Nabokov's Lolita. 
 * Symbol: Citizens
 * Technique: Labyrinth
 * [Modernism Lab article on The Wandering Rocks](https://campuspress.yale.edu/modernismlab/the-wandering-rocks/) 
-* [Blog posts on The Wandering Rocks](https://www.bloomsandbarnacles.com/blog/category/Wandering+Rocks) 
+* [Blog posts on The Wandering Rocks](https://bloomsandbarnacles.com/category/wandering-rocks/) 
 
 > This episode comprises nineteen separate passages, each a short poetic sketch of a scene or event happening somewhere in Dublin. Some of these episodes, though seemingly unrelated, appear to be happening simultaneously, affording the reader the sense of a wide-angle lens through which the whole city may be viewed. This uniﬁcation of disparate elements is effected the more tellingly by the culminating scene, wherein a viceregal procession is depicted as observed by many of the characters individually portrayed. (Smith)
 
@@ -281,7 +281,7 @@ About 4:00 p.m., at The Concert Room (saloon at the Ormond Hotel).
 * Technique: Tumescence / detumescence
 * Review "The Odyssey" Book 5
 * [Modernism Lab article on Nausicaa](https://campuspress.yale.edu/modernismlab/nausicaa/) 
-* [Blog posts on Nausicaa](https://www.bloomsandbarnacles.com/blog/category/Aeolus) 
+* [Blog posts on Nausicaa](https://bloomsandbarnacles.com/category/nausicaa/) 
 
 > We return to the beach that served as stage for Stephen’s earlier musings and ﬁnds Bloom there pondering his perception (markedly less theoretical) of young Gerty MacDowell and her underwear. Even less concerned with philosophy is Gerty, who gleans she is the object of [a] man’s desire and happens to be quite busy living up to her objectiﬁcation. When her group runs off in pursuit of the nearby ﬁreworks display, she stays behind, soaking up the male gaze and feeding it with more and more view of leg until the exploding Roman candles overhead mimic Bloom’s ejaculation. Meanwhile, anthem-like strains of organ and men’s voices are heard emanating from a nearby church to remind us there is a temperance retreat in progress. When Gerty gets up from the rock and lamely limps away, we are left with Bloom alone on the dim-lit beach in a guilt-tainted postmasturbatory reverie, reﬂecting on women and sexuality with his characteristic concreteness, providing a complementary foil to Gerty’s ruminations on the subject. (Smith)
 
@@ -311,7 +311,7 @@ About 4:00 p.m., at The Concert Room (saloon at the Ormond Hotel).
 * Review "The Odyssey" Book 10
 * Read "The Odyssey" Books 13-16
 * [Modernism Lab article on Circe](https://campuspress.yale.edu/modernismlab/circe/) 
-* [Blog posts on Circe](https://www.bloomsandbarnacles.com/blog/category/Circe) 
+* [Blog posts on Circe](https://bloomsandbarnacles.com/category/circe/) 
 
 > In keeping with the late hour, high blood alcohol level, and magical powers of Homer’s Circe, this episode is expressed largely in a hallucinatory manner that invites comparison with the metaphoric power of dream logic. Bloom and Stephen move freely in and out of a sorceress’ world, where personages and fears from their recent and distant pasts are made manifest to them in a seamless process of metamorphosis, and put down on the page in dramatic form, replete with stage directions. Stephen heads for the red-light district and is followed by Bloom, who is concerned in a fatherly way over Stephen’s well-being. In the house of Bella Cohen, Bloom ﬂirts with Zoe, falls under the spell of the whoremistress Bella, and keeps watch over Stephen, who, after a traumatic hallucinatory visit from his deceased mother, attempts to break her hold on his psyche by smashing his walking stick against Bella’s chandelier. Bloom pays Bella for the damage and follows Stephen into the street. Stephen is punched by a British solder unimpressed by Stephen’s rhetorical skills, and Bloom protects the unconscious recipient of that punch so that the latter might avoid falling into the custody of the police. The episode (and with it Part II, the “Odyssey” proper) ends poignantly with Bloom’s vision of his own son Rudy (who had died eleven years ago at the age of eleven days) as he might have been in life, now eleven. By associating Rudy with Stephen at this point, the image powerfully reinforces the book’s undercurrent theme of father and son in search of each other. (Smith)
 
@@ -328,7 +328,7 @@ About 4:00 p.m., at The Concert Room (saloon at the Ormond Hotel).
 * Technique: Narrative, Old
 * Read "The Odyssey" Books 17-20
 * [Modernism Lab article on Eumaeus](https://campuspress.yale.edu/modernismlab/eumaeus/) 
-* [Blog posts on Eumaeus](https://www.bloomsandbarnacles.com/blog/category/Eumaeus) 
+* [Blog posts on Eumaeus](https://bloomsandbarnacles.com/category/eumaeus/) 
 
 > Bloom escorts the revived Stephen to a nearby cabman’s shelter in hopes of sobering the young man up and bringing him home to Eccles Street for a good night’s sleep. The shelter is run by a reputed ex-Invincible known as “Skin-the-Goat,” whose clientele are being entertained by the tattoos and tall tales of a sailor named Murphy, just back with a fresh batch of rare exploits on the ship Stephen watched that morning from the strand. Bloom’s best efforts at communication with his newfound spiritual son are met with certain disappointments, beautifully emphasized by the episode’s narrative technique, a prose style so hopelessly laden with subordinate clauses, derelict predicates, tireless wandering constructions, and delicious clichés that the reader yearns for bedtime more keenly than do the protagonists. Nevertheless, our hero is triumphant in his mission, and eventually leads the young bard through the vicissitudes of city life and tired language to safe harbor at Eccles Street. (Smith)
 

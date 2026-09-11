@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "Smoky Bonfire"
 slug = "smoky-bonfire"
 date = 2025-06-26

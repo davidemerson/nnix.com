@@ -1,7 +1,8 @@
-﻿+++
++++
 title = "Margarita"
 slug = "margarita"
 date = 2025-06-26
+description = "Recipe featuring tequila, mezcal, and orange liqueur"
 [taxonomies]
   foodcategory = ["drinks"]
 +++

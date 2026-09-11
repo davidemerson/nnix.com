@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "Ghost Pepper Sauce"
 slug = "ghost-pepper-sauce"
 date = 2025-06-26

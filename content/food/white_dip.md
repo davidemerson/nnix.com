@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "White Dip"
 slug = "white-dip"
 date = 2025-06-26

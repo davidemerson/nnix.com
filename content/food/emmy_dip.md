@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "Emmy Dip"
 slug = "emmy-dip"
 date = 2025-06-26

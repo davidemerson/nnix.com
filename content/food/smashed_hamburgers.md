@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "Smashed Hamburgers"
 slug = "smashed-hamburgers"
 date = 2025-06-26

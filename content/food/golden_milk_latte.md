@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "Golden Milk Latte"
 slug = "golden-milk-latte"
 date = 2025-06-26

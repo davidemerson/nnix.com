@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "Red Beans Rice"
 slug = "red-beans-rice"
 date = 2025-06-26

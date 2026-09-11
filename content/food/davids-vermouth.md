@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "David's Vermouth"
 slug = "davids-vermouth"
 date = 2025-06-26

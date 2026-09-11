@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "Lentils"
 slug = "lentils"
 date = 2025-06-26

@@ -8,13 +8,8 @@
   --bg-color: #f2f2f2; 
   --secondary-bg-color: #d9d9d9; 
   --border-radius: 15px;
-  --font-family-text: 'nnixbook';
-  --font-family-bold: 'nnixbold';
-  --font-family-italic: 'nnixitalic';
   --font-family-mono: 'nnixmono';
   --font-family-medium: 'nnixmedium';
-  --max-width: 80ch;
-  --spacing-unit: 2ch;
 }
 html, body { background-color: var(--bg-color); margin: 0; padding: 0; }
 main { max-width: 80ch; padding: 2ch; margin: auto; font-family: 'nnixbook'; font-size: 100%; line-height: 1.6; min-height: 100vh; }
@@ -23,18 +18,17 @@ code, pre, tt, kbd, samp { overflow-wrap: break-word; word-wrap: break-word; whi
 h1 { font-family: 'nnixbold'; font-weight: normal; font-size: 2.07em; }
 h2 { font-family: 'nnixbold'; font-weight: normal; font-size: 1.54em; }
 h3 { font-family: 'nnixitalic'; font-weight: normal; font-size: 1.16em; }
-emph { font-family: 'nnixbook'; font-weight: normal; font-size: 1.16em; }
+.dated { font-family: 'nnixbook'; font-weight: normal; font-size: 1.16em; }
 b, strong { font-family: 'nnixbold'; font-weight: normal; font-size: inherit; }
-footer { max-width: 80ch; padding: 2ch; margin: auto; font-family: 'nnixfont'; }
 a:link, a:visited { color: inherit; font-family: 'nnixmedium'; text-decoration: underline; }
 a:hover, a:focus { text-decoration: none; color:#00008B; }
 img { border-radius: var(--border-radius); max-width: 100%; height: auto; }
 .smallfeature { border-radius: var(--border-radius); display: block; margin: 1rem auto; width: clamp(50%, 80%, 300px); }
-figure { margin: 0 0 1em; }
 ul { margin-left: 1em; padding: 0; list-style: none; }
 ul li::before { content: "+"; padding-right: 4px; }
 ul.ing li::before { content: none; padding-right: 0; }
 li ul { margin-left: 2em; }
+ul.spaced li { margin-bottom: 1em; }
 table { border-collapse: collapse; }
 td { background-color: var(--bg-color); overflow: hidden; text-align: left; word-break: normal; padding: 5px 20px; font-size: 100%; }
 th { font-family: 'nnixbold'; font-weight: normal; background-color: var(--secondary-bg-color); text-align: left; padding: 8px 15px; border-radius: var(--border-radius); border: 2px solid var(--bg-color); font-size: 100%; }

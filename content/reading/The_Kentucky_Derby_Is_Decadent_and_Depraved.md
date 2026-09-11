@@ -14,7 +14,7 @@ The following essay was originally published in Scanlan's Monthly, vol. 1, no. 4
 
 It seems to be out in the wild, so I'm just putting it here, since it's brilliant and deserves a read.
 
-Good article about it from the Lexington Herald-Leader [here](https://www.kentucky.com/opinion/op-ed/article147523164.html).
+Good article about it from the Lexington Herald-Leader [here](https://web.archive.org/web/20250822115823/https://www.kentucky.com/opinion/op-ed/article147523164.html).
 
 # The Kentucky Derby is Decadent and Depraved
 

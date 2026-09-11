@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "Acorn Shortbread"
 slug = "acorn-shortbread"
 date = 2025-06-26

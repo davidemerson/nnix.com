@@ -3,15 +3,17 @@
 {% block content %}
 <div><a href=".."><<<</a></div>
 <h1 class="title">{{ taxonomy.name }}: {{ term.name }}</h1>
+<ul class="spaced">
 {% for page in term.pages %}
-<header>
-    <ul>
-    <p><li>
-        {{ page.taxonomies.authorname?[0] or "" }}.
-        ({{ page.taxonomies.pubyear?[0] or "" }}).
-        <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
-    </li></p>
-    </ul>
-</header>
+  {% if page.taxonomies.authorname %}
+  <li>
+    {{ page.taxonomies.authorname[0] }}.
+    ({{ page.taxonomies.pubyear?[0] or "" }}).
+    <a href="{{ page.permalink | safe }}"><i>{{ page.title }}</i></a>.
+  </li>
+  {% else %}
+  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+  {% endif %}
 {% endfor %}
+</ul>
 {% endblock content %}

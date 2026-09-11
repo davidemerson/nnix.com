@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "Denser Sourdough Bread"
 slug = "sourdough-bread"
 date = 2025-06-26

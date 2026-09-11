@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "Candied Pecans"
 slug = "candied-pecans"
 date = 2025-06-26

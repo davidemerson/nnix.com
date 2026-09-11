@@ -3,8 +3,8 @@ title = "Black & Blue NY Strip"
 slug = "black-blue-ny-strip"
 date = 2025-06-26
 description = "Recipe featuring ny strip steaks with sous vide technique"
-[extra]
-  category = "main"
+[taxonomies]
+  foodcategory = ["main"]
 +++
 
 # Black & Blue NY Strip

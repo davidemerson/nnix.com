@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "Gin"
 slug = "gin"
 date = 2025-06-26
